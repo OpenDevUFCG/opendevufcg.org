@@ -21,3 +21,5 @@ jobs:
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
         local_dir: public
+        on:
+           branch: config-travis-deploy-and-tests
