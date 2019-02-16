@@ -5,6 +5,10 @@ cache:
   directories:
   - node_modules
 
+before_deploy:
+    - npm run build
+    - rm -rf node_modules/
+
 jobs:
   include:
     - stage: "Tests"
@@ -15,7 +19,7 @@ jobs:
     - stage: "Deploy"
       if: branch = config-travis-deploy-and-tests
       name: "Deploy to gh-pages"
-      script: npm run build
+      script: skip
       deploy:
         provider: pages
         skip_cleanup: true
