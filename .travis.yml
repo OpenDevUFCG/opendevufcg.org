@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+
+jobs:
+  include:
+    - stage: "Tests"
+      name: "Test"
+      script: npm run test
+    - script: npm run lint
+      name: "Lint"
+    - stage: "Deploy"
+      if: branch = config-travis-deploy-and-tests
+      name: "Deploy to gh-pages"
+      script: npm run build
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        local_dir: public
