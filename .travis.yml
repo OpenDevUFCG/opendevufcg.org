@@ -11,12 +11,10 @@ before_deploy:
 
 jobs:
   include:
-    - stage: "Tests"
-      name: "Test"
-      script: npm run test
-    - script: npm run lint
+    - stage: tests
       name: "Lint"
-    - stage: "Deploy"
+      script: npm run lint
+    - stage: deploy
       if: branch = config-travis-deploy-and-tests
       name: "Deploy to gh-pages"
       script: skip
