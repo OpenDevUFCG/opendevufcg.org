@@ -1,19 +1,15 @@
 <template>
     <section>
         <div class="content">
-          <h1>Oi</h1>
+          <h1>Introducao</h1>
         </div>
     </section>
 </template>
 
 <script>
 export default {
-  name: 'Introducao',
-  
-  data () {
-    return 
-    }
-  }
+  name: 'Introducao'
+}
 </script>
 
 <style lang="scss" scoped>
