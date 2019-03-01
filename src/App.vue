@@ -1,23 +1,37 @@
 <template>
   <div id="app">
-    Teste
+    <home/>
   </div>
 </template>
 
 <script>
+import Home from '@/pages/Home.vue'
 
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Home
+  },
 }
 </script>
 
-<style>
+<style lang="scss">
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    box-sizing: border-box; 
 }
 </style>
