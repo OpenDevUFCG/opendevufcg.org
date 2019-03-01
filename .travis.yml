@@ -6,7 +6,7 @@ cache:
   - node_modules
 
 before_deploy:
-    - npm run build
+    - npm run generate
     - rm -rf node_modules/
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       name: "Lint"
       script: npm run lint
     - stage: deploy
-      if: branch = master
+      if: branch = add-nuxtjs
       name: "Deploy to gh-pages"
       script: skip
       deploy:
@@ -25,4 +25,4 @@ jobs:
         keep-history: true
         local_dir: dist
         on:
-           branch: master
+           branch: add-nuxtjs
