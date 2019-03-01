@@ -15,10 +15,10 @@
           class="button--green"
         >Github</a>
         <a
-          href="https://groups.google.com/forum/#!forum/opendevufcg"
+          href="https://gitter.im/OpenDevUFCG/community"
           target="_blank"
           class="button--grey"
-        >NewsLetter</a>
+        >Gitter</a>
       </div>
     </div>
   </section>
