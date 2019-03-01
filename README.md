@@ -1,6 +1,7 @@
-# OpenDevUFCG
 
-> OpenDevUFCG Portal
+# OpenDevUFCG [![Join the chat at https://gitter.im/OpenDevUFCG/portal](https://badges.gitter.im/OpenDevUFCG/portal.svg)](https://gitter.im/OpenDevUFCG/portal?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Portal do OpenDevUFCG
 
 ## [Wiki](https://github.com/OpenDevUFCG/OpenDevUFCG/wiki)
 
@@ -30,6 +31,4 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
 Para mais detalhes, veja [Nuxt.js docs](https://nuxtjs.org).
-)
