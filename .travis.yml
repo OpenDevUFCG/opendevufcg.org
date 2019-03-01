@@ -15,7 +15,7 @@ jobs:
       name: "Lint"
       script: npm run lint
     - stage: deploy
-      if: branch = add-nuxtjs
+      if: branch = master
       name: "Deploy to gh-pages"
       script: skip
       deploy:
@@ -26,4 +26,4 @@ jobs:
         local_dir: dist
         fqdn: opendevufcg.org
         on:
-           branch: add-nuxtjs
+           branch: master
