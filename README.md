@@ -1,3 +1,4 @@
+
 # OpenDevUFCG [![Join the chat at https://gitter.im/OpenDevUFCG/portal](https://badges.gitter.im/OpenDevUFCG/portal.svg)](https://gitter.im/OpenDevUFCG/portal?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Portal do OpenDevUFCG
@@ -8,31 +9,26 @@ Portal do OpenDevUFCG
 
 O site é feito em [Vue](https://vuejs.org/), para usá-lo localmente, você precisará ter `npm` instalado na máquina.
 
-### Instalar dependências
-
-```
-npm install
-```
-
-### Para iniciar o servidor
-
-```
-npm run serve
-```
-
-### Rodar os testes
-
-```
-npm run test
-```
-
-### Lint
-```
-npm run lint
-```
-
-### Build do projeto
-
 ```
 npm run build
 ```
+
+> OpenDevUFCG Portal
+
+## Build Setup
+
+``` bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+```
+Para mais detalhes, veja [Nuxt.js docs](https://nuxtjs.org).
