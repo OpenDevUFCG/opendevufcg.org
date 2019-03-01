@@ -1,6 +1,6 @@
 <template>
     <sessao>
-      <h1>Quem Somos</h1>
+      <h1>Contribuicao</h1>
     </sessao>
 </template>
 
@@ -8,7 +8,7 @@
 import Sessao from '@/components/home/sessoes/Sessao.vue'
 
 export default {
-  name: 'Apresentacao',
+  name: 'Contribuicao',
   components: {
     Sessao
   }

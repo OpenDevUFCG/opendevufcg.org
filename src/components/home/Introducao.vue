@@ -20,7 +20,6 @@ section {
     display: flex;
     margin: 0;
     max-width: 100%;
-    background-color: yellow;
     height: 100vh;
     font-weight: 500;
 }
