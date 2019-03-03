@@ -83,11 +83,11 @@ export default {
   }
 
   .logo {
-    max-width: 175px;
+    max-width: 170px;
   }
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 568px) {
   .intro {
     align-items: center;
   }
@@ -101,7 +101,11 @@ export default {
   }
 
   .logo {
-    max-width: 175px;
+    max-width: 170px;
+  }
+
+  .subtitle {
+    font-size: 1em;
   }
 }
 
