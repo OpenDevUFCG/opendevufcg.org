@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="projeto.imagem" style="width:100%">
+    <img :src="projeto.imagem">
     <a class="titulo" :href="projeto.site" target="_blank"> 
       {{ projeto.titulo }}
     </a>
@@ -26,17 +26,16 @@ export default {
   max-height: 100vh;
   height: 410px;
   text-align: center;
-  padding: 0px 20px;
-  padding-bottom: 40px;
+  padding: 2px 20px;
   border-radius: 4px;
-  box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  border: px solid #d0d0d0;
+  box-shadow: 0 15px 35px #32325a1a, 0 5px 15px #00000012;
+  border: 1px solid #00000020;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: default;
 
   img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     padding: 30px 30px;
     margin-bottom: 20px;
   }

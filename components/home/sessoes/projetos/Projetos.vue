@@ -1,16 +1,37 @@
 <template>
-  <section class="section--allscreen">
-    <div class="projetosGrid">
-      <projeto-card v-for="projeto in projetos" :key="projeto.site" :projeto="projeto" />
+  <div class="content">
+    <div class="head">
+      <span class="titulo">Nossos Projetos</span>
+      <span class="subtitulo">
+        Desenvolvemos projetos para a comunidade da UFCG, você pode ver alguns deles abaixo.
+      </span>
     </div>
-  </section>
+    <div class="projetos">
+      <carousel 
+        navigationEnabled="true" 
+        perPage="1"
+        :perPageCustom="[[1024, 2]]"
+        autoplay="true"
+        autoplayTimeout="3000"
+        loop="true"
+        paginationActiveColor="#1e6995"
+        paginationColor	="#B1d9ee">
+        <slide v-for="projeto in projetos" :key="projeto.site">
+          <projeto-card :projeto="projeto" />
+        </slide>
+      </carousel>
+    </div>
+  </div>
 </template>
 <script>
+import { Carousel, Slide } from 'vue-carousel'
 import ProjetoCard from './ProjetoCard.vue'
 export default {
   name: 'Projetos',
   components: {
-    ProjetoCard
+    ProjetoCard,
+    Carousel,
+    Slide
   },
   data() {
     return {
@@ -55,19 +76,50 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.projetosGrid {
+.content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 10px;
+  width: 100%;
+}
+.head {
+  align-self: center;
+  margin: 20px 20px 80px 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  * {
-    margin: 10px;
+  .titulo {
+    font-size: 50px;
+    color: #1e6995;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  .subtitulo {
+    font-size: 20px;
+    color: #80858a;
+    text-align: center;
+    width: 90%;
   }
 }
+.projetos {
+  max-width: 620px;
+  align-self: center;
+}
 
-@media (max-width: 600px) {
-  .projetosGrid {
-    flex-direction: column;
+@media only screen and (max-width: 728px) {
+  .projetos {
+    width: 90vw;
+    margin: 4px 0px;
+  }
+  .titulo {
+    font-size: 30px !important;
+  }
+
+  .subtitulo {
+    font-size: 15px !important;
   }
 }
 </style>
