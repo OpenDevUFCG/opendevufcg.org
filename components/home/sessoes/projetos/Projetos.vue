@@ -20,14 +20,14 @@ export default {
           descricao:
             'Glossário contendo significados de siglas e gírias usadas por alunos da UFCG.',
           site: 'https://glossario.opendevufcg.org/',
-          imagem: '/opendev_icon.png'
+          imagem: '/glossario_icon.svg'
         },
         {
           titulo: 'Tamburetei',
           descricao:
             'Repositório contendo materiais para ajudar alunos fazerem de tamburete cadeiras de Computação@UFCG.',
           site: 'https://github.com/opendevufcg/Tamburetei/',
-          imagem: '/opendev_icon.png'
+          imagem: '/tamburetei_icon.svg'
         },
         {
           titulo: 'IssueAi',
@@ -40,7 +40,7 @@ export default {
           titulo: 'Roadmap CC',
           descricao: 'Roadmap para se tornar um cientista de Computação@UFCG.',
           site: 'https://github.com/OpenDevUFCG/roadmap-cc',
-          imagem: '/opendev_icon.png'
+          imagem: '/roadmapcc_icon.svg'
         },
         {
           titulo: 'Laguinho API',
@@ -60,7 +60,6 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   * {
     margin: 10px;
   }

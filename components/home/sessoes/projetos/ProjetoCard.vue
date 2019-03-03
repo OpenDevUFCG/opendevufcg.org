@@ -30,9 +30,16 @@ export default {
   padding-bottom: 40px;
   border-radius: 4px;
   box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  border: 1px solid #d0d0d0;
+  border: px solid #d0d0d0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: default;
+
+  img {
+    height: 250px;
+    width: 250px;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .card:hover {
@@ -63,6 +70,10 @@ export default {
   .card {
     width: 95%;
     margin: 0px 5px;
+  }
+  img {
+    width: 80%;
+    height: 80%;
   }
 }
 </style>
