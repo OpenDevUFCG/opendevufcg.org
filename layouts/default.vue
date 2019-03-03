@@ -54,10 +54,4 @@ html {
   color: #fff;
   background-color: #35495e;
 }
-
-.section--allscreen {
-  width: 100%;
-  margin: 0;
-  height: 100vh;
-}
 </style>

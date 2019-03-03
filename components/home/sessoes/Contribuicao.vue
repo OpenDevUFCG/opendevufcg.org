@@ -1,5 +1,5 @@
 <template>
-  <section class="section--allscreen">
+  <section>
     <h1>Contribuicao</h1>
   </section>
 </template>
