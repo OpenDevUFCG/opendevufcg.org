@@ -1,71 +1,43 @@
 <template>
-  <section class="container">
-    <div>
-      <img src="~/static/opendev_icon.png" class="logo">
-      <h1 class="title">
-        OpenDevUFCG
-      </h1>
-      <h2 class="subtitle">
-        Impulsionando projetos e desenvolvedores open source de CC@UFCG.
-      </h2>
-      <div class="links">
-        <a
-          href="https://github.com/OpenDevUFCG/"
-          target="_blank"
-          class="button--green"
-        >Github</a>
-        <a
-          href="https://gitter.im/OpenDevUFCG/community"
-          target="_blank"
-          class="button--grey"
-        >Gitter</a>
-      </div>
-    </div>
-  </section>
+  <div>
+    <header>
+      <introducao />
+    </header>
+    <main>
+      <visao />
+      <projetos />
+      <equipe />
+    </main>
+  </div>
 </template>
 
 <script>
+import Visao from '@/components/home/sessoes/Visao'
+import Introducao from '@/components/home/sessoes/Introducao'
+import Projetos from '@/components/home/sessoes/Projetos'
+import Equipe from '@/components/home/sessoes/Equipe'
 export default {
   components: {
-    // Logo
+    Visao,
+    Introducao,
+    Projetos,
+    Equipe
   }
 }
 </script>
 
-<style>
-.container {
+<style scoped>
+header {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 80vh;
+}
+
+main {
+  margin: auto;
+  width: 80vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 34px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-.logo {
-  width: 400px;
-  height: 400px;
 }
 </style>
