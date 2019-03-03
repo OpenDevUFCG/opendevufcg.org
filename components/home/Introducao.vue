@@ -30,12 +30,11 @@ export default {
 }
 
 .intro-content {
-  padding: 15px;
-  max-width: 500px;
+  margin-right: 25px;
+  max-width: 600px;
 }
 
 .logo-content {
-  max-width: vmin;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -46,7 +45,7 @@ export default {
 
 .title {
   display: block;
-  font-size: 5vw;
+  font-size: 6vw;
 }
 
 .subtitle:before {
@@ -60,20 +59,63 @@ export default {
 .subtitle {
   font-weight: 300;
   max-width: 450px;
-  font-size: 20px;
-  word-spacing: 5px;
+  font-size: 1.5em;
   float: right;
 }
 
 .logo {
   display: block;
-  max-width: 200px;
+  max-width: 250px;
   height: auto;
 }
 
 @media screen and (max-width: 750px) {
+  .intro {
+    align-items: center;
+  }
+
   .title {
     font-size: 8vw;
+  }
+
+  .intro-content {
+    margin-right: 0;
+  }
+
+  .logo {
+    max-width: 175px;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .intro {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .intro-content {
+    margin-right: 0;
+  }
+
+  .logo {
+    max-width: 175px;
+  }
+}
+
+@media screen and (min-height: 750px) and (min-width: 750px) {
+  .intro {
+    align-items: center;
+  }
+
+  .intro-content {
+    max-width: 800px;
+  }
+
+  .title {
+    font-size: 7vh;
   }
 
   .intro-content {
