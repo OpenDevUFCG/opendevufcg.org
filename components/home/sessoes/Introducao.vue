@@ -1,7 +1,7 @@
 <template>
   <section>
     <div>
-      <img src="~/static/opendev_icon.png" class="logo">
+      <img src="~static/opendev_icon.png" class="logo">
       <h1 class="title">
         OpenDevUFCG
       </h1>
