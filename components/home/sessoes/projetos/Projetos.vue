@@ -1,8 +1,8 @@
 <template>
   <div class="content">
-    <div class="head">
-      <span class="titulo">Nossos Projetos</span>
-      <span class="subtitulo">
+    <div class="sessao-head">
+      <span class="sessao-titulo">Nossos Projetos</span>
+      <span class="sessao-subtitulo">
         Desenvolvemos projetos para a comunidade da UFCG, você também pode contribuir para eles! Veja alguns deles abaixo: 
       </span>
     </div>
@@ -85,25 +85,6 @@ export default {
   padding: 10px;
   width: 100%;
 }
-.head {
-  align-self: center;
-  margin: 20px 20px 80px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .titulo {
-    font-size: 50px;
-    color: #1e6995;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-  }
-  .subtitulo {
-    font-size: 20px;
-    color: #80858a;
-    text-align: center;
-    width: 90%;
-  }
-}
 .projetos {
   max-width: 620px;
   align-self: center;
@@ -113,13 +94,6 @@ export default {
   .projetos {
     width: 90vw;
     margin: 4px 0px;
-  }
-  .titulo {
-    font-size: 30px !important;
-  }
-
-  .subtitulo {
-    font-size: 15px !important;
   }
 }
 </style>

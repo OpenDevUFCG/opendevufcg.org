@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -53,5 +53,33 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.sessao-head {
+  align-self: center;
+  margin: 20px 20px 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sessao-titulo {
+  font-size: 50px;
+  color: #1e6995;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+
+  @media only screen and (max-width: 728px) {
+    font-size: 30px !important;
+  }
+}
+.sessao-subtitulo {
+  font-size: 20px;
+  color: #80858a;
+  text-align: center;
+  width: 90%;
+  @media only screen and (max-width: 728px) {
+    font-size: 15px !important;
+  }
 }
 </style>
