@@ -34,7 +34,7 @@ header {
 
 main {
   margin: auto;
-  width: 80vh;
+  width: 80vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
