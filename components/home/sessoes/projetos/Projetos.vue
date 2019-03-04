@@ -3,17 +3,17 @@
     <div class="head">
       <span class="titulo">Nossos Projetos</span>
       <span class="subtitulo">
-        Desenvolvemos projetos para a comunidade da UFCG, você pode ver alguns deles abaixo.
+        Desenvolvemos projetos para a comunidade da UFCG, você também pode contribuir para eles! Veja alguns deles abaixo: 
       </span>
     </div>
     <div class="projetos">
       <carousel 
-        navigationEnabled="true" 
-        perPage="1"
-        :perPageCustom="[[1024, 2]]"
-        autoplay="true"
-        autoplayTimeout="3000"
-        loop="true"
+        :navigationEnabled="true" 
+        :perPage="1"
+        :perPageCustom="[[600, 2]]"
+        :autoplay="true"
+        :autoplayTimeout="3000"
+        :loop="true"
         paginationActiveColor="#1e6995"
         paginationColor	="#B1d9ee">
         <slide v-for="projeto in projetos" :key="projeto.site">

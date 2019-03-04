@@ -47,7 +47,7 @@ export default {
 }
 
 .titulo {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   letter-spacing: 2px;
   color: #35495e;
