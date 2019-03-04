@@ -55,7 +55,7 @@ export default {
           descricao:
             'O Issue Ai cria um espaço de visibilidade para os projetos open source de Computação@UFCG.',
           site: 'https://issueai.opendevufcg.org/',
-          imagem: '/opendev_icon.png'
+          imagem: '/issueai_icon.svg'
         },
         {
           titulo: 'Roadmap CC',
@@ -68,7 +68,7 @@ export default {
           descricao:
             'Onde todos os dados, pessoas e radiação da UFCG se encontram.',
           site: 'https://github.com/OpenDevUFCG/laguinho-api',
-          imagem: '/opendev_icon.png'
+          imagem: '/laguinho_icon.svg'
         }
       ]
     }

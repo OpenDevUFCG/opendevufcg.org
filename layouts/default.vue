@@ -24,6 +24,21 @@ html {
   margin: 0;
 }
 
+@font-face {
+  font-family: Ikaros-Regular;
+  src: url(~assets/fonts/Ikaros-Regular.otf);
+}
+
+@font-face {
+  font-family: Jaapokki-Regular;
+  src: url(~assets/fonts/Jaapokki-Regular.otf);
+}
+
+@font-face {
+  font-family: Jaapokki-Regular;
+  src: url(~assets/fonts/AvertaDemoPE-ExtraboldItalic.otf);
+}
+
 .button--green {
   display: inline-block;
   border-radius: 4px;
