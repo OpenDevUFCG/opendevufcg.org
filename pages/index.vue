@@ -15,7 +15,7 @@
 import Visao from '@/components/home/sessoes/Visao'
 import Introducao from '@/components/home/sessoes/Introducao'
 import Projetos from '@/components/home/sessoes/projetos/Projetos'
-import Equipe from '@/components/home/sessoes/Equipe'
+import Equipe from '@/components/home/sessoes/equipe/Equipe'
 export default {
   components: {
     Visao,
