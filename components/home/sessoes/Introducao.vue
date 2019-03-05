@@ -1,5 +1,5 @@
 <template>
-  <section class="intro section--allscreen">
+  <section class="intro">
     <div class="intro-content">
       <div class="logo-content">
         <img src="~/static/opendev_icon.png" class="logo" alt="Logo do OpenDev">
@@ -18,11 +18,8 @@ export default {
 }
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
+<style scoped>
 .intro {
-  font-family: 'Source Sans Pro', sans-serif;
   padding: 2em 1em;
   display: flex;
   justify-content: center;
