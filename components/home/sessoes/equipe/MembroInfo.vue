@@ -1,9 +1,10 @@
 <template>
   <div class="membro-info">
-    <img id="avatar" :src="membro.path_img">
-    <span>{{ membro.nome }}</span>
+    <a :href="membro.url_github" target="_blank">
+      <img :src="membro.imagem" :alt="membro.nome" :title="membro.nome">
+    </a>
   </div>
-</template>
+</template> 
 <script>
 export default {
   name: 'MembroInfo',
@@ -16,10 +17,21 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-#avatar {
-  height: 15%;
-  width: 15%;
+.membro-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.membro-info:hover {
+  transform: scale(1.2);
+}
+
+img {
+  align-self: center;
+  height: 100%;
+  width: 100%;
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  margin: 0;
+  background: #639;
 }
 </style>
