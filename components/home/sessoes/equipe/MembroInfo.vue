@@ -21,7 +21,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .membro-info:hover {
