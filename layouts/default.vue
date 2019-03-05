@@ -39,7 +39,7 @@ html {
   src: url(~assets/fonts/AvertaDemoPE-ExtraboldItalic.otf);
 }
 
-.button--green {
+.button--blue {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #387ca5;
@@ -49,7 +49,7 @@ html {
   transition: 0.2s;
 }
 
-.button--green:hover {
+.button--blue:hover {
   color: #fff;
   background-color: #387ca5;
 }
