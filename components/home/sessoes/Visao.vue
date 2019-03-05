@@ -5,13 +5,13 @@
       <span class="sessao-subtitulo">
         Entendemos que o código aberto é uma ótima prática de desenvolvimento
       para projetos de software, especialmente quando eles tem potencial
-      de atingir várias pessoas. Nosso principal objetivo é criar um ambiente open-source para:
+      de atingir várias pessoas. Nosso principal objetivo é criar um ambiente open source para:
       </span>
     </header>
     <ul>
       <li>Estimular a troca de conhecimentos entre estudantes</li>
       <li>Incentivar a criação de projetos open-source na UFCG</li>
-      <li>Reduzir as barreiras entre estudantes e suas primeiras contribuições open-source</li>
+      <li>Reduzir as barreiras entre estudantes e suas primeiras contribuições open source</li>
       <li>Desenvolver projetos de/para estudantes</li>
     </ul>
   </section>
