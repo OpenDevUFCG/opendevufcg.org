@@ -39,6 +39,11 @@ export default {
           imagem: 'hericles.jpeg'
         },
         {
+          nome: 'José Rean',
+          url_github: 'https://github.com/JoseRenan',
+          imagem: 'renan.jpeg'
+        },
+        {
           nome: 'José Robson',
           url_github: 'https://github.com/JRobsonJr',
           imagem: 'robson.jpeg'
