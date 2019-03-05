@@ -1,25 +1,13 @@
 <template>
-  <section>
-    <div>
-      <img src="~static/opendev_icon.png" class="logo">
-      <h1 class="title">
-        OpenDevUFCG
-      </h1>
+  <section class="intro">
+    <div class="intro-content">
+      <div class="logo-content">
+        <img src="~/static/opendev_icon.png" class="logo" alt="Logo do OpenDev">
+        <h1 class="title">OpenDev UFCG</h1>
+      </div>
       <h2 class="subtitle">
         Impulsionando projetos e desenvolvedores open source de CC@UFCG.
       </h2>
-      <div class="links">
-        <a
-          href="https://github.com/OpenDevUFCG/"
-          target="_blank"
-          class="button--green"
-        >Github</a>
-        <a
-          href="https://gitter.im/OpenDevUFCG/community"
-          target="_blank"
-          class="button--grey"
-        >Gitter</a>
-      </div>
     </div>
   </section>
 </template>
@@ -31,37 +19,108 @@ export default {
 </script>
 
 <style scoped>
-section {
+.intro {
+  padding: 2em 1em;
   display: flex;
   justify-content: center;
+  text-align: right;
+}
+
+.intro-content {
+  margin-right: 25px;
+  max-width: 600px;
+}
+
+.logo-content {
+  border-radius: 20px;
+  display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-size: 6vw;
+}
+
+.subtitle:before {
+  content: '';
+  display: block;
+  width: vmin;
+  border: 2px solid #e95425;
+  margin: 1em auto;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 34px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  max-width: 450px;
+  font-size: 1.5em;
+  float: right;
 }
 
 .logo {
-  width: 400px;
-  height: 400px;
+  display: block;
+  max-width: 250px;
+  height: auto;
+}
+
+@media screen and (max-width: 750px) {
+  .intro {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+
+  .intro-content {
+    margin-right: 0;
+  }
+
+  .logo {
+    max-width: 170px;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .intro {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .intro-content {
+    margin-right: 0;
+  }
+
+  .logo {
+    max-width: 170px;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-height: 750px) and (min-width: 750px) {
+  .intro {
+    align-items: center;
+  }
+
+  .intro-content {
+    max-width: 800px;
+  }
+
+  .title {
+    font-size: 7vh;
+  }
+
+  .intro-content {
+    margin-right: 0;
+  }
 }
 </style>
