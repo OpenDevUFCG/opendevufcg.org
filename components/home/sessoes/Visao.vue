@@ -10,7 +10,7 @@
     </header>
     <ul>
       <li>Estimular a troca de conhecimentos entre estudantes</li>
-      <li>Incentivar a criação de projetos open-source na UFCG</li>
+      <li>Incentivar a criação de projetos open source na UFCG</li>
       <li>Reduzir as barreiras entre estudantes e suas primeiras contribuições open source</li>
       <li>Desenvolver projetos de/para estudantes</li>
     </ul>
