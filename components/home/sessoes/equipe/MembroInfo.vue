@@ -1,7 +1,7 @@
 <template>
   <div class="membro-info">
     <a :href="membro.url_github" target="_blank">
-      <img :src="membro.imagem" :alt="membro.nome" :title="membro.nome">
+      <img :src="require('~/assets/avatar/' + membro.imagem)" :alt="membro.nome" :title="membro.nome">
     </a>
   </div>
 </template> 
@@ -32,6 +32,5 @@ img {
   height: 100%;
   width: 100%;
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: #639;
 }
 </style>
