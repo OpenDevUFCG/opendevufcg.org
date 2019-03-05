@@ -1,18 +1,19 @@
 <template>
-  <section>
-    <h1>Visão</h1>
-    <p>
-      Entendemos que o código aberto é uma ótima prática de desenvolvimento
+  <section class="sessao">
+    <header class="sessao-head">
+      <span class="sessao-titulo">Visão</span>
+      <span class="sessao-subtitulo">
+        Entendemos que o código aberto é uma ótima prática de desenvolvimento
       para projetos de software, especialmente quando eles tem potencial
-      de atingir várias pessoas. Buscamos criar um ambiente open source para:
-      <ul>
-        <li>Estimular a interação entre estudantes;</li>
-        <li>Estimular a participação em repositórios abertos;</li>
-        <li>Prover mecanismos para a contribuição por estudantes desde os primeiros períodos</li>
-        <li>Desenvolver projetos de/para estudantes;</li>
-        <li>Impulsionar projetos open source;</li>
-      </ul>
-    </p>
+      de atingir várias pessoas. Nosso principal objetivo é criar um ambiente open-source para:
+      </span>
+    </header>
+    <ul>
+      <li>Estimular a troca de conhecimentos entre estudantes</li>
+      <li>Incentivar a criação de projetos open-source na UFCG</li>
+      <li>Reduzir as barreiras entre estudantes e suas primeiras contribuições open-source</li>
+      <li>Desenvolver projetos de/para estudantes</li>
+    </ul>
   </section>
 </template>
 <script>
@@ -21,41 +22,38 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-section {
-  margin: 0px;
+.sessao {
+  margin: 40px 0 40px 0px;
 }
-
 ul {
-  margin: 10px 0 0 0;
-  padding: 0 0 0 6px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  margin: auto;
+  max-width: 1100px;
 }
 li {
-  margin-top: 3px;
-  margin: 0;
-  padding: 15px 0 15px 30px;
+  margin: 0 10px 0 10px;
+  padding: 20px 0 15px 40px;
+  text-decoration: none;
   list-style: none;
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 24px;
+  font-size: 1.4rem;
+  color: #5a6166;
   background-image: url('~static/hexagon.svg');
   text-align: initial;
   &:nth-of-type(2n) {
     background-position: right center;
     text-align: right;
-    padding: 15px 30px 15px 0px;
+    padding: 20px 40px 15px 0px;
   }
 }
-p {
-  text-align: center;
-  font-size: 1.3rem;
-  word-wrap: break-word;
-}
 @media (max-width: 790px) {
-  section {
-    margin: 20px 14px 0 14px;
+  .section {
+    margin: 20px 14px 10 14px;
   }
 }
 </style>

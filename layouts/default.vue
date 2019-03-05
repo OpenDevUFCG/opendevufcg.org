@@ -72,29 +72,23 @@ html {
 
 .sessao-head {
   align-self: center;
-  margin: 20px 20px 80px 20px;
+  margin: 20px 20px 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .sessao-titulo {
-  font-size: 50px;
+  font-size: 3rem;
   color: #1e6995;
   margin-bottom: 20px;
   letter-spacing: 2px;
-
-  @media only screen and (max-width: 728px) {
-    font-size: 30px !important;
-  }
+  font-weight: normal;
 }
 .sessao-subtitulo {
-  font-size: 20px;
-  color: #80858a;
+  font-size: 1.3rem;
+  color: #4a5055;
   text-align: center;
+  line-height: 25px;
   width: 90%;
-  @media only screen and (max-width: 728px) {
-    font-size: 15px !important;
-  }
 }
 </style>
