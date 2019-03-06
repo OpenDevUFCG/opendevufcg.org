@@ -15,6 +15,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scrollbar-color: #1e6995 #eee;
+  scrollbar-width: thin;
 }
 
 *,
@@ -96,5 +98,18 @@ html {
   @media only screen and (max-width: 728px) {
     font-size: 15px !important;
   }
+}
+
+html::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+html::-webkit-scrollbar-track-piece {
+  background: #eee;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #1e6995;
 }
 </style>
