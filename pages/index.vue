@@ -5,6 +5,7 @@
     </header>
     <main>
       <visao />
+      <apresentacao />
       <projetos />
       <equipe />
     </main>
@@ -13,12 +14,14 @@
 
 <script>
 import Visao from '@/components/home/sessoes/Visao'
+import Apresentacao from '@/components/home/sessoes/apresentacao/Apresentacao'
 import Introducao from '@/components/home/sessoes/Introducao'
 import Projetos from '@/components/home/sessoes/projetos/Projetos'
 import Equipe from '@/components/home/sessoes/equipe/Equipe'
 export default {
   components: {
     Visao,
+    Apresentacao,
     Introducao,
     Projetos,
     Equipe
