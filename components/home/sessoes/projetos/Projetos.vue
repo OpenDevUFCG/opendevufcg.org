@@ -1,37 +1,18 @@
 <template>
   <div class="content">
-    <div class="sessao-head">
-      <span class="sessao-titulo">Nossos Projetos</span>
-      <span class="sessao-subtitulo">
-        Desenvolvemos projetos para a comunidade da UFCG, você também pode contribuir para eles! Veja alguns deles abaixo: 
-      </span>
-    </div>
     <div class="projetos">
-      <carousel 
-        :navigationEnabled="true" 
-        :perPage="1"
-        :perPageCustom="[[600, 2]]"
-        :autoplay="true"
-        :autoplayTimeout="3000"
-        :loop="true"
-        paginationActiveColor="#1e6995"
-        paginationColor	="#B1d9ee">
-        <slide v-for="projeto in projetos" :key="projeto.site">
-          <projeto-card :projeto="projeto" />
-        </slide>
-      </carousel>
+      <ul v-for="projeto in projetos" :key="projeto.site">
+        <li><projeto-card :projeto="projeto" /></li>
+      </ul>
     </div>
   </div>
 </template>
 <script>
-import { Carousel, Slide } from 'vue-carousel'
 import ProjetoCard from './ProjetoCard.vue'
 export default {
   name: 'Projetos',
   components: {
-    ProjetoCard,
-    Carousel,
-    Slide
+    ProjetoCard
   },
   data() {
     return {
@@ -77,17 +58,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 .content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
   min-height: 100vh;
   padding: 10px;
   width: 100%;
 }
 .projetos {
-  max-width: 620px;
-  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 6%;
+}
+
+ul {
+  list-style: none;
 }
 
 @media only screen and (max-width: 728px) {

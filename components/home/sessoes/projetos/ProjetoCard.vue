@@ -22,9 +22,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card {
-  width: 300px;
+  width: 290px;
   max-height: 100vh;
-  height: 410px;
+  height: 400px;
   text-align: center;
   padding: 2px 20px;
   border-radius: 4px;
