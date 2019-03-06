@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <nuxt />
   </div>
 </template>
@@ -15,6 +15,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scrollbar-color: #1e6995 #eee;
+  scrollbar-width: thin;
 }
 
 *,
@@ -90,5 +92,18 @@ html {
   text-align: center;
   line-height: 25px;
   width: 90%;
+}
+
+html::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+html::-webkit-scrollbar-track-piece {
+  background: #eee;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #1e6995;
 }
 </style>
