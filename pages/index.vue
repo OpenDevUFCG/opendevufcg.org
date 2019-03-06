@@ -29,7 +29,7 @@ export default {
 <style scoped>
 header {
   margin: 0 auto;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 main {
