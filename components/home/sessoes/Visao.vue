@@ -43,7 +43,7 @@ li {
   background-size: 24px;
   font-size: 1.4rem;
   color: #5a6166;
-  background-image: url('~static/hexagon.svg');
+  background-image: url('~asssets/hexagon.svg');
   text-align: initial;
   &:nth-of-type(2n) {
     background-position: right center;
