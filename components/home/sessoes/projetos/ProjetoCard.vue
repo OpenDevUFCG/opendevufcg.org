@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="projeto.imagem">
+    <img :src="require('~/assets/projetos_icones/' + projeto.imagem)">
     <a class="titulo" :href="projeto.site" target="_blank"> 
       {{ projeto.titulo }}
     </a>
