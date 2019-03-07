@@ -1,5 +1,8 @@
 <template>
   <div class="item-contribuicao">
+    <div class="item-image">
+      
+    </div>
     <div class="item">
       <div class="item-header">
         <p>{{ item.titulo }}</p>
@@ -30,15 +33,22 @@ export default {
 
 <style scoped>
 .item-contribuicao {
-  padding: 20px;
-  border-left: 120px solid #1e6995;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
   background-color: #b1d9ee;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
 }
 
 .item-contribuicao:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.item-image {
+  padding: 10px;
+  background-color: #1e6995;
+  min-height: 15vh;
 }
 
 .item-header {
@@ -66,5 +76,11 @@ export default {
 .item-footer {
   padding: 10px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .item-contribuicao {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

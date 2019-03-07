@@ -48,7 +48,7 @@ export default {
   grid-auto-rows: minmax(min-content, max-content);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .content {
     grid-template-columns: 1fr;
   }
