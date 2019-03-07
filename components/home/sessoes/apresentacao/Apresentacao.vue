@@ -22,12 +22,12 @@ export default {
 section {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 10% 10% 80%;
   grid-template-areas:
-    'titulo'
-    'subtitulo'
-    'main';
+    'titulo titulo titulo'
+    'subtitulo subtitulo subtitulo'
+    '. main .';
 }
 
 .titulo {
@@ -40,7 +40,9 @@ section {
   justify-self: center;
 }
 
-.content {
+.topicos {
   grid-area: main;
+  justify-self: center;
+  justify-items: center;
 }
 </style>

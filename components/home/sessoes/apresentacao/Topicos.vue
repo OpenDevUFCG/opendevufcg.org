@@ -3,6 +3,7 @@
       <div class="topico" v-for="topico in topicos" :key="topico.titulo">
           <span class="topico-titulo">{{ topico.titulo }}</span>
           <span class="topico-descricao">{{ topico.descricao }}</span>
+          
       </div>
   </div>
 </template>
@@ -14,17 +15,19 @@ export default {
       topicos: [
         {
           titulo: 'Comunidade',
-          descricao: 'Acreditamos na comunidade dsadsad dsadsad dsa.',
+          descricao:
+            'Crescemos mais juntos, por isso valorizamos a comunidade, criando um espaço que exista diálogo, amizade, respeito e suporte.',
           imagem: '~assets/comunidade_icon.svg'
         },
         {
           titulo: 'Livre',
-          descricao: 'Liberdade blabla dasdsa dsa dsa  dsa da.',
+          descricao: 'Acreditamos',
           imagem: '~assets/comunidade_icon.svg'
         },
         {
           titulo: 'Empoderamento',
-          descricao: 'Empodera empodera dasdsadsadasddsa dsadas dsa dss.',
+          descricao:
+            'Queremos empoderar pessoas, do iniciante ao experiente, todos podem aprender, sugerir e ajudar na OpenDevUFCG. Queremos ser a organização que possa encorajar pessoas a tomarem o primeiro passo, a sugerir novas ideias e principalmente, a contruí-las. Veja mais. ',
           imagem: '~assets/comunidade_icon.svg'
         }
       ]
@@ -35,15 +38,15 @@ export default {
 <style lang="scss" scoped>
 .topicos {
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: auto;
-  grid-gap: 10px 90px;
+  grid-gap: 2px 70px;
 }
 .topico {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10% 90%;
-  grid-gap: 2px 2px;
+  grid-template-rows: 10% 1fr;
+  grid-gap: 2px 90px;
   grid-template-areas:
     'titulo'
     'descricao';
@@ -56,5 +59,7 @@ export default {
 }
 .topico-descricao {
   grid-area: descricao;
+  color: #80858a;
+  letter-spacing: 0.1rem;
 }
 </style>
