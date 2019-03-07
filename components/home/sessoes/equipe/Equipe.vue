@@ -39,7 +39,7 @@ export default {
           imagem: 'hericles.jpeg'
         },
         {
-          nome: 'José Rean',
+          nome: 'José Renan',
           url_github: 'https://github.com/JoseRenan',
           imagem: 'renan.jpeg'
         },
@@ -86,12 +86,13 @@ export default {
 <style lang="scss" scoped>
 .equipe {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-gap: 2vmin;
   padding: 10px;
 }
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 </style>
