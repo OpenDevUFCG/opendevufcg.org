@@ -70,7 +70,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .projetos {
@@ -78,7 +79,8 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex: 0 0 40%;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -88,7 +90,7 @@ ul {
 @media only screen and (max-width: 728px) {
   .projetos {
     width: 90vw;
-    margin: 4px 0px;
+    margin: 10px 10px;
   }
 }
 </style>

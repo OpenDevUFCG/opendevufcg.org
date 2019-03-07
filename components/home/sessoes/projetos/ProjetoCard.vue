@@ -29,7 +29,7 @@ export default {
   border-radius: 4px;
   box-shadow: 0 15px 35px #32325a1a, 0 5px 15px #00000012;
   border: 1px solid #00000020;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: default;
 
@@ -66,7 +66,7 @@ export default {
 @media (max-width: 600px) {
   .card {
     width: 95%;
-    margin: 0px 5px;
+    margin: 10px 10px;
   }
   img {
     width: 80%;
