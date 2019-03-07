@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <section class="sessao">
     <div class="sessao-head">
       <h1 class="sessao-titulo">
         Equipe 
@@ -10,7 +10,7 @@
         <li><membro-info :membro="membro" /></li>
       </ul>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import MembroInfo from './MembroInfo.vue'
@@ -86,7 +86,7 @@ export default {
 <style lang="scss" scoped>
 .equipe {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
   grid-gap: 2vmin;
   padding: 10px;
 }

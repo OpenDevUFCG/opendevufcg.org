@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <section class="sessao">
     <div class="sessao-head">
       <span class="sessao-titulo">Nossos Projetos</span>
       <span class="sessao-subtitulo">
@@ -11,7 +11,7 @@
         <li><projeto-card :projeto="projeto" /></li>
       </ul>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import ProjetoCard from './ProjetoCard.vue'
@@ -65,6 +65,12 @@ export default {
 <style lang="scss" scoped>
 .content {
   min-height: 100vh;
+}
+.sessao {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
 }
 .projetos {

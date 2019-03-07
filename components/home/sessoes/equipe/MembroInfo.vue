@@ -30,8 +30,8 @@ export default {
 
 img {
   align-self: center;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
   background: #639;
 }

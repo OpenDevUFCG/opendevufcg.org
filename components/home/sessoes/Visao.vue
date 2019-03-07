@@ -23,26 +23,27 @@ export default {
 </script>
 <style lang="scss" scoped>
 .sessao {
-  margin: 40px 0 40px 0px;
+  display: flex;
+  flex-direction: column;
 }
 ul {
-  margin: 0;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   margin: auto;
-  max-width: 1100px;
+  padding: 30px 20px 30px 20px;
 }
 li {
   margin: 0 10px 0 10px;
-  padding: 20px 0 15px 40px;
+  padding: 20px 0 20px 40px;
   text-decoration: none;
   list-style: none;
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 24px;
   font-size: 1.4rem;
-  color: #5a6166;
+  color: #f0f0f0;
   background-image: url('~assets/hexagon.svg');
   text-align: initial;
   &:nth-of-type(2n) {
@@ -52,7 +53,7 @@ li {
   }
 }
 @media (max-width: 790px) {
-  .section {
+  .sessao {
     margin: 20px 14px 10 14px;
   }
 }
