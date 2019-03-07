@@ -6,6 +6,7 @@
     <main>
       <visao />
       <projetos />
+      <contribuicao />
       <equipe />
     </main>
   </div>
@@ -14,14 +15,17 @@
 <script>
 import Visao from '@/components/home/sessoes/Visao'
 import Introducao from '@/components/home/sessoes/Introducao'
+import Contribuicao from '@/components/home/sessoes/contribuicao/Contribuicao.vue'
 import Projetos from '@/components/home/sessoes/projetos/Projetos'
 import Equipe from '@/components/home/sessoes/equipe/Equipe'
+
 export default {
   components: {
     Visao,
     Introducao,
     Projetos,
-    Equipe
+    Equipe,
+    Contribuicao
   }
 }
 </script>
