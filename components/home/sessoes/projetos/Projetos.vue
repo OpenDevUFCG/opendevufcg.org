@@ -63,15 +63,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.content {
+sessao {
   min-height: 100vh;
-}
-.sessao {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
   width: 100%;
 }
 .projetos {
@@ -79,7 +73,6 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 ul {
