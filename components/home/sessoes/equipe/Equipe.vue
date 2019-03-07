@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <section class="sessao">
     <div class="sessao-head">
       <h1 class="sessao-titulo">
         Equipe 
@@ -10,7 +10,7 @@
         <li><membro-info :membro="membro" /></li>
       </ul>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import MembroInfo from './MembroInfo.vue'
