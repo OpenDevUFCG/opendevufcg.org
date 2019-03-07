@@ -30,7 +30,8 @@ export default {
         },
         {
           titulo: 'Fale conosco no Gitter',
-          descricao: 'ideias, tirar dúvidas...',
+          descricao:
+            'Um bate-papo com a nossa comunidade, sinta-se a vontade pra compartilhar  ideias, tirar dúvidas...',
           link: 'https://gitter.im/OpenDevUFCG/community'
         }
       ]
