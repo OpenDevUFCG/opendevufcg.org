@@ -76,7 +76,6 @@ export default {
 }
 .projetos {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
