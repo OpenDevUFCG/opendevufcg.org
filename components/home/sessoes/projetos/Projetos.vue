@@ -1,5 +1,11 @@
 <template>
   <div class="content">
+    <div class="sessao-head">
+      <span class="sessao-titulo">Nossos Projetos</span>
+      <span class="sessao-subtitulo">
+        Desenvolvemos projetos para a comunidade da UFCG, você também pode contribuir para eles! Veja alguns deles abaixo: 
+      </span>
+    </div>
     <div class="projetos">
       <ul v-for="projeto in projetos" :key="projeto.site">
         <li><projeto-card :projeto="projeto" /></li>
@@ -59,14 +65,14 @@ export default {
 <style lang="scss" scoped>
 .content {
   min-height: 100vh;
-  padding: 10px;
   width: 100%;
 }
 .projetos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 40%;
 }
 
 ul {
