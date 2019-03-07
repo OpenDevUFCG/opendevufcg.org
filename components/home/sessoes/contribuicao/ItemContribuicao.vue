@@ -13,7 +13,9 @@
         </p>
       </div>
       <div class="item-footer">
-        <a :href="item.link" target="_blank" class="link">Acessar</a>
+        <a :href="item.link" target="_blank" class="link">
+          Acessar &#10132;
+        </a>
       </div>
     </div>
   </div>
@@ -36,6 +38,7 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
   background-color: #b1d9ee;
+  color: #1e6995;
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 4fr;
@@ -53,16 +56,15 @@ export default {
 
 .item-header {
   padding: 10px;
-  font-size: 27px;
+  font-size: 1.8em;
   font-weight: bold;
-  color: #1e6995;
 }
 
 .item-body {
   padding: 15px;
   min-height: 20vh;
-  font-size: 20px;
-  color: #387ca5;
+  font-size: 1.2em;
+  text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,13 +76,18 @@ export default {
 }
 
 .item-footer {
-  padding: 10px;
-  font-size: 20px;
+  padding: 15px;
+  font-size: 1.2em;
+  text-align: right;
 }
 
 @media screen and (max-width: 1000px) {
   .item-contribuicao {
     grid-template-columns: 1fr;
+  }
+
+  .item-header {
+    margin-top: 10px;
   }
 }
 </style>

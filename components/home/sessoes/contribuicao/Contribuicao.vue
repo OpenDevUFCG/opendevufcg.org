@@ -25,13 +25,13 @@ export default {
         {
           titulo: 'Acesse nosso Github',
           descricao:
-            'Aqui você pode acessar todos os nossos repositórios. Não esqueça de deixar uma star!',
+            'Aqui você pode acessar todos os nossos repositórios. Não esqueça de deixar uma star em cada um!',
           link: 'https://github.com/OpenDevUFCG'
         },
         {
           titulo: 'Fale conosco no Gitter',
           descricao:
-            'Um bate-papo com a nossa comunidade, sinta-se a vontade pra compartilhar  ideias, tirar dúvidas...',
+            'Um bate-papo descontraído com a nossa comunidade, sinta-se à vontade pra compartilhar  ideias, tirar dúvidas...',
           link: 'https://gitter.im/OpenDevUFCG/community'
         }
       ]
