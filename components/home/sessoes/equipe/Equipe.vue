@@ -1,14 +1,14 @@
 <template>
   <section class="sessao">
-    <div class="sessao-head">
-      <h1 class="sessao-titulo">
-        Equipe 
-      </h1>
-    </div>
-    <div class="equipe">
-      <ul v-for="membro in equipe" :key="membro.url_github">
-        <li><membro-info :membro="membro" /></li>
-      </ul>
+    <header class="sessao-head">
+      <span class="sessao-titulo">Equipe</span>
+    </header>
+    <div class="content">
+      <div class="equipe">
+        <ul v-for="membro in equipe" :key="membro.url_github">
+          <li><membro-info :membro="membro" /></li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
@@ -84,15 +84,25 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.content {
+  max-width: 70vw;
+  margin: auto;
+}
+@media only screen and (max-width: 728px) {
+  .content {
+    max-width: 90vw;
+  }
+}
+
 .equipe {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18vh, 1fr));
   grid-gap: 2vmin;
   padding: 10px;
 }
 
 ul {
   list-style: none;
-  padding-left: 0;
+  padding: 10px;
 }
 </style>
