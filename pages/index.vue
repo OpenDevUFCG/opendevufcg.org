@@ -46,7 +46,7 @@ export default {
       color: #f5f5f5;
     }
     .sessao-subtitulo {
-      color: antiquewhite;
+      color: rgb(211, 229, 255);
     }
   }
 }
