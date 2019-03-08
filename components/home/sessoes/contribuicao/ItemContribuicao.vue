@@ -1,18 +1,16 @@
 <template>
   <div class="item-contribuicao">
-    <div class="item-image">
-      
-    </div>
-    <div class="item">
+    <div class="item-image"></div>
+    <div class="item p-15">
       <div class="item-header">
         <p>{{ item.titulo }}</p>
       </div>
-      <div class="item-body">
-        <p>
+      <div class="item-body p-15">
+        <p class="description">
           {{ item.descricao }}
         </p>
       </div>
-      <div class="item-footer">
+      <div class="item-footer p-15">
         <a :href="item.link" target="_blank" class="link">
           Acessar &#10132;
         </a>
@@ -49,45 +47,71 @@ export default {
 }
 
 .item-image {
-  padding: 10px;
   background-color: #1e6995;
   min-height: 15vh;
 }
 
+.item {
+  position: relative;
+}
+
 .item-header {
-  padding: 10px;
   font-size: 1.8em;
   font-weight: bold;
 }
 
 .item-body {
-  padding: 15px;
-  min-height: 20vh;
-  font-size: 1.2em;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-size: 1.3em;
+}
+
+.description {
+  max-width: 65ch;
+}
+
+.item-footer {
+  font-size: 1.1em;
+  text-align: right;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .link {
   color: #e95425;
   text-decoration: none;
+  transition: all 0.2s;
 }
 
-.item-footer {
+.link:hover {
+  color: #ff774c;
+}
+
+.p-15 {
   padding: 15px;
-  font-size: 1.2em;
-  text-align: right;
 }
 
 @media screen and (max-width: 1000px) {
+  .item-header {
+    font-size: 2em;
+  }
+
   .item-contribuicao {
     grid-template-columns: 1fr;
   }
 
   .item-header {
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .item-header {
+    font-size: 1.5em;
+  }
+
+  .item-body {
+    font-size: 1.2em;
   }
 }
 </style>
