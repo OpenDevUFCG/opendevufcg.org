@@ -1,9 +1,7 @@
 <template>
   <section class="sessao">
     <header class="sessao-head">
-      <span class="sessao-titulo">
-        Equipe 
-      </span>
+      <span class="sessao-titulo">Equipe</span>
     </header>
     <div class="content">
       <div class="equipe">
