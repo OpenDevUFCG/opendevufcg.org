@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="sessao">
     <h1>Contribuicao</h1>
   </section>
 </template>

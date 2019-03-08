@@ -32,9 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  min-height: 100vh;
+  min-height: 80vh;
+  margin: 20px 0 20px 0;
   display: flex;
-  margin-top: 90px;
   justify-content: center;
   @media only screen and (max-width: 728px) {
     margin-top: 0px;
@@ -43,7 +43,6 @@ export default {
 
 .links {
   align-self: center;
-  margin-left: 90px;
   margin-top: 40px;
   @media only screen and (max-width: 728px) {
     margin-top: 20px;
@@ -55,6 +54,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-content {
@@ -86,7 +87,6 @@ export default {
   text-align: center;
   width: 800px;
   color: #2c677b;
-  margin-left: 90px;
   font-size: 35px;
   letter-spacing: 0.2rem;
   @media only screen and (max-width: 728px) {

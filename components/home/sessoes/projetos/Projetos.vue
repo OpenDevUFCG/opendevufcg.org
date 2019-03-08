@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <section class="sessao">
     <div class="sessao-head">
       <span class="sessao-titulo">Nossos Projetos</span>
       <span class="sessao-subtitulo">
@@ -21,7 +21,7 @@
         </slide>
       </carousel>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import { Carousel, Slide } from 'vue-carousel'
@@ -76,13 +76,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.content {
+.sessao {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  padding: 10px;
   width: 100%;
 }
 .projetos {
