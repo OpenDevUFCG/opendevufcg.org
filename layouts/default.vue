@@ -24,6 +24,7 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -72,8 +73,8 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em;
+  width: 0.3em;
+  height: 0.3em;
 }
 
 html::-webkit-scrollbar-track-piece {
