@@ -5,15 +5,21 @@
         <img src="~/static/opendev_icon.png" class="logo" alt="Logo do OpenDev">
         <img src="~/assets/opendevufcg_typo.svg" class="name">
       </div>
-      <span class="subtitle">
-         Desenvolvendo <span class="spin"></span> a comunidade.
+      <span class="subtitle">Desenvolvendo para 
+        <vue-typer
+          :text="listChangeText"
+          :repeat="Infinity"
+          :shuffle="false"
+          initial-action="erasing"
+          :pre-type-delay="70"
+          :type-delay="60"
+          :erase-delay="60"
+          erase-style="backspace"
+          caret-animation="phase"
+        />
       </span>
       <div class="links">
-        <a
-          href="https://github.com/OpenDevUFCG/"
-          target="_blank"
-          class="button--blue"
-        >Github</a>
+        <a href="https://github.com/OpenDevUFCG/" target="_blank" class="button--blue">Github</a>
         <a
           href="https://gitter.im/OpenDevUFCG/community"
           target="_blank"
@@ -25,8 +31,17 @@
 </template>
 
 <script>
+import { VueTyper } from 'vue-typer'
 export default {
-  name: 'Introducao'
+  name: 'Introducao',
+  components: {
+    VueTyper
+  },
+  data() {
+    return {
+      listChangeText: ['a comunidade', 'a UFCG', 'os estudantes', 'você']
+    }
+  }
 }
 </script>
 
@@ -98,22 +113,9 @@ export default {
     width: 100%;
   }
 }
-.spin:after {
-  content: '';
-  animation: spin 3s linear infinite alternate;
-}
-.spin {
+</style>
+<style>
+.vue-typer .custom.char {
   color: #49c3ed;
-  @keyframes spin {
-    0% {
-      content: 'com';
-    }
-    50% {
-      color: transparent;
-    }
-    100% {
-      content: 'para';
-    }
-  }
 }
 </style>
