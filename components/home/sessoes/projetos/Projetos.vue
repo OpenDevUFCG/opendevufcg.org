@@ -7,31 +7,18 @@
       </span>
     </div>
     <div class="projetos">
-      <carousel 
-        :navigationEnabled="true" 
-        :perPage="1"
-        :perPageCustom="[[600, 2]]"
-        :autoplay="true"
-        :autoplayTimeout="3000"
-        :loop="true"
-        paginationActiveColor="#1e6995"
-        paginationColor	="#B1d9ee">
-        <slide v-for="projeto in projetos" :key="projeto.site">
-          <projeto-card :projeto="projeto" />
-        </slide>
-      </carousel>
+      <ul v-for="projeto in projetos" :key="projeto.site">
+        <li><projeto-card :projeto="projeto" /></li>
+      </ul>
     </div>
   </section>
 </template>
 <script>
-import { Carousel, Slide } from 'vue-carousel'
 import ProjetoCard from './ProjetoCard.vue'
 export default {
   name: 'Projetos',
   components: {
-    ProjetoCard,
-    Carousel,
-    Slide
+    ProjetoCard
   },
   data() {
     return {
@@ -76,22 +63,26 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.sessao {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
 .projetos {
-  max-width: 620px;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 10vh;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px 10px 0 10px;
 }
 
 @media only screen and (max-width: 728px) {
   .projetos {
     width: 90vw;
-    margin: 4px 0px;
+    margin: 10px 10px;
   }
 }
 </style>
