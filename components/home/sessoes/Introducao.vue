@@ -117,4 +117,8 @@ export default {
 .vue-typer .custom.char {
   color: #49c3ed;
 }
+.vue-typer .custom.caret {
+  background-color: #2c677b;
+  width: 2px;
+}
 </style>
