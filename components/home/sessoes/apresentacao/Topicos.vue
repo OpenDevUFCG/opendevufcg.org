@@ -43,7 +43,7 @@ export default {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr 4fr;
-  grid-gap: 20px 0px;
+  grid-gap: 5px 0px;
   grid-template-areas:
     'titulo'
     'descricao';
