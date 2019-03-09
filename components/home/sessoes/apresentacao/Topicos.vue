@@ -2,8 +2,7 @@
   <div class="topicos">
       <div class="topico" v-for="topico in topicos" :key="topico.titulo">
           <span class="topico-titulo">{{ topico.titulo }}</span>
-          <span class="topico-descricao">{{ topico.descricao }}</span>
-          
+          <span class="topico-descricao">{{ topico.descricao }}</span>   
       </div>
   </div>
 </template>
@@ -16,19 +15,17 @@ export default {
         {
           titulo: 'Comunidade',
           descricao:
-            'Crescemos mais juntos, por isso valorizamos a comunidade, criando um espaço que exista diálogo, amizade, respeito e suporte.',
-          imagem: '~assets/comunidade_icon.svg'
+            'Juntos fazemos mais, por isso nos esforçamos em criar uma comunidade que exista diálogo, amizade, respeito e suporte. Todos são bem vindos, seja para contribuir, sugerir novas ideias ou pedir ajuda.'
         },
         {
-          titulo: 'Livre',
-          descricao: 'Acreditamos',
-          imagem: '~assets/comunidade_icon.svg'
+          titulo: 'Open Source',
+          descricao:
+            'Open Source permite que qualquer pessoa possa ver, modificar, contribuir e distribuir seu código. Adotamos o Open Source como filosofia pois acreditamos que é isso que nos conecta, todos nossos projetos são Open Source e queremos espalhar essa cultura pela UFCG e quem sabe até fora dela.'
         },
         {
           titulo: 'Empoderamento',
           descricao:
-            'Queremos empoderar pessoas, do iniciante ao experiente, todos podem aprender, sugerir e ajudar na OpenDevUFCG. Queremos ser a organização que possa encorajar pessoas a tomarem o primeiro passo, a sugerir novas ideias e principalmente, a contruí-las. Veja mais. ',
-          imagem: '~assets/comunidade_icon.svg'
+            'Queremos empoderar pessoas, do iniciante ao experiente, todos podem aprender, sugerir e ajudar na OpenDevUFCG. Queremos ser a comunidade que possa encorajar pessoas a tomarem o primeiro passo, a sugerir novas ideias e principalmente, a contruí-las.'
         }
       ]
     }
@@ -45,8 +42,8 @@ export default {
 .topico {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10% 1fr;
-  grid-gap: 2px 90px;
+  grid-template-rows: 1fr 4fr;
+  grid-gap: 20px 0px;
   grid-template-areas:
     'titulo'
     'descricao';
@@ -61,5 +58,6 @@ export default {
   grid-area: descricao;
   color: #80858a;
   letter-spacing: 0.1rem;
+  margin-left: 10px;
 }
 </style>

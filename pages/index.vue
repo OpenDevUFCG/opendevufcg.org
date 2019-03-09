@@ -17,13 +17,14 @@
 import Introducao from '@/components/home/sessoes/Introducao'
 import Contribuicao from '@/components/home/sessoes/contribuicao/Contribuicao.vue'
 import Projetos from '@/components/home/sessoes/projetos/Projetos'
-
+import Apresentacao from '@/components/home/sessoes/apresentacao/Apresentacao'
 import Visao from '@/components/home/sessoes/Visao'
 import Equipe from '@/components/home/sessoes/equipe/Equipe'
 
 export default {
   components: {
     Introducao,
+    Apresentacao,
     Projetos,
     Equipe,
     Contribuicao,

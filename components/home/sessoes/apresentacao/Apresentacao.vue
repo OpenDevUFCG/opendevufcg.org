@@ -1,12 +1,14 @@
 <template>
-  <section>  
-    <span class="sessao-titulo titulo">
-      Sobre nós
-    </span>
-    <span class="sessao-subtitulo subtitulo">
-      Desenvolvemos projetos para a comunidade da UFCG, você também pode contribuir para eles! Veja alguns deles abaixo:
-    </span>
-    <topicos/>
+  <section class="sessao">
+    <div class="sessao-head">  
+      <span class="sessao-titulo">
+        Sobre nós
+      </span>
+      <span class="sessao-subtitulo">
+        Somos uma comunidade voltada a incentivar a cultura open source no curso de Ciência da Computação da UFCG.
+      </span>
+    </div>
+    <topicos class="topicos"/>
   </section>
 </template>
 <script>
@@ -19,30 +21,20 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-section {
-  min-height: 100vh;
+.sessao {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 10% 10% 80%;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 60px 0px;
   grid-template-areas:
-    'titulo titulo titulo'
-    'subtitulo subtitulo subtitulo'
-    '. main .';
+    'head head head'
+    '. topicos .';
 }
 
-.titulo {
-  grid-area: titulo;
-  justify-self: center;
-}
-
-.subtitulo {
-  grid-area: subtitulo;
-  justify-self: center;
+.sessao-head {
+  grid-area: head;
 }
 
 .topicos {
-  grid-area: main;
-  justify-self: center;
-  justify-items: center;
+  grid-area: topicos;
 }
 </style>
