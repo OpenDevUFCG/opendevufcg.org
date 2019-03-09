@@ -3,11 +3,23 @@
     <div class="intro-content">
       <div class="logo-content">
         <img src="~/static/opendev_icon.png" class="logo" alt="Logo do OpenDev">
-        <h1 class="title">OpenDev UFCG</h1>
+        <img src="~/assets/opendevufcg_typo.svg" class="name">
       </div>
-      <h2 class="subtitle">
-        Impulsionando projetos e desenvolvedores open source de CC@UFCG.
-      </h2>
+      <span class="subtitle">
+         Desenvolvendo <span class="spin"></span> a comunidade.
+      </span>
+      <div class="links">
+        <a
+          href="https://github.com/OpenDevUFCG/"
+          target="_blank"
+          class="button--blue"
+        >Github</a>
+        <a
+          href="https://gitter.im/OpenDevUFCG/community"
+          target="_blank"
+          class="button--grey"
+        >Gitter</a>
+      </div>
     </div>
   </section>
 </template>
@@ -18,109 +30,89 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .intro {
-  padding: 2em 1em;
+  min-height: 80vh;
+  margin: 20px 0 20px 0;
   display: flex;
   justify-content: center;
-  text-align: right;
+  @media only screen and (max-width: 728px) {
+    margin-top: 0px;
+  }
+}
+
+.links {
+  align-self: center;
+  margin-top: 40px;
+  @media only screen and (max-width: 728px) {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
 }
 
 .intro-content {
-  margin-right: 25px;
-  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-content {
-  border-radius: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  .logo {
+    max-height: 300px;
+    max-width: 300px;
+    @media only screen and (max-width: 728px) {
+      width: 300px;
+      position: absolute;
+    }
+  }
+  .name {
+    height: 400px;
+    max-width: 600px;
+    @media only screen and (max-width: 728px) {
+      margin-top: 250px;
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @media only screen and (max-width: 728px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-.title {
-  display: block;
-  font-size: 6vw;
-}
-
-.subtitle:before {
-  content: '';
-  display: block;
-  width: vmin;
-  border: 2px solid #e95425;
-  margin: 1em auto;
-}
-
 .subtitle {
-  font-weight: 300;
-  max-width: 450px;
-  font-size: 1.5em;
-  float: right;
-}
-
-.logo {
-  display: block;
-  max-width: 250px;
-  height: auto;
-}
-
-@media screen and (max-width: 750px) {
-  .intro {
-    align-items: center;
-  }
-
-  .title {
-    font-size: 8vw;
-  }
-
-  .intro-content {
-    margin-right: 0;
-  }
-
-  .logo {
-    max-width: 170px;
+  text-align: center;
+  width: 800px;
+  color: #2c677b;
+  font-size: 35px;
+  letter-spacing: 0.2rem;
+  @media only screen and (max-width: 728px) {
+    font-size: 15px;
+    position: block;
+    margin-top: -50px;
+    margin-left: 0px;
+    width: 100%;
   }
 }
-
-@media screen and (max-height: 568px) {
-  .intro {
-    align-items: center;
-  }
-
-  .title {
-    font-size: 4vw;
-  }
-
-  .intro-content {
-    margin-right: 0;
-  }
-
-  .logo {
-    max-width: 170px;
-  }
-
-  .subtitle {
-    font-size: 1em;
-  }
+.spin:after {
+  content: '';
+  animation: spin 3s linear infinite alternate;
 }
-
-@media screen and (min-height: 750px) and (min-width: 750px) {
-  .intro {
-    align-items: center;
-  }
-
-  .intro-content {
-    max-width: 800px;
-  }
-
-  .title {
-    font-size: 7vh;
-  }
-
-  .intro-content {
-    margin-right: 0;
+.spin {
+  color: #49c3ed;
+  @keyframes spin {
+    0% {
+      content: 'com';
+    }
+    50% {
+      color: transparent;
+    }
+    100% {
+      content: 'para';
+    }
   }
 }
 </style>

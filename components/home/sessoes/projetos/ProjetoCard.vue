@@ -1,8 +1,7 @@
 <template>
   <div class="card">
-    <img :src="projeto.imagem">
-    <a class="titulo" :href="projeto.site" target="_blank"> 
-      {{ projeto.titulo }}
+    <a :href="projeto.site" target="_blank">
+      <img :src="require('~/assets/projetos_icones/' + projeto.imagem)">
     </a>
     <p class="descricao">
       {{ projeto.descricao }}
@@ -22,22 +21,24 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card {
-  width: 300px;
-  max-height: 100vh;
-  height: 410px;
+  width: 30vh;
+  min-height: 40vh;
   text-align: center;
-  padding: 2px 20px;
+  padding: 20px 20px;
   border-radius: 4px;
   box-shadow: 0 15px 35px #32325a1a, 0 5px 15px #00000012;
   border: 1px solid #00000020;
+  margin-bottom: 15%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   img {
-    height: 200px;
-    width: 200px;
-    padding: 30px 30px;
-    margin-bottom: 20px;
+    height: auto;
+    width: auto;
+    //max-width: 200px;
   }
 }
 
@@ -68,7 +69,7 @@ export default {
 @media (max-width: 600px) {
   .card {
     width: 95%;
-    margin: 0px 5px;
+    margin: 10px 10px;
   }
   img {
     width: 80%;

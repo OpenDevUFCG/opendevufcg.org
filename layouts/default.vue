@@ -15,6 +15,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scrollbar-color: #1e6995 #eee;
+  scrollbar-width: thin;
 }
 
 *,
@@ -22,6 +24,7 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -39,7 +42,7 @@ html {
   src: url(~assets/fonts/AvertaDemoPE-ExtraboldItalic.otf);
 }
 
-.button--green {
+.button--blue {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #387ca5;
@@ -49,7 +52,7 @@ html {
   transition: 0.2s;
 }
 
-.button--green:hover {
+.button--blue:hover {
   color: #fff;
   background-color: #387ca5;
 }
@@ -64,37 +67,21 @@ html {
   margin-left: 15px;
   transition: 0.2s;
 }
-
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
 }
 
-.sessao-head {
-  align-self: center;
-  margin: 20px 20px 80px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+html::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
 }
 
-.sessao-titulo {
-  font-size: 50px;
-  color: #1e6995;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-
-  @media only screen and (max-width: 728px) {
-    font-size: 30px !important;
-  }
+html::-webkit-scrollbar-track-piece {
+  background: #eee;
 }
-.sessao-subtitulo {
-  font-size: 20px;
-  color: #80858a;
-  text-align: center;
-  width: 90%;
-  @media only screen and (max-width: 728px) {
-    font-size: 15px !important;
-  }
+
+html::-webkit-scrollbar-thumb {
+  background: #1e6995;
 }
 </style>

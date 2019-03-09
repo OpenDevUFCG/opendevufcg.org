@@ -1,16 +1,16 @@
 <template>
-  <div class="content">
-    <div class="sessao-head">
-      <h1 class="sessao-titulo">
-        Equipe 
-      </h1>
+  <section class="sessao">
+    <header class="sessao-head">
+      <span class="sessao-titulo">Equipe</span>
+    </header>
+    <div class="content">
+      <div class="equipe">
+        <ul v-for="membro in equipe" :key="membro.url_github">
+          <li><membro-info :membro="membro" /></li>
+        </ul>
+      </div>
     </div>
-    <div class="equipe">
-      <ul v-for="membro in equipe" :key="membro.url_github">
-        <li><membro-info :membro="membro" /></li>
-      </ul>
-    </div>
-  </div>
+  </section>
 </template>
 <script>
 import MembroInfo from './MembroInfo.vue'
@@ -39,7 +39,7 @@ export default {
           imagem: 'hericles.jpeg'
         },
         {
-          nome: 'José Rean',
+          nome: 'José Renan',
           url_github: 'https://github.com/JoseRenan',
           imagem: 'renan.jpeg'
         },
@@ -84,14 +84,25 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.content {
+  max-width: 70vw;
+  margin: auto;
+}
+@media only screen and (max-width: 728px) {
+  .content {
+    max-width: 90vw;
+  }
+}
+
 .equipe {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18vh, 1fr));
   grid-gap: 2vmin;
   padding: 10px;
 }
 
 ul {
   list-style: none;
+  padding: 10px;
 }
 </style>
