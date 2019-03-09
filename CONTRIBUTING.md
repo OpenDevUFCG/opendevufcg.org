@@ -22,7 +22,7 @@ Usamos algumas classificações para categorizar as issues, veja:
 
 ## Contribuir
 
-Você pode contribuir tanto sugerindo novas ideias em nossas issues ou no nosso [chat](https://gitter.im/OpenDevUFCG/portal), como contribuindo para melhorar nosso conteúdo e código.
+Você pode contribuir tanto sugerindo novas ideias em nossas issues ou no nosso [chat](https://gitter.im/OpenDevUFCG/portal), como também criando um "fork" do repositório e submetendo sua PR para melhorar nosso conteúdo e código.
 
 ## Desenvolvimento
 
