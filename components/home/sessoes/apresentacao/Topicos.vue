@@ -37,7 +37,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: auto;
-  grid-gap: 2px 70px;
+  grid-gap: 30px 70px;
 }
 .topico {
   display: grid;
@@ -47,6 +47,9 @@ export default {
   grid-template-areas:
     'titulo'
     'descricao';
+  @media only screen and (max-width: 728px) {
+    grid-gap: 4px 0px;
+  }
 }
 .topico-titulo {
   font-size: 2rem;
