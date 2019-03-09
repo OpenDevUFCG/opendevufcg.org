@@ -7,8 +7,8 @@
       <visao />
       <apresentacao />
       <projetos />
-      <contribuicao />
       <equipe />
+      <contribuicao />
     </main>
   </div>
 </template>
