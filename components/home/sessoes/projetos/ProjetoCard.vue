@@ -70,6 +70,7 @@ export default {
   .card {
     width: 95%;
     margin: 10px 10px;
+    height: 50vh;
   }
   img {
     width: 80%;
