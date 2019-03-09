@@ -50,7 +50,6 @@ export default {
   min-height: 80vh;
   margin: 20px 0 20px 0;
   display: flex;
-  background-color: #ffffff;
   justify-content: center;
   @media only screen and (max-width: 728px) {
     margin-top: 0px;

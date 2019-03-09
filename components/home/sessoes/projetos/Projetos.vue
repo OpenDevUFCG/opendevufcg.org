@@ -63,20 +63,20 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-sessao {
-  min-height: 100vh;
-  padding: 10px;
-  width: 100%;
-}
 .projetos {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: 0 10vh;
 }
 
 ul {
   list-style: none;
+}
+
+li {
+  margin: 10px 10px 0 10px;
 }
 
 @media only screen and (max-width: 728px) {

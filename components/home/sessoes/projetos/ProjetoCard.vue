@@ -21,21 +21,24 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card {
-  width: 250px;
-  max-height: 100vh;
-  height: 300px;
+  width: 30vh;
+  min-height: 40vh;
   text-align: center;
-  padding: 2px 20px;
+  padding: 20px 20px;
   border-radius: 4px;
   box-shadow: 0 15px 35px #32325a1a, 0 5px 15px #00000012;
   border: 1px solid #00000020;
   margin-bottom: 15%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   img {
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: auto;
+    //max-width: 200px;
   }
 }
 

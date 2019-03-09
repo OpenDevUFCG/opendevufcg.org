@@ -1,27 +1,32 @@
 <template>
-  <div class="content" lang="es">
+  <div class="content" lang="pt">
     <header class="header">
       <introducao />
     </header>
     <main class="main">
       <visao />
       <projetos />
+      <contribuicao />
       <equipe />
     </main>
   </div>
 </template>
 
 <script>
-import Visao from '@/components/home/sessoes/Visao'
 import Introducao from '@/components/home/sessoes/Introducao'
+import Contribuicao from '@/components/home/sessoes/contribuicao/Contribuicao.vue'
 import Projetos from '@/components/home/sessoes/projetos/Projetos'
+
+import Visao from '@/components/home/sessoes/Visao'
 import Equipe from '@/components/home/sessoes/equipe/Equipe'
+
 export default {
   components: {
-    Visao,
     Introducao,
     Projetos,
-    Equipe
+    Equipe,
+    Contribuicao,
+    Visao
   }
 }
 </script>
@@ -31,7 +36,7 @@ export default {
   margin: 0 auto;
 }
 .main {
-  width: 100vw;
+  overflow: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -46,7 +51,7 @@ export default {
       color: #f5f5f5;
     }
     .sessao-subtitulo {
-      color: antiquewhite;
+      color: rgb(211, 229, 255);
     }
   }
 }
@@ -56,7 +61,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 80vw;
 }
 .sessao-titulo {
   font-size: 3rem;
@@ -69,7 +73,7 @@ export default {
   font-size: 1.3rem;
   text-align: center;
   line-height: 25px;
-  width: 90%;
+  max-width: 80vw;
   color: rgb(38, 58, 87);
 }
 </style>
