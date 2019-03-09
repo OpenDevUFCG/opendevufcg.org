@@ -24,6 +24,7 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -66,37 +67,14 @@ html {
   margin-left: 15px;
   transition: 0.2s;
 }
-
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
 }
 
-.sessao-head {
-  align-self: center;
-  margin: 20px 20px 30px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sessao-titulo {
-  font-size: 3rem;
-  color: #1e6995;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  font-weight: normal;
-}
-.sessao-subtitulo {
-  font-size: 1.3rem;
-  color: #4a5055;
-  text-align: center;
-  line-height: 25px;
-  width: 90%;
-}
-
 html::-webkit-scrollbar {
-  width: 0.4em;
-  height: 0.4em;
+  width: 0.3em;
+  height: 0.3em;
 }
 
 html::-webkit-scrollbar-track-piece {
