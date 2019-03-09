@@ -1,71 +1,81 @@
 <template>
-  <section class="container">
-    <div>
-      <img src="~/static/opendev_icon.png" class="logo">
-      <h1 class="title">
-        OpenDevUFCG
-      </h1>
-      <h2 class="subtitle">
-        Impulsionando projetos e desenvolvedores open source de CC@UFCG.
-      </h2>
-      <div class="links">
-        <a
-          href="https://github.com/OpenDevUFCG/"
-          target="_blank"
-          class="button--green"
-        >Github</a>
-        <a
-          href="https://gitter.im/OpenDevUFCG/community"
-          target="_blank"
-          class="button--grey"
-        >Gitter</a>
-      </div>
-    </div>
-  </section>
+  <div class="content" lang="pt">
+    <header class="header">
+      <introducao />
+    </header>
+    <main class="main">
+      <visao />
+      <apresentacao />
+      <projetos />
+      <equipe />
+      <contribuicao />
+    </main>
+  </div>
 </template>
 
 <script>
+import Introducao from '@/components/home/sessoes/Introducao'
+import Contribuicao from '@/components/home/sessoes/contribuicao/Contribuicao.vue'
+import Projetos from '@/components/home/sessoes/projetos/Projetos'
+import Apresentacao from '@/components/home/sessoes/apresentacao/Apresentacao'
+import Visao from '@/components/home/sessoes/Visao'
+import Equipe from '@/components/home/sessoes/equipe/Equipe'
+
 export default {
   components: {
-    // Logo
+    Introducao,
+    Apresentacao,
+    Projetos,
+    Equipe,
+    Contribuicao,
+    Visao
   }
 }
 </script>
 
-<style>
-.container {
+<style lang="scss">
+.header {
   margin: 0 auto;
-  min-height: 100vh;
+}
+.main {
+  overflow: auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+}
+.sessao {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 40px 0px;
+  &:nth-child(2n + 1) {
+    background-color: rgb(38, 58, 87);
+    .sessao-titulo {
+      color: #f5f5f5;
+    }
+    .sessao-subtitulo {
+      color: rgb(211, 229, 255);
+    }
+  }
+}
+.sessao-head {
+  align-self: center;
+  margin: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+.sessao-titulo {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: rgb(38, 58, 87);
+}
+.sessao-subtitulo {
+  font-size: 1.3rem;
   text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 34px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-.logo {
-  width: 400px;
-  height: 400px;
+  line-height: 25px;
+  max-width: 80vw;
+  color: rgb(38, 58, 87);
 }
 </style>

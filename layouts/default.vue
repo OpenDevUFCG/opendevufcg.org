@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div id="app">
     <nuxt />
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -15,6 +15,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scrollbar-color: #1e6995 #eee;
+  scrollbar-width: thin;
 }
 
 *,
@@ -22,9 +24,25 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-.button--green {
+@font-face {
+  font-family: Ikaros-Regular;
+  src: url(~assets/fonts/Ikaros-Regular.otf);
+}
+
+@font-face {
+  font-family: Jaapokki-Regular;
+  src: url(~assets/fonts/Jaapokki-Regular.otf);
+}
+
+@font-face {
+  font-family: Jaapokki-Regular;
+  src: url(~assets/fonts/AvertaDemoPE-ExtraboldItalic.otf);
+}
+
+.button--blue {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #387ca5;
@@ -34,7 +52,7 @@ html {
   transition: 0.2s;
 }
 
-.button--green:hover {
+.button--blue:hover {
   color: #fff;
   background-color: #387ca5;
 }
@@ -49,15 +67,21 @@ html {
   margin-left: 15px;
   transition: 0.2s;
 }
-
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
 }
 
-.section--allscreen {
-  width: 100%;
-  margin: 0;
-  height: 100vh;
+html::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+html::-webkit-scrollbar-track-piece {
+  background: #eee;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #1e6995;
 }
 </style>
