@@ -18,18 +18,17 @@ Você precisa ter `vue` instalado na sua máquina.
 ### Instalar dependências
 
 ``` bash
-# install dependencies
-$ npm install
+npm install
 ```
 
 ### Rodar localmente
 ```bash
-$ npm run dev
+npm run dev
 ```
 
 # Gerar o site estático
 ```
-$ npm run generate
+npm run generate
 ```
 Para mais detalhes, veja [Nuxt.js docs](https://nuxtjs.org).
 
