@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content" lang="pt">
     <header class="header">
       <introducao />
     </header>
