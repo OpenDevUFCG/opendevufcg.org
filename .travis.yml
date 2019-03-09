@@ -10,7 +10,6 @@ install:
 
 before_deploy:
   - npm install
-deploy:
   - npm run generate
 after_deploy:
   - rm -rf node_modules/
