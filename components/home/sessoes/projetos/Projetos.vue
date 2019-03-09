@@ -7,8 +7,10 @@
       </span>
     </div>
     <div class="projetos">
-      <ul v-for="projeto in projetos" :key="projeto.site">
-        <li><projeto-card :projeto="projeto" /></li>
+      <ul class="list">
+        <li v-for="projeto in projetos" :key="projeto.site" class="list-item">
+          <projeto-card :projeto="projeto" />
+        </li>
       </ul>
     </div>
   </section>
@@ -71,8 +73,17 @@ export default {
   margin: 0 10vh;
 }
 
-ul {
+.list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-item {
+  display: flex;
+  widows: 100%;
+  flex-direction: row;
 }
 
 li {
