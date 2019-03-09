@@ -1,15 +1,15 @@
 <template>
-  <div class="contribuicao">
-    <span class="sessao-head">
+  <section class="sessao">
+    <header class="sessao-head">
       <span class="sessao-titulo">Faça sua contribuição</span>
       <span class="sessao-subtitulo">
-        Junte-se a comunidade do OpenDevUFCG!
+        Junte-se a comunidade da OpenDevUFCG!
       </span>
-    </span>
-    <div class="content">
+    </header>
+    <div class="cards">
       <ItemContribuicao v-for="item in listaContribuicao" :key="item.titulo" :item="item" />
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import ItemContribuicao from './ItemContribuicao.vue'
@@ -41,16 +41,19 @@ export default {
 </script>
 
 <style scoped>
-.content {
+.cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  margin: auto;
+  padding: 30px 80px 30px 80px;
   grid-auto-rows: minmax(min-content, max-content);
 }
 
-@media screen and (max-width: 1000px) {
-  .content {
+@media screen and (max-width: 820px) {
+  .cards {
     grid-template-columns: 1fr;
+    padding: 30px 20px 30px 20px;
   }
 }
 </style>

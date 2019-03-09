@@ -103,6 +103,10 @@ export default {
   .item-header {
     margin-top: 10px;
   }
+
+  .item-image {
+    height: 15vh;
+  }
 }
 
 @media screen and (max-width: 450px) {

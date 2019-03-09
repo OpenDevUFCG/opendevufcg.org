@@ -26,7 +26,7 @@ export default {
     Projetos,
     Equipe,
     Contribuicao,
-    Visao,
+    Visao
   }
 }
 </script>
