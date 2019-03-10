@@ -67,8 +67,10 @@ export default {
     max-width: 300px;
     align-self: center;
     @media only screen and (max-width: 728px) {
-      width: 300px;
+      width: 250px;
       position: absolute;
+      align-self: center;
+      top: 0;
     }
   }
   .name {
@@ -76,7 +78,7 @@ export default {
     max-width: 900px;
     align-self: center;
     @media only screen and (max-width: 728px) {
-      margin-top: 250px;
+      margin-top: 50px;
       width: 300px;
       height: 300px;
     }
