@@ -1,5 +1,5 @@
 <template>
-  <div class="item-contribuicao">
+  <div class="item-contribuicao" @click="goToUrl">
     <div class="item-image"></div>
     <div class="item p-15">
       <div class="item-header">
@@ -9,11 +9,6 @@
         <p class="description">
           {{ item.descricao }}
         </p>
-      </div>
-      <div class="item-footer p-15">
-        <a :href="item.link" target="_blank" class="link">
-          Acessar &#10132;
-        </a>
       </div>
     </div>
   </div>
@@ -26,6 +21,12 @@ export default {
     item: {
       type: Object,
       default: null
+    }
+  },
+  methods: {
+    goToUrl() {
+      const url = this.item.link
+      window.open(url, '_blank')
     }
   }
 }
@@ -44,6 +45,7 @@ export default {
 
 .item-contribuicao:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .item-image {
@@ -66,25 +68,6 @@ export default {
 
 .description {
   max-width: 65ch;
-}
-
-.item-footer {
-  font-size: 1.1em;
-  text-align: right;
-  padding-top: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.link {
-  color: #e95425;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.link:hover {
-  color: #ff774c;
 }
 
 .p-15 {
