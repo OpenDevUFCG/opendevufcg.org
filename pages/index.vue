@@ -34,6 +34,9 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 .header {
   margin: 0 auto;
 }
