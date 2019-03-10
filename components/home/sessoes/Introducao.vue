@@ -18,6 +18,14 @@
           caret-animation="phase"
         />
       </span>
+      <div class="links">
+        <a href="https://github.com/OpenDevUFCG/" target="_blank" class="button--blue">Github</a>
+        <a
+          href="https://gitter.im/OpenDevUFCG/community"
+          target="_blank"
+          class="button--grey"
+        >Gitter</a>
+      </div>
     </div>
   </section>
 </template>
