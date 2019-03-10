@@ -24,6 +24,9 @@ Usamos algumas classificações para categorizar as issues, veja:
 
 Você pode contribuir tanto sugerindo novas ideias em nossas issues ou no nosso [chat](https://gitter.im/OpenDevUFCG/portal), como também criando um "fork" do repositório e submetendo sua PR para melhorar nosso conteúdo e código.
 
+## Estrutura
+O site é feito em [Vue](https://vuejs.org/) e usando [Nuxt.js](https://nuxtjs.org). Nossa estrutura é a mesma descrita na documentação do [Nuxt.js](https://nuxtjs.org/guide/directory-structure).
+
 ## Desenvolvimento
 
 Você precisa ter `vue` instalado na sua máquina.
