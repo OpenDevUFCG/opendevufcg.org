@@ -18,7 +18,7 @@
           caret-animation="phase"
         />
       </span>
-      <scroll-down go-to="#section2" />
+      <scroll-down go-to="#visao" />
     </div>
   </section>
 </template>
@@ -57,6 +57,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 1700px) and (max-height: 660px) {
+    justify-content: flex-start;
+  }
 }
 
 .logo-content {
