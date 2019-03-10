@@ -58,7 +58,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 1700px) and (max-height: 780px) {
+  @media (min-width: 1300px) and (max-height: 780px) {
     justify-content: flex-start;
   }
 }
