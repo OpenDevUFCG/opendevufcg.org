@@ -18,24 +18,20 @@
           caret-animation="phase"
         />
       </span>
-      <div class="links">
-        <a href="https://github.com/OpenDevUFCG/" target="_blank" class="button--blue">Github</a>
-        <a
-          href="https://gitter.im/OpenDevUFCG/community"
-          target="_blank"
-          class="button--grey"
-        >Gitter</a>
-      </div>
+      <scroll-down go-to="#visao" />
     </div>
   </section>
 </template>
 
 <script>
 import { VueTyper } from 'vue-typer'
+import ScrollDown from '@/components/home/ScrollDown'
+
 export default {
   name: 'Introducao',
   components: {
-    VueTyper
+    VueTyper,
+    ScrollDown
   },
   data() {
     return {
@@ -47,21 +43,11 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  min-height: 80vh;
-  margin: 20px 0 20px 0;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   @media only screen and (max-width: 728px) {
     margin-top: 0px;
-  }
-}
-
-.links {
-  align-self: center;
-  margin-top: 40px;
-  @media only screen and (max-width: 728px) {
-    margin-top: 20px;
-    margin-left: 0px;
   }
 }
 
@@ -71,6 +57,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 1300px) and (max-height: 780px) {
+    justify-content: flex-start;
+  }
 }
 
 .logo-content {
@@ -79,16 +69,20 @@ export default {
   .logo {
     max-height: 300px;
     max-width: 300px;
+    align-self: center;
     @media only screen and (max-width: 728px) {
-      width: 300px;
+      width: 250px;
       position: absolute;
+      align-self: center;
+      top: 0;
     }
   }
   .name {
-    height: 400px;
-    max-width: 600px;
+    height: 500px;
+    max-width: 900px;
+    align-self: center;
     @media only screen and (max-width: 728px) {
-      margin-top: 250px;
+      margin-top: 50px;
       width: 300px;
       height: 300px;
     }

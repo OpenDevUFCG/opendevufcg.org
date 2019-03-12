@@ -1,5 +1,5 @@
 <template>
-  <section class="sessao">
+  <section class="sessao" id="visao">
     <header class="sessao-head">
       <span class="sessao-titulo">Visão</span>
       <span class="sessao-subtitulo">
