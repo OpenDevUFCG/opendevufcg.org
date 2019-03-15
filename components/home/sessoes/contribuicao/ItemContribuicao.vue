@@ -1,6 +1,8 @@
 <template>
   <div class="item-contribuicao" @click="goToUrl">
-    <div class="item-image"></div>
+    <div class="item-image">
+      <img :src="require('~/assets/' + item.img)">
+    </div>
     <div class="item p-15">
       <div class="item-header">
         <p>{{ item.titulo }}</p>
@@ -50,7 +52,12 @@ export default {
 
 .item-image {
   background-color: #1e6995;
-  min-height: 15vh;
+  display: flex;
+}
+
+img {
+  height: auto;
+  width: auto;
 }
 
 .item {
