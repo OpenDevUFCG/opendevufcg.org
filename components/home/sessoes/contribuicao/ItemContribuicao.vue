@@ -53,11 +53,13 @@ export default {
 .item-image {
   background-color: #1e6995;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
-  height: auto;
-  width: auto;
+  max-width: 10vw;
+  height: 10vw;
 }
 
 .item {
@@ -95,7 +97,12 @@ img {
   }
 
   .item-image {
-    height: 15vh;
+    height: 25vh;
+  }
+
+  img {
+    max-width: 20vh;
+    height: 20vh;
   }
 }
 
