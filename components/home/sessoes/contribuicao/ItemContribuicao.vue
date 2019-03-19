@@ -1,6 +1,8 @@
 <template>
-  <div class="item-contribuicao">
-    <div class="item-image"></div>
+  <div class="item-contribuicao" @click="goToUrl">
+    <div class="item-image">
+      <img :src="require('~/assets/' + item.img)">
+    </div>
     <div class="item p-15">
       <div class="item-header">
         <p>{{ item.titulo }}</p>
@@ -9,11 +11,6 @@
         <p class="description">
           {{ item.descricao }}
         </p>
-      </div>
-      <div class="item-footer p-15">
-        <a :href="item.link" target="_blank" class="link">
-          Acessar &#10132;
-        </a>
       </div>
     </div>
   </div>
@@ -26,6 +23,12 @@ export default {
     item: {
       type: Object,
       default: null
+    }
+  },
+  methods: {
+    goToUrl() {
+      const url = this.item.link
+      window.open(url, '_blank')
     }
   }
 }
@@ -44,11 +47,19 @@ export default {
 
 .item-contribuicao:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .item-image {
   background-color: #1e6995;
-  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 10vw;
+  height: 10vw;
 }
 
 .item {
@@ -66,25 +77,6 @@ export default {
 
 .description {
   max-width: 65ch;
-}
-
-.item-footer {
-  font-size: 1.1em;
-  text-align: right;
-  padding-top: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.link {
-  color: #e95425;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.link:hover {
-  color: #ff774c;
 }
 
 .p-15 {
@@ -105,7 +97,12 @@ export default {
   }
 
   .item-image {
-    height: 15vh;
+    height: 25vh;
+  }
+
+  img {
+    max-width: 20vh;
+    height: 20vh;
   }
 }
 
