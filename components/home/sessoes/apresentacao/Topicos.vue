@@ -1,9 +1,9 @@
 <template>
   <div class="topicos">
-      <div class="topico" v-for="topico in topicos" :key="topico.titulo">
-          <span class="topico-titulo">{{ topico.titulo }}</span>
-          <span class="topico-descricao">{{ topico.descricao }}</span>   
-      </div>
+    <div v-for="topico in topicos" :key="topico.titulo" class="topico">
+      <span class="topico-titulo">{{ topico.titulo }}</span>
+      <span class="topico-descricao">{{ topico.descricao }}</span>
+    </div>
   </div>
 </template>
 <script>
@@ -56,11 +56,14 @@ export default {
   color: #387ca5;
   letter-spacing: 0.2rem;
   grid-area: titulo;
+  justify-self: center;
 }
 .topico-descricao {
   grid-area: descricao;
   color: #80858a;
   letter-spacing: 0.1rem;
   margin-left: 10px;
+  justify-self: center;
+  text-align: center;
 }
 </style>
