@@ -1,5 +1,5 @@
 <template>
-    <a :href="goTo" class="scroll-down" address="true"></a>
+  <a :href="goTo" class="scroll-down" address="true" />
 </template>
 
 <script>

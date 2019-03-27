@@ -1,11 +1,11 @@
 <template>
-  <section class="sessao" id="visao">
+  <section id="visao" class="sessao">
     <header class="sessao-head">
       <span class="sessao-titulo">Visão</span>
       <span class="sessao-subtitulo">
         Entendemos que o código aberto é uma ótima prática de desenvolvimento
-      para projetos de software, especialmente quando eles tem potencial
-      de atingir várias pessoas. Nosso principal objetivo é criar um ambiente open source para:
+        para projetos de software, especialmente quando eles tem potencial
+        de atingir várias pessoas. Nosso principal objetivo é criar um ambiente open source para:
       </span>
     </header>
     <ul>
