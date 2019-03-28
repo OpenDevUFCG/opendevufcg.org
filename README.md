@@ -1,5 +1,6 @@
 
-# OpenDevUFCG [![Build Status](https://travis-ci.com/OpenDevUFCG/OpenDevUFCG.svg?branch=master)](https://travis-ci.com/OpenDevUFCG/OpenDevUFCG) [![Join the chat at https://gitter.im/OpenDevUFCG/portal](https://badges.gitter.im/OpenDevUFCG/portal.svg)](https://gitter.im/OpenDevUFCG/portal?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# OpenDevUFCG [![Build Status](https://travis-ci.com/OpenDevUFCG/OpenDevUFCG.svg?branch=master)](https://travis-ci.com/OpenDevUFCG/OpenDevUFCG) [![chat on Discord](https://img.shields.io/discord/558293573494112257.svg?logo=discord)](https://discordapp.com/invite/YT7NvM)
+![Tamburetei Logo](https://i.imgur.com/FOgBKcI.png)
 
  
 Este repositório contém o código que faz o [portal da OpenDevUFCG](https://opendevufcg.org/)
