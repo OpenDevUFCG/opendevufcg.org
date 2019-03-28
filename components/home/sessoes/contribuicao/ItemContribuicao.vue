@@ -1,7 +1,7 @@
 <template>
   <div class="item-contribuicao" @click="goToUrl">
     <div class="item-icon">
-      <font-awesome-icon :icon="['fab', item.icon]"/>
+      <font-awesome-icon :icon="['fab', item.icon]" />
     </div>
     <div class="item p-15">
       <div class="item-header">
