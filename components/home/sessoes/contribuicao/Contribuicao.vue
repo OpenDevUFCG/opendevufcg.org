@@ -33,7 +33,7 @@ export default {
           titulo: 'Fale conosco no Discord',
           descricao:
             'Um bate-papo descontraído com a nossa comunidade, sinta-se à vontade pra compartilhar  ideias, tirar dúvidas...',
-          link: 'https://gitter.im/OpenDevUFCG/community',
+          link: 'https://discordapp.com/invite/vFFGGEE',
           icon: 'discord'
         }
       ]
