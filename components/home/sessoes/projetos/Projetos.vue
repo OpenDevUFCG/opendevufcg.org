@@ -49,7 +49,7 @@ export default {
         {
           titulo: 'Roadmap CC',
           descricao: 'Roadmap para se tornar um cientista de Computação@UFCG.',
-          site: 'https://github.com/OpenDevUFCG/roadmap-cc',
+          site: 'http://roadmap.opendevufcg.org/',
           imagem: 'roadmapcc_icon.svg'
         },
         {
