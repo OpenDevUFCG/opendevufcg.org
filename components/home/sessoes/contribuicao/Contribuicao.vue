@@ -27,14 +27,14 @@ export default {
           descricao:
             'Aqui você pode acessar todos os nossos repositórios. Não esqueça de deixar uma star em cada um!',
           link: 'https://github.com/OpenDevUFCG',
-          img: 'github_white.png'
+          icon: 'github'
         },
         {
-          titulo: 'Fale conosco no Gitter',
+          titulo: 'Fale conosco no Discord',
           descricao:
             'Um bate-papo descontraído com a nossa comunidade, sinta-se à vontade pra compartilhar  ideias, tirar dúvidas...',
-          link: 'https://gitter.im/OpenDevUFCG/community',
-          img: 'gitter_white.png'
+          link: 'https://discordapp.com/invite/vFFGGEE',
+          icon: 'discord'
         }
       ]
     }

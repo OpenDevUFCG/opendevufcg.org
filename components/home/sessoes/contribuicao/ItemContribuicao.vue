@@ -1,7 +1,7 @@
 <template>
   <div class="item-contribuicao" @click="goToUrl">
-    <div class="item-image">
-      <img :src="require('~/assets/' + item.img)">
+    <div class="item-icon">
+      <font-awesome-icon :icon="['fab', item.icon]" />
     </div>
     <div class="item p-15">
       <div class="item-header">
@@ -50,8 +50,10 @@ export default {
   cursor: pointer;
 }
 
-.item-image {
+.item-icon {
   background-color: #1e6995;
+  color: white;
+  font-size: 7em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +98,7 @@ img {
     margin-top: 10px;
   }
 
-  .item-image {
+  .item-icon {
     height: 25vh;
   }
 
