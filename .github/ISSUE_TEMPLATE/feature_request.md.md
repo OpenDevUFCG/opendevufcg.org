@@ -17,4 +17,4 @@ Dê ideias de como a melhoria pode ser implementada no projeto
 Se aplicavel, adicione uma imagem que ajude no entendimento da melhoria
 
 **Contexto adicional:**
-Adicione qualquer informação adicional que achar necessaria
+Adicione qualquer informação adicional que achar necessária
