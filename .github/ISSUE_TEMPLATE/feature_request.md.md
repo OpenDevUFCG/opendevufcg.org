@@ -8,7 +8,7 @@ about: Peça uma melhoria para esse projeto
 Descreva a melhoria e suas caracteristicas mais importantes
 
 **Necessidade da melhoria:**
-Descreva o porquê da melhoria ser necessaria
+Descreva o porquê da melhoria ser necessária
 
 **Como ela pode ser implementada:**
 Dê ideias de como a melhoria pode ser implementada no projeto
