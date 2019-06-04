@@ -60,7 +60,7 @@ export default {
         },
         {
           nome: 'Lucas Medeiros',
-          url_github: 'https://github.com/LukeHxH',
+          url_github: 'https://github.com/lucasmedeiros',
           imagem: 'lucas.jpeg'
         },
         {
