@@ -77,6 +77,11 @@ export default {
           nome: 'Pedro Espíndula',
           url_github: 'https://github.com/pedroespindula',
           imagem: 'pedro.jpeg'
+        },
+	{
+          nome: 'Ivyna Santino',
+          url_github: 'https://github.com/ivynasantino',
+          imagem: 'ivyna.jpeg'
         }
       ]
     }
