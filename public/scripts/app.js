@@ -16,7 +16,7 @@ const renderProjetoCard = ({titulo, descricao, site, imagem}) => {
 
 const renderMembroInfo = ({nome, url_github}) => {
   const membroInfo = document.getElementById('membro-template').cloneNode(true)
-  membroInfo.id = "url_github"
+  membroInfo.id = url_github
 
   membroInfo.querySelector('.membro-github').href = url_github
   membroInfo.querySelector('.membro-imagem').src = url_github + '.png'
@@ -41,8 +41,6 @@ const renderEquipe = () => {
 }
 
 const init = () => {
-  console.log('hey')
-  console.log(projetos)
   renderProjetos()
   renderEquipe()
 }

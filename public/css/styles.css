@@ -17,6 +17,7 @@ section {
 
 section header {
   text-align: center;
+  margin-bottom: 5%;
 }
 
 section h2 {
@@ -28,8 +29,7 @@ section h2 {
 
 section .sessao-subtitulo {
   color: #263a57;
-  letter-spacing: 2px;
-  font-size: 1em;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -55,8 +55,15 @@ section:nth-child(even) .sessao-subtitulo {
   margin-top: 5%;
 }
 
+.visao li {
+  background: url("../images/hexagono.svg") left/24px no-repeat;
+  padding-left: 40px;
+}
+
 .visao li:nth-child(even) {
   text-align: right;
+  background-position: right;
+  padding-right: 40px;
 }
 
 .visao li + li {
@@ -65,40 +72,47 @@ section:nth-child(even) .sessao-subtitulo {
 
 /* SOBRE NOS */
 
-.sobre ul {
+.sobre .topicos {
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.sobre ul li {
-  flex: 1 100%;
+.sobre .topico {
+  flex: 0 1 30%;
+  padding: 0px;
 }
 
-.sobre li h3 { 
+.sobre .topico h3 { 
   color: #387ca5;
   letter-spacing: 0.2rem;
-  font-size: 1.3em;
+  font-size: 2rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-.sobre li p { 
+.sobre .topico p { 
   color: #80858a;
   letter-spacing: 0.1rem;
+  text-align: center;
+  line-height: 1.8;
 }
 
 /* PROJETOS */
 
 .projetos {
+  list-style: none;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-evenly;
 }
 
 .projeto-card {
-  max-width: calc(100% / 5);
-  min-height: 40vh;
-  /* max-height: 100vh; */
+  flex: 0 0 calc(100% / 5);
+  height: 400px;
   text-align: center;
   padding: 20px 20px;
   background-color: white;
@@ -107,6 +121,12 @@ section:nth-child(even) .sessao-subtitulo {
   flex-direction: column;
   justify-content: space-around;
   border-radius: 0.25rem;
+  margin: 10px 10px 0 10px;
+}
+
+.projeto-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: translateY(-1px);
 }
 
 .projeto-card img {
@@ -120,16 +140,16 @@ section:nth-child(even) .sessao-subtitulo {
 }
 
 /* EQUIPE */
+
 .equipe {
   list-style: none;
-  display: grid;
-  max-width: 70vw;
-  grid-template-columns: repeat(auto-fit, minmax(18vh, 1fr));
-  grid-gap: 2vmin;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .membro {
-  /* max-width: 50px; */
+  flex: 0 0 160px;
   transition: all 0.3s;
 }
 
@@ -140,6 +160,27 @@ section:nth-child(even) .sessao-subtitulo {
 .membro-imagem {
   align-self: center;
   object-fit: cover;
-  width: 100%;
+  max-width: 150px;
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+/* COMUNIDADE */
+
+.comunidade-lista {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.comunidade-item {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+  text-decoration: none;
+}
+
+.comunidade-item i {
+  font-size: 7em;
+  color: white;
+  background-color: #1e6995;
 }

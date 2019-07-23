@@ -7,14 +7,17 @@
     <meta name="description" content="OpenDevUFCG Portal" />
     <script type="module" src="/scripts/app.js"></script>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   </head>
   <body>
+
     <div class="container">
       <!-- INTRODUCAO -->
       <header class="introducao">
         <div class="logo-content">
           <img src="~/static/opendev_icon.png" class="logo" alt="Logo do OpenDev">
           <img src="~/assets/opendevufcg_typo.svg" class="name">
+
         </div>
       </header>
 
@@ -46,15 +49,15 @@
         </header>
         <main>
           <ul class="topicos">
-            <li>
+            <li class="topico">
               <h3>Comunidade</h3>
               <p>Juntos fazemos mais, por isso nos esforçamos em criar uma comunidade que exista diálogo, amizade, respeito e suporte. Todos são bem vindos, seja para contribuir, sugerir novas ideias ou pedir ajuda.</p>
             </li>
-            <li>
+            <li class="topico">
               <h3>Open Source</h3>
               <p>Open Source permite que qualquer pessoa possa ver, modificar, contribuir e distribuir seu código. Adotamos o Open Source como filosofia pois acreditamos que é isso que nos conecta, todos nossos projetos são Open Source e queremos espalhar essa cultura pela UFCG e quem sabe até fora dela.</p>
             </li>
-            <li>
+            <li class="topico">
               <h3>Empoderamento</h3>
               <p>Queremos empoderar pessoas, do iniciante ao experiente, todos podem aprender, sugerir e ajudar na OpenDevUFCG. Queremos ser a comunidade que possa encorajar pessoas a tomarem o primeiro passo, a sugerir novas ideias e principalmente, a contruí-las.</p>
             </li>
@@ -63,45 +66,62 @@
       </section>
 
       <!-- SESSAO PROJETOS -->
-      <section class="projetos">
+      <section>
           <header>
               <h2>Nossos Projetos</h2>
               <p class="sessao-subtitulo">
                   Desenvolvemos projetos para a comunidade da UFCG, você também pode contribuir para eles! Veja alguns deles abaixo:
               </p>
           </header>
-          <main class="projetos">
-              <div class="projeto-card" id="projeto-template">
-                <a class="projeto-site" target="_blank"> <img class="projeto-imagem"/> </a>
-                <p class="projeto-descricao"></p>
-              </div>
+          <main>
+            <ul class="projetos">
+              <li class="projeto-card" id="projeto-template">
+                  <a class="projeto-site" target="_blank"> <img class="projeto-imagem"/> </a>
+                  <p class="projeto-descricao"></p>
+              </li>
+            </ul>
           </main>
       </section>
       
       <!-- SESSAO EQUIPE -->
-      <section class="equipe">
+      <section>
         <header>
             <h2>Equipe</h2>
         </header>
         <main>
           <ul class="equipe">
-            <li>
-              <div class="membro" id="membro-template">
-                <a class="membro-github" target="_blank"> <img class="membro-imagem"/> </a>
-              </div>
+            <li class="membro" id="membro-template">
+              <a class="membro-github" target="_blank"> <img class="membro-imagem"/> </a>
             </li>
           </ul>
         </main>
       </section>
 
       <!-- SESSAO COMUNIDADE -->
-      <section class="comunidade">
+      <section>
         <header>
           <h2>Comunidade</h2>
           <p class="sessao-subtitulo">Junte-se a comunidade da OpenDevUFCG!</p>
         </header>
         <main>
-          
+          <ul class="comunidade-lista">
+            <li>
+              <a class="comunidade-item" href="https://github.com/OpenDevUFCG" target="_blank">
+                <i class="fab fa-github" title="Github"></i>
+                <h3 class="comunidade-item-titulo">Github</h3>
+                <p>Aqui você pode acessar todos os nossos repositórios. Não esqueça de deixar uma star em cada um!</p>
+              </a>
+            </li>
+            <li>
+              <a class="comunidade-item" href="https://discordapp.com/invite/vFFGGEE" target="_blank">
+                <i class="fab fa-discord" class="Discord"></i>
+                <div class="comunidade-conteudo">
+                  <h3 class="comunidade-item-titulo">Discord</h3>
+                  <p>Um bate-papo descontraído com a nossa comunidade, sinta-se à vontade pra compartilhar  ideias, tirar dúvidas...</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </main>
       </section>
     </div>
