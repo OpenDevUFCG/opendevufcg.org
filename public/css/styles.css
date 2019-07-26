@@ -188,7 +188,7 @@ section:nth-child(even) .sessao-subtitulo {
   color: white;
   background-color: #1e6995;
   padding: 0.15em;
-  width: 1.7em;
+  width: 1.4em;
   text-align: center;
 }
 
@@ -203,7 +203,7 @@ section:nth-child(even) .sessao-subtitulo {
   color: #1e6995;
   font-size: 1em;
   padding: 1em 0.5em 0.5em 1em;
-  max-width: 25em;
+  max-width: 22em;
 }
 
 .comunidade-conteudo h3 {
