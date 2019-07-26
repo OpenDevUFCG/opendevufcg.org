@@ -170,6 +170,8 @@ section:nth-child(even) .sessao-subtitulo {
   list-style: none;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-left: 0px;
 }
 
 .comunidade-item {
@@ -177,10 +179,49 @@ section:nth-child(even) .sessao-subtitulo {
   flex-flow: row wrap;
   background-color: white;
   text-decoration: none;
+  min-height: 170px;
+  border-radius: 0.25rem;
 }
 
 .comunidade-item i {
   font-size: 7em;
   color: white;
   background-color: #1e6995;
+  padding: 0.15em;
+  width: 1.7em;
+  text-align: center;
+}
+
+.comunidade-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: translateY(-1px);
+}
+
+.comunidade-conteudo {
+  display: flex;
+  flex-flow: column wrap;
+  color: #1e6995;
+  font-size: 1em;
+  padding: 1em 0.5em 0.5em 1em;
+  max-width: 25em;
+}
+
+.comunidade-conteudo h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.comunidade-conteudo p {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 450px) {
+  .comunidade-item i {
+    width: 100%;
+  }
+
+  .comunidade-lista li + li {
+    margin-top: 5%;
+  }
 }
