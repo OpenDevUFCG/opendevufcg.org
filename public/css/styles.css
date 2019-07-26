@@ -8,6 +8,29 @@ body {
   overflow: auto
 }
 
+/* INTRO */
+
+.introducao {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-content {
+
+}
+
+.logo {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.nome {
+  height: 500px;
+  max-width: 900px;
+}
+
 /* SESSOES */
 
 section {
