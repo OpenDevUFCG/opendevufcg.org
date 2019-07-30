@@ -203,7 +203,7 @@ section:nth-child(even) .sessao-subtitulo {
   color: #1e6995;
   font-size: 1em;
   padding: 1em 0.5em 0.5em 1em;
-  max-width: 22em;
+  width: 22em;
 }
 
 .comunidade-conteudo h3 {
@@ -216,12 +216,20 @@ section:nth-child(even) .sessao-subtitulo {
   margin-left: 0.5em;
 }
 
-@media screen and (max-width: 450px) {
-  .comunidade-item i {
+@media screen and (max-width: 1500px) {
+  .comunidade-item i, .comunidade-conteudo {
     width: 100%;
+  }
+
+  .comunidade-conteudo h3 {
+    text-align: center;
   }
 
   .comunidade-lista li + li {
     margin-top: 5%;
+  }
+  
+  .comunidade-lista li {
+    max-width: 30em;
   }
 }
