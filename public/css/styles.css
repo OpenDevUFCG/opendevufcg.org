@@ -13,12 +13,15 @@ body {
 .introducao {
   min-height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.logo-content {
-
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -29,6 +32,20 @@ body {
 .nome {
   height: 500px;
   max-width: 900px;
+}
+
+.subtitulo {
+  font-size: 2em;
+  color: #2c677b;
+  letter-spacing: 0.2rem;
+  display: inherit;
+}
+
+.typewrite {
+  padding-left: 1rem; /* Adiciona um espaco antes da frase estatica */
+  color: #49c3ed;
+  height: 20px;
+  margin: 0;
 }
 
 /* SESSOES */
