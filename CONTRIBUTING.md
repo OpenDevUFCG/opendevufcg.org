@@ -25,25 +25,15 @@ Usamos algumas classificações para categorizar as issues, veja:
 Você pode contribuir tanto sugerindo novas ideias em nossas issues ou no nosso [chat](https://gitter.im/OpenDevUFCG/portal), como também criando um "fork" do repositório e submetendo sua PR para melhorar nosso conteúdo e código.
 
 ## Estrutura
-O site é feito em [Vue](https://vuejs.org/) e usando [Nuxt.js](https://nuxtjs.org). Nossa estrutura é a mesma descrita na documentação do [Nuxt.js](https://nuxtjs.org/guide/directory-structure).
+
+O site é feito utilizando apenas **Javascript**, **HTML** e **CSS**. Você pode encontrar o código na pasta [`docs/`](docs).
 
 ## Desenvolvimento
 
-Você precisa ter `vue` instalado na sua máquina.
-
-### Instalar dependências
+Para rodar e fazer alterações locais na sua máquina, primeiro você deve fazer um *Fork* deste repositório e depois cloná-lo para sua máquina:
 
 ``` bash
-npm install
-```
+git clone https://github.com/<seu_usuario>/opendevufcg
+``` 
 
-### Rodar localmente
-```bash
-npm run dev
-```
-
-# Gerar o site estático
-```
-npm run generate
-```
-Para mais detalhes, veja [Nuxt.js docs](https://nuxtjs.org).
+Depois, abra o arquivo `docs/index.html` no navegador de sua preferência, agora é só começar a codar que você irá poder ver suas alterações no navegador!
