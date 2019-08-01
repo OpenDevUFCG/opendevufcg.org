@@ -1,14 +1,14 @@
 
-import projetos from '../data/projetos.js'
-import equipe from '../data/equipe.js'
-
+/*
+  Dados de projetos e equipe estão na pasta data/
+*/
 
 const renderProjetoCard = ({titulo, descricao, site, imagem}) => {
   const projetoCard = document.getElementById('projeto-template').cloneNode(true)
   projetoCard.id = "projeto-" + titulo
 
   projetoCard.querySelector('.projeto-descricao').textContent = descricao
-  projetoCard.querySelector('.projeto-imagem').src = '../images/projetos_logos/' + imagem
+  projetoCard.querySelector('.projeto-imagem').src = './img/projetos_logos/' + imagem
   projetoCard.querySelector('.projeto-site').href = site
 
   return projetoCard

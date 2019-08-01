@@ -48,5 +48,3 @@ const equipe = [
     "url_github": 'https://github.com/ivynasantino',
   }
 ]
-
-export default equipe

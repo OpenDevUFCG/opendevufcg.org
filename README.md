@@ -3,32 +3,20 @@
  
 Este repositório contém o código que faz o [portal da OpenDevUFCG](https://opendevufcg.org/)
 
-## Objetivos
-
-Esse site deve mostrar informações importantes sobre a OpenDevUFCG, no futuro pretendemos que também contenha notícias da organização e tutoriais dos mais diversos assuntos de computação que possam ser úteis para a comunidade.
-
 ## Estrutura
-O site é feito em [Vue](https://vuejs.org/) e usando [Nuxt.js](https://nuxtjs.org). Nossa estrutura é a mesma descrita na documentação do [Nuxt.js](https://nuxtjs.org/guide/directory-structure).
+
+O site é feito utilizando apenas **Javascript**, **HTML** e **CSS**. Você pode encontrar o código na pasta [`docs/`](docs).
 
 ## Desenvolvimento
 
-Você precisa ter `vue` instalado na sua máquina.
-
-### Instalar dependências
+Para rodar e fazer alterações locais na sua máquina, primeiro você deve fazer um *Fork* deste repositório e depois cloná-lo para sua máquina:
 
 ``` bash
-npm install
-```
+git clone https://github.com/<seu_usuario>/opendevufcg
+``` 
 
-### Rodar localmente
-```bash
-npm run dev
-```
+Depois, abra o arquivo `docs/index.html` no navegador de sua preferência, agora é só começar a codar que você irá poder ver suas alterações no navegador!
 
-# Gerar o site estático
-```
-npm run generate
-```
-Para mais detalhes, veja [Nuxt.js docs](https://nuxtjs.org).
+## Como Contribuir
 
 Veja nosso [CONTRIBUTING](/CONTRIBUTING.md) e o [Código de Conduta](/CODE_OF_CONDUCT.md)

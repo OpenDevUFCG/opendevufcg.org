@@ -20,6 +20,7 @@ body {
 
 .logo-area {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -35,7 +36,7 @@ body {
 }
 
 .subtitulo {
-  font-size: 2em;
+  font-size: 2.5rem;
   color: #2c677b;
   letter-spacing: 0.2rem;
   display: inherit;
@@ -44,9 +45,30 @@ body {
 .typewrite {
   padding-left: 1rem; /* Adiciona um espaco antes da frase estatica */
   color: #49c3ed;
-  height: 20px;
   margin: 0;
 }
+
+@media only screen and (max-width: 728px) {
+  .logo-area {
+    flex-direction: column;
+  }
+  .nome {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  .logo {
+    width: 250px;
+    position: absolute;
+    align-self: center;
+    top: 0;
+  }
+  .subtitulo {
+    font-size: 1rem;
+  }
+}
+
+
 
 /* SESSOES */
 
@@ -96,7 +118,7 @@ section:nth-child(even) .sessao-subtitulo {
 }
 
 .visao li {
-  background: url("../images/hexagono.svg") left/24px no-repeat;
+  background: url("../img/hexagono.svg") left/24px no-repeat;
   padding-left: 40px;
 }
 
