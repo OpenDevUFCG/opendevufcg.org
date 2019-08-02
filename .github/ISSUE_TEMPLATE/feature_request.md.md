@@ -1,6 +1,9 @@
 ---
 name: Requisição de melhoria
 about: Peça uma melhoria para esse projeto
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
