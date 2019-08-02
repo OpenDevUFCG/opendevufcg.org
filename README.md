@@ -12,7 +12,7 @@ O site é feito utilizando apenas **Javascript**, **HTML** e **CSS**. Você pode
 Para rodar e fazer alterações locais na sua máquina, primeiro você deve fazer um *Fork* deste repositório e depois cloná-lo para sua máquina:
 
 ``` bash
-git clone https://github.com/<seu_usuario>/opendevufcg
+git clone https://github.com/<seu_usuario>/opendevufcg.org
 ``` 
 
 Depois, abra o arquivo `docs/index.html` no navegador de sua preferência, agora é só começar a codar que você irá poder ver suas alterações no navegador!
