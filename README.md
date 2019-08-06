@@ -1,5 +1,5 @@
 
-# OpenDevUFCG[![chat on Discord](https://img.shields.io/discord/558293573494112257.svg?logo=discord)](https://discordapp.com/invite/vFFGGEE)
+# OpenDevUFCG [![chat on Discord](https://img.shields.io/discord/558293573494112257.svg?logo=discord)](https://discordapp.com/invite/vFFGGEE)
  
 Este repositório contém o código que faz o [portal da OpenDevUFCG](https://opendevufcg.org/)
 
