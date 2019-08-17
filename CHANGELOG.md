@@ -6,6 +6,11 @@ e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/
 
 ## [Não publicado]
 
+## [1.1.2] - 16/08/2019
+
+### Adicionado
+
+- Novas seções explicativas do código e o processo de contribuição no `README.md` e `CONTRIBUTING.md`
 
 ## [1.1.1] - 05/08/2019
 
