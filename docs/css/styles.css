@@ -64,7 +64,10 @@ body {
     top: 0;
   }
   .subtitulo {
-    font-size: 1rem;
+    flex-wrap: wrap;
+    height: 20px;
+    justify-content: center;
+    font-size: 1.2rem;
   }
 }
 
