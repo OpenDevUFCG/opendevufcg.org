@@ -155,11 +155,10 @@ section:nth-child(even) .sessao-subtitulo {
 @media screen and (max-width: 750px){
    .sobre .topicos{
      flex-direction: column;
-     flex-wrap: nowrap; 
    }
 }
 
-.sobre .topico {
+.sobre .topico {  
   flex: 0 1 30%;
   padding: 0 10px;
 }
