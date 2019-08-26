@@ -314,7 +314,7 @@ section:nth-child(even) .sessao-subtitulo {
   }
 
  .comunidade-conteudo{
-   width: 100%;
+   font-size: 1em;
  } 
 
   .comunidade-conteudo h3 {
