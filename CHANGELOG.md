@@ -6,6 +6,15 @@ e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/
 
 ## [Não publicado]
 
+## [1.1.3] - 26/08/2019
+### Modificado
+- Zerado padding e margin de tags `ul` do **body** do site.
+
+### Corrigido
+- Quebra de linha do texto da animação typewriter da primeira seção.
+- Centralização de tópicos na seção "Sobre nós"
+- Responsividade em telas maiores dos cards de comunidade na ultima seção.
+
 ## [1.1.2] - 16/08/2019
 
 ### Adicionado
