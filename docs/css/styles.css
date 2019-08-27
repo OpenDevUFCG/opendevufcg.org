@@ -268,12 +268,11 @@ section:nth-child(even) .sessao-subtitulo {
   flex-flow: row wrap;
   background-color: white;
   text-decoration: none;
-  min-height: 170px;
   border-radius: 0.25rem;
 }
 
 .comunidade-item i {
-  font-size: 7em;
+  font-size: 8vw;
   color: white;
   background-color: #1e6995;
   padding: 0.15em;
@@ -290,9 +289,9 @@ section:nth-child(even) .sessao-subtitulo {
   display: flex;
   flex-flow: column wrap;
   color: #1e6995;
-  font-size: 1em;
+  font-size: 1.3vw;
   padding: 1em 0.5em 0.5em 1em;
-  width: 22em;
+  width: 25vw;
 }
 
 .comunidade-conteudo h3 {
@@ -305,10 +304,18 @@ section:nth-child(even) .sessao-subtitulo {
   margin-left: 0.5em;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1024px) {
   .comunidade-item i, .comunidade-conteudo {
     width: 100%;
   }
+
+  .comunidade-item i {
+    font-size: 7em;
+  }
+
+ .comunidade-conteudo{
+   font-size: 1em;
+ } 
 
   .comunidade-conteudo h3 {
     text-align: center;
