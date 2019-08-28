@@ -188,9 +188,10 @@ section:nth-child(even) .sessao-subtitulo {
   justify-content: center;
 }
 
-.projeto-card {  
+.projeto-card { 
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   flex: 1;
   background-color: white;
   text-align: center;
@@ -199,7 +200,7 @@ section:nth-child(even) .sessao-subtitulo {
   padding: 20px 20px 10px 20px;
   color: #80858a;
   border-radius: 0.25rem;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .projeto-card img {
@@ -207,8 +208,9 @@ section:nth-child(even) .sessao-subtitulo {
 }
 
 .projeto-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-  transform: scale(1.02);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  margin: 10px 30px 0 20px;
+  transform: scale(1.04);
 }
 
 @media screen and (min-width: 750px) {
