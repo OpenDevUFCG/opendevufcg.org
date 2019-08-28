@@ -199,6 +199,7 @@ section:nth-child(even) .sessao-subtitulo {
   padding: 20px 20px 10px 20px;
   color: #80858a;
   border-radius: 0.25rem;
+  transition: transform 0.2s ease;
 }
 
 .projeto-card img {
@@ -206,8 +207,8 @@ section:nth-child(even) .sessao-subtitulo {
 }
 
 .projeto-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  transform: scale(1.02);
 }
 
 @media screen and (min-width: 750px) {
@@ -269,6 +270,7 @@ section:nth-child(even) .sessao-subtitulo {
   background-color: white;
   text-decoration: none;
   border-radius: 0.25rem;
+  transition: transform 0.2s ease;
 }
 
 .comunidade-item i {
@@ -281,8 +283,8 @@ section:nth-child(even) .sessao-subtitulo {
 }
 
 .comunidade-item:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  transform: translateY(-1px);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  transform: scale(1.02);
 }
 
 .comunidade-conteudo {
