@@ -191,7 +191,6 @@ section:nth-child(even) .sessao-subtitulo {
 .projeto-card { 
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   flex: 1;
   background-color: white;
   text-align: center;
