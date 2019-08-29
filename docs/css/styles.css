@@ -221,8 +221,8 @@ section:nth-child(even) .sessao-subtitulo {
 
 @media screen and (min-width: 1500px) {
   .projeto-card {  
-    min-width: calc(100% / 6);
-    max-width: calc(100% / 6);
+    min-width: calc(100% / 6.3);
+    max-width: calc(100% / 6.3);
   }
 }
 
