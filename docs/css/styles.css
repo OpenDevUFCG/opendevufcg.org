@@ -225,7 +225,8 @@ section:nth-child(even) .sessao-subtitulo {
 }
 
 @media screen and (min-width: 1500px) {
-  .projeto-card {  
+  /* Os valores quebrados na divisão da tela são para permitir uma margem para os cards se movimentarem sem quebrar linha  */
+  .projeto-card {   
     min-width: calc(100% / 6.4);
     max-width: calc(100% / 6.4);
   }
