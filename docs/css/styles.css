@@ -190,6 +190,7 @@ section:nth-child(even) .sessao-subtitulo {
 
 .projeto-card {  
   background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.6);
   margin: 10px 10px 0px 0px;
   padding: 20px 20px 10px 20px;
   border-radius: 0.25rem;
