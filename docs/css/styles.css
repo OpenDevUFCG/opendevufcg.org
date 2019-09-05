@@ -249,7 +249,7 @@ section:nth-child(even) .sessao-subtitulo {
 
 .membro {
   flex: 0 0 160px;
-  transition: transform 0.2s  ease;  
+  transition: transform 0.2s  ease;
 }
 
 .membro:hover {
