@@ -248,7 +248,8 @@ section:nth-child(even) .sessao-subtitulo {
 }
 
 .membro {
-  flex: 0 0 160px;
+  display: flex;
+  margin: 8px;
   transition: transform 0.2s  ease;  
 }
 
