@@ -248,8 +248,9 @@ section:nth-child(even) .sessao-subtitulo {
 }
 
 .membro {
-  flex: 0 0 160px;
-  transition: all 0.3s;
+  display: flex;
+  margin: 8px;
+  transition: transform 0.2s  ease;  
 }
 
 .membro:hover {
@@ -259,8 +260,8 @@ section:nth-child(even) .sessao-subtitulo {
 .membro-imagem {
   align-self: center;
   object-fit: cover;
-  max-width: 150px;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  max-width: 130px;
+  border-radius: 50%;
 }
 
 /* COMUNIDADE */
