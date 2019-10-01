@@ -6,7 +6,10 @@ e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/
 
 ## [Não publicado]
 
-## [1.2.3] - 01/10/2019
+## [1.2.1] - 01/10/2019
+- Adiciona `theme_color` em manifest e metatag.
+
+## [1.2.0] - 01/10/2019
 ### Adicionado
 - Service Worker e `manifest.json`. Agora o portal é PWA
 
