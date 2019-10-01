@@ -5,7 +5,7 @@ Este repositório contém o código que faz o [portal da OpenDevUFCG](https://op
 
 ## Objetivo
 
-Objetivo do [opendevufcg.org](opendevufcg.org) é ser um site de apresentação para qualquer um que queria saber quem é a OpenDevUFCG, contendo informações sobre o que fazemos, nossos valores, e também uma listagem de projetos e maintainers atuais.
+Objetivo do [opendevufcg.org](https://opendevufcg.org/) é ser um site de apresentação para qualquer um que queria saber quem é a OpenDevUFCG, contendo informações sobre o que fazemos, nossos valores, e também uma listagem de projetos e maintainers atuais.
 
 A filosofia desse projeto é ser simples sempre!
 
