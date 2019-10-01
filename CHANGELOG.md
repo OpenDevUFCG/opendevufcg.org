@@ -5,8 +5,13 @@ O formato foi baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0
 e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/v2.0.0.html).
 
 ## [Não publicado]
+
+## [1.2.3] - 01/10/2019
+### Adicionado
+- Service Worker e `manifest.json`. Agora o portal é PWA
+
 ### Modificao
-- meta tag de description no `index.html`.
+- Meta tag de description no `index.html`.
 
 ## [1.1.3] - 26/08/2019
 ### Modificado
