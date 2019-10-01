@@ -1,0 +1,13 @@
+{
+  "name": "OpenDevUFCG",
+  "short_name": "OpenDev",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF",
+  "description": "Portal oficial do OpenDev UFCG",
+  "icons": [{
+    "src": "/img/opendev_icon.png",
+    "type": "image/png",
+    "sizes": "192x192 512x512"
+  }]
+}
