@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   height: 100vh;
 }
 
-#content{
+#content {
   display: flex;
   justify-content: center;
   align-items: center;
