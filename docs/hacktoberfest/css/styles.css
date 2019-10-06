@@ -21,6 +21,8 @@ body {
   background-image: url('../assets/img/background.svg');
   background-repeat: no-repeat;
   font-family: 'mayhem', sans-serif;
+  overflow: hidden;
+  background-size: contain;
   background-color: #2b3131;
   height: 100vh;
   width: 100vw;

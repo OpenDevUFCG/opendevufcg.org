@@ -1,13 +1,13 @@
 const renderTimer = () => {
 
-    const { distance, days, hours, minutes, seconds } = convertTime()
+    const { interval, days, hours, minutes, seconds } = convertTime()
 
     document.getElementById('days').innerHTML = parseValue(days)
     document.getElementById('hours').innerHTML = parseValue(hours)
     document.getElementById('minutes').innerHTML = parseValue(minutes)
     document.getElementById('seconds').innerHTML = parseValue(seconds) 
     
-    if (distance > 0){
+    if (interval > 0){
         setTimeout(renderTimer, 1000)
     }
 }
@@ -21,15 +21,15 @@ const convertTime = () => {
 
     const countdownDate = new Date(eventDate).getTime()
     const currentDate = new Date().getTime()
-    const distance  = countdownDate - currentDate
+    const interval  = countdownDate - currentDate
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const days = Math.floor(interval / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((interval % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((interval % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((interval % (1000 * 60)) / 1000);
     
     return {
-        distance,
+        interval,
         days,
         hours,
         minutes,
