@@ -1,23 +1,20 @@
 ---
-name: Requisição de melhoria
-about: Peça uma melhoria para esse projeto
+name: Requisição de feature
+about: Peça uma nova funcionalidade para o projeto
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Descrição da melhoria:**
-Descreva a melhoria e suas características mais importantes
+**Descreva a feature em detalhes**
+<!-- Descreva a feature e suas características mais importantes. -->
 
-**Necessidade da melhoria:**
-Descreva o porquê da melhoria ser necessária
+**Necessidade da feature:**
+<!-- Descreva o porquê da melhoria ser necessária -->
 
 **Como ela pode ser implementada:**
-Dê ideias de como a melhoria pode ser implementada no projeto
-
-**Imagens:**
-Se aplicável, adicione uma imagem que ajude no entendimento da melhoria
+<!-- Dê ideias de como a melhoria pode ser implementada no projeto -->
 
 **Contexto adicional:**
-Adicione qualquer informação adicional que achar necessária
+<!-- Adicione qualquer informação adicional que achar necessária. Imagens, links etc -->
