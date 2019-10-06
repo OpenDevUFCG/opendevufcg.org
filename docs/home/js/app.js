@@ -8,7 +8,7 @@ const renderProjetoCard = ({titulo, descricao, site, imagem}) => {
   projetoCard.id = "projeto-" + titulo
 
   projetoCard.querySelector('.projeto-descricao').textContent = descricao
-  projetoCard.querySelector('.projeto-imagem').src = './img/projetos_logos/' + imagem
+  projetoCard.querySelector('.projeto-imagem').src = './home/img/projetos_logos/' + imagem
   projetoCard.querySelector('.projeto-site').href = site
 
   return projetoCard
