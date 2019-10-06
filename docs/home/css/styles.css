@@ -76,7 +76,6 @@ body {
   font-weight: bold;
 }
 
-
 @media only screen and (max-width: 728px) {
   .logo {
     width: 100vw;
@@ -97,7 +96,6 @@ body {
     font-size: 1rem;
   }
 }
-
 
 
 /* SESSOES */
