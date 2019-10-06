@@ -7,7 +7,7 @@
   "background_color": "#FFF",
   "description": "Portal oficial da OpenDevUFCG",
   "icons": [{
-    "src": "/img/opendevufcg_icon.png",
+    "src": "/home/img/opendevufcg_icon.png",
     "type": "image/png",
     "sizes": "192x192 512x512"
   }]
