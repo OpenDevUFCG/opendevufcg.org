@@ -8,7 +8,7 @@
 #### Como pode ser manualmente testado?
 
 #### Screenshots
-<!-- Se aplicável -->
+<!-- Se aplicável, se não apague essa seção -->
 
 #### Tipos de mudanças
 <!-- Marque com x o que se encaixa nas suas mudanças-->
