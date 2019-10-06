@@ -2,18 +2,22 @@ const renderTimer = () => {
 
     const { distance, days, hours, minutes, seconds } = convertTime()
 
-    document.getElementById('days').innerHTML = days
-    document.getElementById('hours').innerHTML = hours
-    document.getElementById('minutes').innerHTML = minutes
-    document.getElementById('seconds').innerHTML = seconds
+    document.getElementById('days').innerHTML = parseValue(days)
+    document.getElementById('hours').innerHTML = parseValue(hours)
+    document.getElementById('minutes').innerHTML = parseValue(minutes)
+    document.getElementById('seconds').innerHTML = parseValue(seconds) 
     
     if (distance > 0){
         setTimeout(renderTimer, 1000)
     }
 }
 
+const parseValue = (value) => {    
+    return value < 10 ?  '0' + value  :  value
+} 
+
 const convertTime = () => {
-    const eventDate = 'Oct 19, 2019 08:00:00'
+    const eventDate = 'Oct 19, 2019 09:00:00'
 
     const countdownDate = new Date(eventDate).getTime()
     const currentDate = new Date().getTime()
