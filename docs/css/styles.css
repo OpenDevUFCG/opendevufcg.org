@@ -23,60 +23,46 @@ body {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .logo-area {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .logo {
-  max-height: 300px;
-  max-width: 300px;
-}
-
-.nome {
-  height: 500px;
-  max-width: 900px;
+  height: 70vh;
+  width: 60vw;
 }
 
 .subtitulo {
   font-size: 2.5rem;
-  color: #2c677b;
+  color: #343587;
   letter-spacing: 0.2rem;
   display: inherit;
 }
 
 .typewrite {
   padding-left: 1rem; /* Adiciona um espaco antes da frase estatica */
-  color: #49c3ed;
+  color: #4979b7;
   margin: 0;
 }
 
 @media only screen and (max-width: 728px) {
-  .logo-area {
-    flex-direction: column;
-  }
-  .nome {
-    margin-top: 50px;
-    width: 300px;
-    height: 300px;
-  }
   .logo {
-    width: 250px;
-    position: absolute;
-    align-self: center;
-    top: 0;
+    width: 100vw;
+  }
+  .typewrite {
+    padding-left: 0.5rem; /* Adiciona um espaco antes da frase estatica */
   }
   .subtitulo {
     flex-wrap: wrap;
-    height: 20px;
     justify-content: center;
     font-size: 1.2rem;
+    letter-spacing: 0;
   }
 }
 
