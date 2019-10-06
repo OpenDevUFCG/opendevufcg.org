@@ -7,36 +7,44 @@
       <meta name="description" content="Evento destinado a incentivar a comunidade open source." />
       <link rel="stylesheet" href="./css/styles.css" />
       <link rel="icon" href="./assets/img/favicon.ico">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   </head>
   <body>
-    <div >
-
-    </div>
-    <div id="content">
+    <header>
+      <a  href="https://donorbox.org/hacktoberfest-opendevufcg-2019" target="_blank">
+        <div class="donate-btn">Doar</div>
+      </a>
+    </header>
+    <main id="content">
       <img id="logo" src="./assets/img/logo.svg">
-      
       <div id="counter">
         <div>
-          <span class="counter-value" id="days"></span>
+          <span id="days"></span>
           <span class="counter-label">Dias</span>
         </div>
         <div class="dots">:</div>
         <div>
-          <span class="counter-value" id="hours"></span>
+          <span id="hours"></span>
           <span class="counter-label">Horas</span>
         </div>
         <div class="dots">:</div>
         <div>
-          <span class="counter-value" id="minutes"></span>
+          <span id="minutes"></span>
           <span class="counter-label">Minutos</span>
         </div>
         <div class="dots">:</div>
         <div>
-          <span class="counter-value" id="seconds"></span>
+          <span id="seconds"></span>
           <span class="counter-label">Segundos</span>
         </div>
       </div>
-    </div>
-    <script src="js/app.js"></script>
+      <div id='social-medias'>
+          <a href="http://twitter.com/opendevufcg" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/opendevufcg/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/OpenDevUFCG" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://dev.to/opendevufcg" target="_blank"><i class="fab fa-dev"></i></i></a>
+        </div>
+      </main>
+    <script src="js/counter.js"></script>
   </body>
 </html>
