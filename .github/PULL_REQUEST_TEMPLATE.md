@@ -16,3 +16,4 @@
 * [ ] Conserta um bug
 * [ ] Nova funcionalidade
 * [ ] Refatoração de código
+* [ ] Atualiza documentação
