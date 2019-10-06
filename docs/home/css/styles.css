@@ -14,7 +14,8 @@ body {
   word-spacing: 1px;
   font-size: 1.2em;
   margin: 0 auto;
-  overflow: auto
+  overflow: auto;
+  padding: 0;
 }
 
 /* INTRO */
@@ -51,13 +52,39 @@ body {
   margin: 0;
 }
 
+#message-top-bar {
+  height: 50px;
+  background: #2b3131;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  text-align: center;
+}
+
+#hacktoberfest-message {
+  margin-right: 5px;
+  text-decoration: none;
+  color: #f2ecd9;
+}
+
+#hacktoberfest-message-link {
+  color: #e45a8b;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 728px) {
   .logo {
     width: 100vw;
   }
+
   .typewrite {
     padding-left: 0.5rem; /* Adiciona um espaco antes da frase estatica */
   }
+
   .subtitulo {
     flex-wrap: wrap;
     justify-content: center;
@@ -65,7 +92,6 @@ body {
     letter-spacing: 0;
   }
 }
-
 
 
 /* SESSOES */

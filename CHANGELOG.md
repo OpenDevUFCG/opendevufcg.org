@@ -7,6 +7,11 @@ e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/
 ## [Não publicado]
 ### Adicionado
 - Google Analytics Tracking code.
+- Nova página `/hacktoberfest` com contador para o evento.
+- Messagem no topo da página principal para redirecionar para `/hacktoberfest`.
+- `Favicon` na página.
+- Nova logo da OpenDev.
+- Novo ícone no manifest. 
 
 ## [1.2.1] - 01/10/2019
 ### Adicionado
@@ -14,7 +19,7 @@ e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/
 
 ## [1.2.0] - 01/10/2019
 ### Adicionado
-- Service Worker e `manifest.json`. Agora o portal é PWA
+- Service Worker e `manifest.json`. Agora o portal é PWA.
 
 ### Modificado
 - Meta tag de description no `index.html`.
