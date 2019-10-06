@@ -5,15 +5,18 @@ O formato foi baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0
 e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/v2.0.0.html).
 
 ## [Não publicado]
+### Adicionado
+- Google Analytics Tracking code.
 
 ## [1.2.1] - 01/10/2019
+### Adicionado
 - Adiciona `theme_color` em manifest e metatag.
 
 ## [1.2.0] - 01/10/2019
 ### Adicionado
 - Service Worker e `manifest.json`. Agora o portal é PWA
 
-### Modificao
+### Modificado
 - Meta tag de description no `index.html`.
 
 ## [1.1.3] - 26/08/2019
