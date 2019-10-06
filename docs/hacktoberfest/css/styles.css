@@ -1,21 +1,58 @@
+@font-face {
+  font-family: 'mayhem';
+  src: url('../assets/fonts/mayhem/MAYHEM-Regular.otf')
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html { 
+  font-size: calc(1em + 1vw)
+}
+
 body {
-  background-image: linear-gradient(to right,black, purple);
+  font-family: 'mayhem', sans-serif;
+  background-color: #2b3131;
   height: 100vh;
 }
 
 #content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 1%;
 }
 
 #logo {
-    height: 80vh;
+    max-width: 600px;
 }
+
+/* estilização do contador */
+
+#counter {
+  color: #f2ecd9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#counter div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1vw;
+  font-size: 3rem;
+}
+
+.counter-label {
+    font-size: 1rem;
+}
+
+
+
+
