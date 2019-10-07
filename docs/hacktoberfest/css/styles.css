@@ -28,6 +28,21 @@ body {
   width: 100vw;
 }
 
+/* VOLTAR */
+
+.back-btn {
+  position: absolute;
+  top:  15px;
+  left:  15px;
+  color: #f2ecd9;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.08)
+}
+
 /* DOAR */
 
 .donate-btn {
