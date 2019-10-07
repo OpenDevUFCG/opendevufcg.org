@@ -23,4 +23,7 @@
       ]
     })
   );
+  
+  // Default cache
+  workbox.routing.registerRoute(/.*/, new workbox.strategies.NetworkFirst());
 })();
