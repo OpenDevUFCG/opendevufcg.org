@@ -28,6 +28,14 @@ body {
   width: 100vw;
 }
 
+/* Medida provisoria enquanto o fundo n cobre toda a tela */
+
+@-moz-document url-prefix() {
+  body {
+    background-color: #2e3535;
+  }
+}
+
 header {
   display: flex;
   height: 10%;
