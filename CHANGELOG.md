@@ -6,6 +6,10 @@ e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/
 
 ## [Não publicado]
 
+## [1.3.1] - 07/10/2019
+### Corrigido
+- Modifica estratégia de cache de imagens para ser `StaleWhileRevalidate`. 
+
 ## [1.3.0] - 06/10/2019
 ### Adicionado
 - Google Analytics Tracking code.
