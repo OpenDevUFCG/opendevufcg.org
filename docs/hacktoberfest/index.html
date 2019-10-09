@@ -14,42 +14,54 @@
     <link rel="manifest" href="/manifest.json" />
   </head>
   <body>
-    <header>
-      <a href="../" class="back-btn">&lt;- Voltar</a>
-      <a href="https://donorbox.org/hacktoberfest-opendevufcg-2019" target="_blank">
-        <div class="donate-btn">Doar</div>
-      </a>
-    </header>
-    <main id="content">
-      <img id="logo" src="./assets/img/logo.svg">
-      <div id="counter">
-        <div>
-          <span id="days"></span>
-          <span class="counter-label">Dias</span>
+    <!-- SESSÃO TELA INICIAL -->
+    <section class="home">
+      <header>
+        <a href="../" class="back-btn">&lt;- Voltar</a>
+        <a href="https://donorbox.org/hacktoberfest-opendevufcg-2019" target="_blank">
+          <div class="donate-btn">Doar</div>
+        </a>
+      </header>
+      <main id="content">
+        <img id="logo" src="./assets/img/logo.svg">
+        <div id="counter">
+          <div>
+            <span id="days"></span>
+            <span class="counter-label">Dias</span>
+          </div>
+          <div class="dots">:</div>
+          <div>
+            <span id="hours"></span>
+            <span class="counter-label">Horas</span>
+          </div>
+          <div class="dots">:</div>
+          <div>
+            <span id="minutes"></span>
+            <span class="counter-label">Minutos</span>
+          </div>
+          <div class="dots">:</div>
+          <div>
+            <span id="seconds"></span>
+            <span class="counter-label">Segundos</span>
+          </div>
         </div>
-        <div class="dots">:</div>
-        <div>
-          <span id="hours"></span>
-          <span class="counter-label">Horas</span>
-        </div>
-        <div class="dots">:</div>
-        <div>
-          <span id="minutes"></span>
-          <span class="counter-label">Minutos</span>
-        </div>
-        <div class="dots">:</div>
-        <div>
-          <span id="seconds"></span>
-          <span class="counter-label">Segundos</span>
-        </div>
-      </div>
-      <div id='social-medias'>
-          <a href="http://twitter.com/opendevufcg" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/opendevufcg/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/OpenDevUFCG" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://dev.to/opendevufcg" target="_blank"><i class="fab fa-dev"></i></i></a>
-        </div>
+        <div id='social-medias'>
+            <a href="http://twitter.com/opendevufcg" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/opendevufcg/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/OpenDevUFCG" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://dev.to/opendevufcg" target="_blank"><i class="fab fa-dev"></i></i></a>
+          </div>
       </main>
+    </section>
+    <!-- SESSÃO SOBRE O EVENTO -->
+    <section class="about"></section>
+    <!-- SESSÃO CRONOGRAMA -->
+    <section class="schedule"></section>
+    <!-- SESSÃO LOCALIZAÇÃO  -->
+    <section class="localization"></section>
+    <!-- FOOTER -->
+    <section class="footer"></section>
+
     <script src="js/counter.js"></script>
     <script src="../sw-register.js"></script>
   </body>
