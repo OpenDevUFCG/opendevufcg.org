@@ -11,6 +11,11 @@
 
 a {
   text-decoration:  none;
+  color: #f2ecd9;
+}
+
+ul, li {
+  list-style-type: none;
 }
 
 html { 
@@ -18,47 +23,50 @@ html {
 }
 
 body {
-  background-image: url('../assets/img/background.svg');
-  background-repeat: no-repeat;
   font-family: 'mayhem', sans-serif;
-  overflow: hidden;
-  background-size: contain;
-  background-color: #2a3232;
-  height: 100vh;
+  background-color:#383E3D;
+  height: fit-content;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* navbar */
 
 header {
-  display: flex;
-  height: 10%;
-  padding: 15px;
-  justify-content: space-between;
+  height: 15vh;
+  width: 100vw;
+  padding: 30px 15px;
 }
 
-/* VOLTAR */
-
-.back-btn {
-  color: #f2ecd9;
-  font-size: 1.2rem;
-  transition: all 0.2s ease;
+.navbar {
+   display: flex;
+   font-size: 0.8rem;
+   width: 100%;
+   justify-content: flex-end;
 }
 
-.back-btn:hover {
+.navbar  li {
+    margin: 0 1.5vw;
+    transition: all 0.2s ease;
+}
+
+.navbar li:hover {
   transform: scale(1.08)
 }
 
-/* DOAR */
+/* botao doar */
 
 .donate-btn {
-  color: #f2ecd9;
-  background-color: #2b3131;
   border: 2px solid #f2ecd9;
   border-radius: 20px;
-  width: 4rem;
-  padding: 0.3rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-align: center;
+  padding: 0.3rem 1.2rem;
   transition: all 0.2s ease;
 }
 
@@ -66,67 +74,4 @@ header {
   color: #2b3131;
   background-color: #f2ecd9;
   transform: scale(1.08)
-}
-
-/* MAIN CONTENT */
-
-#content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 90%;
-  width: 100%;
-}
-
-#logo { 
-  width: 30vw;
-  margin-bottom: 40px;
-}
-
-@media screen and (max-width: 1024px) {
-  #logo {
-    width: 70vw;
-  }
-}
-
-/* CONTADOR */
-
-#counter {
-  color: #f2ecd9;
-  display: flex;
-  padding: 5px;
-  border: 4px solid #f2ecd9;
-}
-
-#counter div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1vw;
-  font-size: 3rem;
-}
-
-.counter-label {
-    font-size: 1rem;
-}
-
-/* MIDIAS SOCIAIS */
-
-#social-medias {
-  display: flex;
-  align-items: center;
-  height: 20vh;
-}
-
-#social-medias a {
-  color: #f2ecd9;
-  font-size: 1.5rem;
-  margin: 0 3vw;
-  transition: 0.2s ease;
-}
-
-#social-medias a:hover {
-  color: #72b4c1;
-  font-size: 1.7rem;
 }
