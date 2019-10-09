@@ -97,6 +97,7 @@ header {
   display: flex;
   padding: 5px;
   border: 4px solid #f2ecd9;
+  background-color: rgb(43,49,49, 0.7);
 }
 
 #counter div {
