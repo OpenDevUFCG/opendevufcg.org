@@ -33,7 +33,7 @@ body {
 }
 
 section {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 1em;
   display: flex;
@@ -82,33 +82,38 @@ header {
 /* SESSAO HOME */
 
 #home {
-  max-width: 90%;
+  margin-top: 20px;  
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px; 
   grid-template-areas: 
   "logo event-info"
   "counter social-midias";
-  width: 100%;
 }
 
 #logo {
   grid-area: logo;
-  width: 100%;
+  text-align: center;
+}
+
+#logo img {
+  width: 90%;
 }
 
 @media screen and (max-width: 760px) {
-  #logo {
-    width: 80%;
-    padding: 0;
-  } 
 
   #home {
-      display: flex;
-      flex-direction: column;
-      align-items: center; 
-}
+    max-width: 90%;
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logo"
+    "counter"
+    "event-info";
+    justify-content: center;
+    grid-gap: 15px;
+  }
+  
 }
 
 /* EVENT INFO */
@@ -117,14 +122,17 @@ header {
   grid-area: event-info;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
 }
 
 #event-date {
   margin-bottom: 15px;
+  width: 100%;
 }
 
 #event-description {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 0.5rem;
 }
 
@@ -133,7 +141,7 @@ header {
   background-color: #f2ecd9; 
   color: #383E3D;
   padding: 0.5rem 0.7rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: fit-content;
   transition: all 0.2s ease;
 }
@@ -149,8 +157,8 @@ header {
 
   #event-info {
     text-align: center; 
-    width: 80%;
     align-items: center;
+    padding-top: 0;
   }
 
   #event-description {
@@ -169,7 +177,6 @@ header {
   display: flex;
   margin: 20px 0;
   justify-content: center;
-  height: fit-content;
 }
 
 #display {
@@ -183,11 +190,11 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 0 0.5vw;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .counter-label {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 /* MIDIAS SOCIAIS */
@@ -196,7 +203,7 @@ header {
   grid-area: social-midias;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  align-items: center;
 }
 
 #social-midias a {
@@ -209,16 +216,3 @@ header {
   color: #72b4c1;
   font-size: 1.5rem;
 }
-
-/* botão voltar */
-
-/* .back-btn {
-  width: 30%;
-  color: #f2ecd9;
-  font-size: 0.8rem;
-  transition: all 0.2s ease;
-}
-
-.back-btn:hover {
-  transform: scale(1.08)
-} */
