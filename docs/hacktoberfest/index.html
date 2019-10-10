@@ -12,56 +12,46 @@
     <link rel="icon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="manifest" href="/manifest.json" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- SESSÃO TELA INICIAL -->
-    <section class="home">
+    <div class="container">
+      <!-- SESSÃO TELA INICIAL -->
       <header>
-        <a href="../" class="back-btn">&lt;- Voltar</a>
-        <a href="https://donorbox.org/hacktoberfest-opendevufcg-2019" target="_blank">
-          <div class="donate-btn">Doar</div>
-        </a>
+        <ul class="navbar">
+          <li><a href="#">EVENTO</a></li>
+          <li><a href="#">CRONOGRAMA</a></li>
+          <li><a href="#">LOCALIZACAO</a></li>
+          <li><a class="donate-btn" href="https://donorbox.org/hacktoberfest-opendevufcg-2019" target="_blank">Doar</a></li>
+        </ul>
       </header>
-      <main id="content">
-        <img id="logo" src="./assets/img/logo.svg">
-        <div id="counter">
-          <div>
-            <span id="days"></span>
-            <span class="counter-label">Dias</span>
-          </div>
-          <div class="dots">:</div>
-          <div>
-            <span id="hours"></span>
-            <span class="counter-label">Horas</span>
-          </div>
-          <div class="dots">:</div>
-          <div>
-            <span id="minutes"></span>
-            <span class="counter-label">Minutos</span>
-          </div>
-          <div class="dots">:</div>
-          <div>
-            <span id="seconds"></span>
-            <span class="counter-label">Segundos</span>
-          </div>
+      <section class="home">
+      </section>
+      <!-- SESSÃO SOBRE O EVENTO -->
+      <section id="about">
+        <div>
+          <h3>SOBRE O HACKTOBERFEST</h3>
+          <p>O <a href="https://hacktoberfest.digitalocean.com/" target="_blank">Hacktoberfest</a> é uma celebração mundial da comunidade Open Source que ocorre durante o mês de outubro para incentivar a
+             contribuição em projetos de código aberto. E o mais legal: Não importa seu nível de conhecimento, sempre tem uma forma de
+              contribuir nos repositórios que participam do evento (desde programação até documentação).    
+          </p>
         </div>
-        <div id='social-medias'>
-            <a href="http://twitter.com/opendevufcg" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/opendevufcg/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/OpenDevUFCG" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://dev.to/opendevufcg" target="_blank"><i class="fab fa-dev"></i></i></a>
-          </div>
-      </main>
-    </section>
-    <!-- SESSÃO SOBRE O EVENTO -->
-    <section class="about"></section>
-    <!-- SESSÃO CRONOGRAMA -->
-    <section class="schedule"></section>
-    <!-- SESSÃO LOCALIZAÇÃO  -->
-    <section class="localization"></section>
-    <!-- FOOTER -->
-    <section class="footer"></section>
-    <script src="./data/atividades.js"></script>
+        <div>
+          <h3>O EVENTO</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque finibus lacus id tristique. Phasellus ac arcu
+             efficitur, elementum velit cursus, scelerisque justo. Maecenas placerat aliquet metus eget luctus. Maecenas faucibus nisl 
+             pharetra ante sollicitudin consectetur</p>
+        </div>        
+      </section>
+      <!-- SESSÃO CRONOGRAMA -->
+      <section class="schedule"></section>
+      <!-- SESSÃO LOCALIZAÇÃO  -->
+      <section class="localization"></section>
+      <!-- FOOTER -->
+       <!-- <a href="../" class="back-btn">&lt;- Voltar</a> -->
+      <section class="footer"></section>
+    </div>
+
     <script src="js/counter.js"></script>
     <script src="../sw-register.js"></script>
   </body>
