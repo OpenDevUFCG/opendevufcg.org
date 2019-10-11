@@ -2,18 +2,22 @@ const basicWeb = document.getElementById('web-b')
 const  advancedWeb = document.getElementById('web-a')
 const specifics = document.getElementById('esp')
 
-const renderActivity = ({titulo, horario, responsavel}, template) => {
+const renderActivity = ({titulo, horario, responsavel, duracao}, template) => {
     
     const activity = document.getElementById(template).cloneNode(true)
+
+    activity.id = "Atividade: " + titulo
     
-    const [hour, minutes] = horario.split(':') 
+    const [hour, minutes] = horario.split(':')
 
     activity.querySelector('.hour').textContent = hour
     activity.querySelector('.minutes').textContent = minutes
     activity.querySelector('.title').textContent = titulo
-
     if (template != 'break-template')
         activity.querySelector('.speaker').textContent = responsavel
+
+    if (duracao >= 120) 
+        activity.classList.add("two-hours")  
 
     return activity
 }
@@ -21,16 +25,13 @@ const renderActivity = ({titulo, horario, responsavel}, template) => {
 const renderAllActivities = () => {
     atividades.forEach(activity => {
 
-        const { titulo } = activity;
-        
+        const { titulo } = activity;        
         const template = titulo == 'Pausa' ? 'break-template'  :  'activity-template'
         
-        document.querySelector( '#' + activity.tipo).appendChild(renderActivity(activity, template))
-
+        document.querySelector( '#' + activity.tipo + " main").appendChild(renderActivity(activity, template))        
     });
-    document.getElementById('activity-template').remove()
-    document.getElementById('break-template').remove()
 
+    document.getElementById('templates').remove()
 }
 
 renderAllActivities();

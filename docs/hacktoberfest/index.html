@@ -19,9 +19,9 @@
       <!-- SESSÃO TELA INICIAL -->
       <header>
         <ul class="navbar">
-          <li><a href="#">EVENTO</a></li>
-          <li><a href="#">CRONOGRAMA</a></li>
-          <li><a href="#">LOCALIZACAO</a></li>
+          <li><a href="#about">EVENTO</a></li>
+          <li><a href="#schedule">CRONOGRAMA</a></li>
+          <li><a href="#localization">LOCALIZACAO</a></li>
           <li><a class="donate-btn" href="https://donorbox.org/hacktoberfest-opendevufcg-2019" target="_blank">Doar</a></li>
         </ul>
       </header>
@@ -61,9 +61,9 @@
           </div>
           <div id="event-info">
             <p id="event-date">19 de outubro de 2019</p>
-            <p id="event-description">eget erat elementu eget erat element maximus bibendum vel felis. Nam sed aliquet nulla</p>
+            <p id="event-description">Dessa vez, o Hacktoberfest não vai ser somente online!</p>
             <a href="" >
-              <div id="subscribe-btn">INSCREVER-SE</div>
+              <div id="subscribe-btn">INSCREVA-SE!  VAGAS LIMITADAS</div>
             </a>
           </div>
         </main>
@@ -86,60 +86,85 @@
         </div>
       </section>
       <!-- SESSÃO CRONOGRAMA -->
-      <section class="schedule">
+      <section id="schedule">
         <header>
           <h3>CRONOGRAMA</h3>
         </header>
         <main>
           <div id="general">
-            <div id="geral-am"></div>
-            <!-- MODELO DE UM HORARIO -->
-            <div class="activity" id="activity-template">
-              <div class="start-time">
-                <p class="hour"></p>
-                <p class="minutes"></p>
+            <div id="geral-am">
+              <main></main>
+            </div>
+
+            <div id="parallel-activities">
+              <div id="web-b">
+                <header>
+                  <h3>Minicursos</h3>
+                </header>
+                <main></main>
               </div>
-              <div class="details">
-                <h3 class="title"></h3>
-                <p class="speaker"></p>
+              <div id="web-a">
+                <header>
+                  <h3>Minicursos</h3>
+                </header>
+                <main></main>
+              </div>
+              <div id="esp">
+                  <header>
+                    <h3>Palestras</h3>
+                  </header>
+                  <main></main>
               </div>
             </div>
-            
-            <div class="activity break" id="break-template">
-                <div class="start-time">
-                  <p class="hour"></p>
-                  <p class="minutes"></p>
-                </div>
+
+            <div id="geral-pm">
+              <main></main>
+            </div>
+          </div>
+          <div id="templates">
+              <!-- TEMPLATE DE UMA ATIVIDADE -->
+              <div class="activity" id="activity-template">
+                  <div class="start-time">
+                    <p class="hour"></p>
+                    <p class="minutes"></p>
+                  </div>
                   <div class="details">
                     <h3 class="title"></h3>
+                    <p class="speaker"></p>
                   </div>
-              </div>
-
-              <div id="parallel-activities">
-                <div id="web-b">
-                  <h3>Minicursos</h3>
                 </div>
-                <div id="web-a">
-                    <h3>Minicursos</h3>
+                
+                 <!-- TEMPLATE DE UMA PAUSA-->
+                <div class="activity break" id="break-template">
+                    <div class="start-time">
+                      <p class="hour"></p>
+                      <p class="minutes"></p>
+                    </div>
+                    <div class="details">
+                      <h3 class="title"></h3>
+                    </div>
                 </div>
-                <div id="esp">
-                    <h3>Palestras</h3>
-                </div>
-
-              </div>
-              <div id="geral-pm"></div>
           </div>
         </main>
       </section>
       <!-- SESSÃO LOCALIZAÇÃO  -->
-      <section class="localization"></section>
+      <section id="localization">
+        <!-- <header>
+          <h3>LOCALIZACAO</h3>
+        </header> -->
+        <main>
+          <div id="map"></div>
+        </main>
+      </section>
       <!-- FOOTER -->
-      <section class="footer">
+      <section id="footer">
       </section>
     </div>
     <script src="data/atividades.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/googleMaps.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFm4-Uq12AQ0tPj_JMb3byLjBAjJQ-2Gw&callback=initMap"></script> -->
     <script src="../sw-register.js"></script>
   </body>
 </html>

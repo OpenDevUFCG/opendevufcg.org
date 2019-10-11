@@ -17,7 +17,7 @@ const atividades = [
         "titulo": "Introducao ao React pt.1",
         "horario": "10:00",
         "responsavel": "Matheus Procópio",
-        "duracao:": 120,
+        "duracao": 120,
         "tipo": "web-a" // web avancado
     },{
         "titulo": "Pausa",
@@ -121,6 +121,7 @@ const atividades = [
         "titulo": "Encerramento e Premiacao",
         "horario": "18:00",
         "responsavel": "",
+        "duracao": 20,
         "tipo": "geral-pm"
     }
 ]

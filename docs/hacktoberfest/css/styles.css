@@ -24,6 +24,7 @@ h3 {
 
 html { 
   font-size: calc(1em + 1vw);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,21 +40,17 @@ body {
 section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 2rem;
   display: flex;
+  padding: 0 2rem;
   flex-direction: column;
   align-items: center;
 }
 
 /* navbar */
 
-header {
-  height: 15vh;
-  width: 100vw;
-  padding: 30px 15px;
-}
-
 .navbar {
+  height: 15vh;
+  padding: 30px 15px;
    display: flex;
    font-size: 0.8rem;
    width: 100%;
@@ -87,7 +84,7 @@ header {
 /* SESSAO HOME */
 
 #home {
-  margin-top: 30px;  
+  margin-top: 30px; 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px; 
@@ -108,17 +105,14 @@ header {
 @media screen and (max-width: 760px) {
 
   #home {
-    max-width: 90%;
+    grid-gap: 15px;
     margin-top: 0;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "logo"
     "counter"
     "event-info";
-    justify-content: center;
-    grid-gap: 15px;
   }
-  
 }
 
 /* EVENT INFO */
@@ -138,7 +132,7 @@ header {
 
 #event-description {
   font-family: 'Lato', sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 #subscribe-btn {
@@ -147,7 +141,6 @@ header {
   color: #383E3D;
   padding: 0.5rem 0.7rem;
   margin-top: 2rem;
-  width: fit-content;
   transition: all 0.2s ease;
 }
 
@@ -162,7 +155,6 @@ header {
 
   #event-info {
     text-align: center; 
-    align-items: center;
     padding-top: 0;
   }
 
@@ -171,7 +163,7 @@ header {
   }
 
   #event-date {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -180,7 +172,7 @@ header {
 #counter {
   grid-area: counter;
   display: flex;
-  margin: 20px 0;
+  margin-top: 20px;
   justify-content: center;
 }
 
@@ -249,7 +241,7 @@ header {
   font-size: 0.58rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   #about h3 {
     font-size: 1.3rem;
   }
@@ -261,8 +253,11 @@ header {
 
 /* CRONOGRAMA */
 
-.schedule header {
+#schedule > header {
   text-align: center;
+  margin: 50px 0;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #f2ecd9;
 }
 
 #general {
@@ -281,9 +276,10 @@ header {
   width: 30%;
 } 
 
-#parallel-activities > div > h3 {
+#parallel-activities header h3 {
+  font-size: 0.9rem;
   margin: 20px 0;
-  font-size: 0.9rem; 
+  text-align: center;
 }
 
 @media screen and (max-width: 760px) {
@@ -296,15 +292,25 @@ header {
     width: 100%;
   }
 
+  #parallel-activities > div > h3 {
+    font-size: 1.1rem;
+  }
+
   #general {
     align-items: baseline;
   }
+
+  #general > div {
+    width: 100%;
+  }
 }
+
+/* ACTIVITY TEMPLATE */
 
 .activity {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  height: 3rem;
 }
 
 .details {
@@ -325,13 +331,11 @@ header {
 
 .start-time {
   border: 2px solid #f2ecd9;
-  width: fit-content;
   padding: 5px;
-  text-align: center;
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .details h3 {
     font-size: 0.9rem;
   }
@@ -340,17 +344,26 @@ header {
     font-size: 0.6rem;
     margin-top: 5px;
   }
+
+  .activity {
+    margin-bottom: 10px; 
+  }
 }
+
+/* BREAK TEMPLATE */
 
 .break {
+  margin: 20px 0;
+  width: 100%;
+  height: fit-content;
   display: flex;
-  margin: 15px 0;
   color: #2b3131;
-  background-color: #f2ecd9; 
+  background-color: #f2ecd9;
+  align-items: center;
 }
 
-.break .start-time {
-  padding: 0 5px;
+.break  .start-time {
+  border: none;
 }
 
 .break .details h3  {
@@ -358,6 +371,29 @@ header {
   margin-left: 20px;
 }
 
+.two-hours {
+  height: 6rem;
+}
+
+@media screen and (max-width: 760px) {
+  .break {
+    margin: 10px 0;
+  }
+
+  .two-hours {
+    height: 3rem;
+  }
+}
+
+/* LOCALIZACAO */
+#localization header {
+  text-align: center;
+}
+
+#localization div {
+  height: 80vh;
+  width: 80vw;
+}
 
 
 
