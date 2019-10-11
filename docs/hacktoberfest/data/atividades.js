@@ -1,109 +1,126 @@
 const atividades = [
     {
-        "titulo": "Recepção e Credenciamento",
+        "titulo": "Recepcao e Credenciamento",
         "horario": "08:30",
         "responsavel": "",
-        "tipo": "geral"
+        "duracao":  30, //minutos
+        "tipo": "geral-am"
     },
     {
-        "titulo": "Boas-vindas e Apresentação do Evento",
+        "titulo": "Boas-vindas e Apresentacao do Evento",
         "horario": "09:00",
         "responsavel": "Thayanne Souza",
-        "tipo": "geral"
+        "duracao": 60,
+        "tipo": "geral-am"
     },
     {
-        "titulo": "Introdução ao React pt.1",
+        "titulo": "Introducao ao React pt.1",
         "horario": "10:00",
         "responsavel": "Matheus Procópio",
-        "tipo": "web-a" // web avançado
+        "duracao:": 120,
+        "tipo": "web-a" // web avancado
     },{
         "titulo": "Pausa",
         "horario": "12:00",
         "responsavel": "",
+        "duracao": 90,
         "tipo":"web-a"
     },
     {
-        "titulo": "Introdução ao React pt.2",
+        "titulo": "Introducao ao React pt.2",
         "horario": "13:30",
         "responsavel": "Matheus Procópio",
+        "duracao": 120,
         "tipo": "web-a"
     },
     {
-        "titulo": "Introdução a Desenvolvimento Web pt.1",
+        "titulo": "Introducao a Desenvolvimento Web pt.1",
         "horario": "10:00",
         "responsavel": "Mariana Mendes e Vitória Heliane",
+        "duracao": 120,
         "tipo": "web-b" // web básico
     },
     {
         "titulo": "Pausa",
         "horario": "12:00",
         "responsavel": "",
+        "duracao": 90,
         "tipo":"web-b"
     },
     {
-        "titulo": "Introdução a Desenvolvimento Web pt.2",
+        "titulo": "Introducao a Desenvolvimento Web pt.2",
         "horario": "13:30",
         "responsavel": "Mariana Mendes e Vitória Heliane",
+        "duracao": 60,
         "tipo": "web-b"
     },
     {
         "titulo": "Como contribuir para projetos Open Source (Git + Github)",
         "horario": "14:30",
         "responsavel": "Lucas de Medeiros",
+        "duracao": 60,
         "tipo": "web-b"
     },
     {
-        "titulo": "Além dos algoritmos: Como se preparar para processos e entrevistas",
+        "titulo": "Alem dos algoritmos: Como se preparar para processos e entrevistas",
         "horario": "10:00",
-        "responsavel": "Júlio Leitão",
+        "responsavel": "Júlio Leitao",
+        "duracao": 60,
         "tipo":"esp" //especifico
     },
     {
-        "titulo": "3000 anos em 30 minutos: Otimização de algoritmos em problemas reais",
+        "titulo": "3000 anos em 30 minutos: Otimizacao de algoritmos em problemas reais",
         "horario": "11:00",
         "responsavel": "Gabriel Felipe",
+        "duracao": 60,
         "tipo":"esp" //especifico
     },
     {
         "titulo": "Pausa",
         "horario": "12:00",
         "responsavel": "",
+        "duracao": 90,
         "tipo":"esp" //especifico
     },
     {
         "titulo": "Dados Abertos",
         "horario": "13:30",
         "responsavel": "Lorena Pereira",
+        "duracao": 60,
         "tipo":"esp" //especifico
     },
     {
         "titulo": "Oportunidades em Open Source",
         "horario": "14:30",
-        "responsavel": "José Renan",
+        "responsavel": "Jose Renan",
+        "duracao": 60,
         "tipo":"esp" //especifico
     },
     {
         "titulo": "Demos de projetos Open Source",
         "horario": "15:30",
         "responsavel": "",
-        "tipo": "geral"
+        "duracao": 30,
+        "tipo": "geral-pm"
     },
     {
         "titulo":"Pausa",
         "horario": "16:00",
         "responsavel": "",
-        "tipo": "geral"
+        "duracao": 15,
+        "tipo": "geral-pm"
     },
     {
         "titulo": "HackTime",
         "horario": "16:15",
         "responsavel": "",
-        "tipo": "geral"
+        "duracao": 105,
+        "tipo": "geral-pm"
     },
     {
-        "titulo": "Encerramento e Premiação",
+        "titulo": "Encerramento e Premiacao",
         "horario": "18:00",
         "responsavel": "",
-        "tipo": "geral"
+        "tipo": "geral-pm"
     }
 ]

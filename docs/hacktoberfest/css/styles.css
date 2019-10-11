@@ -18,6 +18,10 @@ ul, li {
   list-style-type: none;
 }
 
+h3 {
+  font-weight: normal;
+}
+
 html { 
   font-size: calc(1em + 1vw);
 }
@@ -25,18 +29,20 @@ html {
 body {
   font-family: 'mayhem', sans-serif;
   background-color:#383E3D;
-  max-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   color: #f2ecd9;
+  overflow-x: hidden;
 }
 
 section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* navbar */
@@ -81,7 +87,7 @@ header {
 /* SESSAO HOME */
 
 #home {
-  margin-top: 20px;  
+  margin-top: 30px;  
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px; 
@@ -221,8 +227,6 @@ header {
 /* SESSAO SOBRE */
 
 #about {
-  display: flex;
-  flex-direction: column;
   margin-top: 100px;
   max-width: 900px;
 }
@@ -236,7 +240,6 @@ header {
 }
 
 #about h3 {
-  font-weight: normal;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
@@ -258,10 +261,50 @@ header {
 
 /* CRONOGRAMA */
 
+.schedule header {
+  text-align: center;
+}
+
+#general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#parallel-activities {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-evenly;
+}
+
+#parallel-activities > div{
+  width: 30%;
+} 
+
+#parallel-activities > div > h3 {
+  margin: 20px 0;
+  font-size: 0.9rem; 
+}
+
+@media screen and (max-width: 760px) {
+  #parallel-activities {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #parallel-activities > div {
+    width: 100%;
+  }
+
+  #general {
+    align-items: baseline;
+  }
+}
+
 .activity {
   display: flex;
   align-items: center;
-  max-width: 300px;
+  margin: 10px 0;
 }
 
 .details {
@@ -269,13 +312,12 @@ header {
 }
 
 .details h3 {
-  font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.6rem;
 }
 
 .details p {
   font-family: 'Lato', sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.4rem;
   color: #71b3c2;
   margin-top: 10px;
   font-weight: bold;
@@ -286,8 +328,36 @@ header {
   width: fit-content;
   padding: 5px;
   text-align: center;
-}
-
-.start-time .hour {
   font-size: 0.8rem;
 }
+
+@media screen and (max-width: 768px) {
+  .details h3 {
+    font-size: 0.9rem;
+  }
+
+  .details p {
+    font-size: 0.6rem;
+    margin-top: 5px;
+  }
+}
+
+.break {
+  display: flex;
+  margin: 15px 0;
+  color: #2b3131;
+  background-color: #f2ecd9; 
+}
+
+.break .start-time {
+  padding: 0 5px;
+}
+
+.break .details h3  {
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+
+
+

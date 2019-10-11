@@ -72,40 +72,64 @@
       <section id="about">
         <div>
           <h3>SOBRE O HACKTOBERFEST</h3>
-          <p>O <a href="https://hacktoberfest.digitalocean.com/" target="_blank">Hacktoberfest</a> é uma celebração mundial da comunidade Open Source que ocorre durante o mês de outubro para incentivar a
-             contribuição em projetos de código aberto. E o mais legal: Não importa seu nível de conhecimento, sempre tem uma forma de
-              contribuir nos repositórios que participam do evento (desde programação até documentação).
+          <p>O <a href="https://hacktoberfest.digitalocean.com/" target="_blank">Hacktoberfest</a> é realizado ao longo de todo o mês de outubro, 
+            engajando estudantes e desenvolvedores em atividades e iniciativas voltadas ao open source. Além das muitas experiências possibilitadas 
+            pelo evento, os participantes ganham camisetas, adesivos e outros mimos como forma de incentivo às suas contribuições. 
+            A cada ano o Hacktoberfest ganha proporções maiores, demonstrando o impacto crescente da comunidade open source.
           </p>
         </div>
         <div>
           <h3>O EVENTO</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque finibus lacus id tristique. Phasellus ac arcu
-             efficitur, elementum velit cursus, scelerisque justo. Maecenas placerat aliquet metus eget luctus. Maecenas faucibus nisl 
-             pharetra ante sollicitudin consectetur</p>
+          <p>Nesse ano, a OpenDevUFCG quer levar o Hacktoberfest para ainda mais perto dos alunos de Computação@UFCG. 
+            Com patrocínio da VTEX e apoio de X, X e X, o evento será realizado no dia 19 de outubro e contará com programação 
+            para o dia inteiro envolvendo palestras, minicursos, trocas de experiência e muito mais.</p>
         </div>
       </section>
       <!-- SESSÃO CRONOGRAMA -->
       <section class="schedule">
-        <div id="geral">
+        <header>
+          <h3>CRONOGRAMA</h3>
+        </header>
+        <main>
+          <div id="general">
+            <div id="geral-am"></div>
+            <!-- MODELO DE UM HORARIO -->
+            <div class="activity" id="activity-template">
+              <div class="start-time">
+                <p class="hour"></p>
+                <p class="minutes"></p>
+              </div>
+              <div class="details">
+                <h3 class="title"></h3>
+                <p class="speaker"></p>
+              </div>
+            </div>
+            
+            <div class="activity break" id="break-template">
+                <div class="start-time">
+                  <p class="hour"></p>
+                  <p class="minutes"></p>
+                </div>
+                  <div class="details">
+                    <h3 class="title"></h3>
+                  </div>
+              </div>
 
-          <!-- MODELO DE UM HORARIO -->
-          <div class="activity">
-            <div class="start-time">
-              <p class="hour">09</p>
-              <p class="minutes">30</p>
-            </div>
-            <div class="details">
-              <h3 class="title">Introducao a Git</h3>
-              <p class="speaker">Lucas de Medeiros</p>
-            </div>
+              <div id="parallel-activities">
+                <div id="web-b">
+                  <h3>Minicursos</h3>
+                </div>
+                <div id="web-a">
+                    <h3>Minicursos</h3>
+                </div>
+                <div id="esp">
+                    <h3>Palestras</h3>
+                </div>
+
+              </div>
+              <div id="geral-pm"></div>
           </div>
-
-            <div id="parallel-activities">
-              <div id="web-b"></div>
-              <div id="web-a"></div>
-              <div id="esp"></div>
-            </div>
-        </div>
+        </main>
       </section>
       <!-- SESSÃO LOCALIZAÇÃO  -->
       <section class="localization"></section>
@@ -113,8 +137,9 @@
       <section class="footer">
       </section>
     </div>
-
+    <script src="data/atividades.js"></script>
     <script src="js/counter.js"></script>
+    <script src="js/app.js"></script>
     <script src="../sw-register.js"></script>
   </body>
 </html>
