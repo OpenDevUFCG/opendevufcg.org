@@ -83,7 +83,7 @@ const atividades = [
         "tipo":"esp" //especifico
     },
     {
-        "titulo": "Dados Abertos",
+        "titulo": "Dados, dados abertos e narrativas",
         "horario": "13:30",
         "responsavel": "Lorena Pereira",
         "duracao": 60,
