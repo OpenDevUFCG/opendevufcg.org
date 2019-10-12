@@ -13,7 +13,7 @@
   // Registro de rota para realizar cache de imagens
   workbox.routing.registerRoute(
     /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
-    new workbox.strategies.StaleWhileRevalidate({
+    new workbox.strategies.NetworkFirst({
       cacheName: "images",
       plugins: [
         new workbox.expiration.Plugin({
