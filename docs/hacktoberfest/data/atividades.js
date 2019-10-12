@@ -104,14 +104,14 @@ const atividades = [
         "tipo": "geral-pm"
     },
     {
-        "titulo":"Pausa",
+        "titulo":"Pausa pro cafezinho",
         "horario": "16:00",
         "responsavel": "",
         "duracao": 15,
         "tipo": "geral-pm"
     },
     {
-        "titulo": "HackTime",
+        "titulo": "HackTime:  Hora da aventura!",
         "horario": "16:15",
         "responsavel": "",
         "duracao": 105,

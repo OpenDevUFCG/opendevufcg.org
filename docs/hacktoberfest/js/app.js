@@ -1,7 +1,3 @@
-const basicWeb = document.getElementById('web-b')
-const  advancedWeb = document.getElementById('web-a')
-const specifics = document.getElementById('esp')
-
 const renderActivity = ({titulo, horario, responsavel, duracao}, template) => {
     
     const activity = document.getElementById(template).cloneNode(true)
@@ -12,7 +8,7 @@ const renderActivity = ({titulo, horario, responsavel, duracao}, template) => {
 
     activity.querySelector('.hour').textContent = hour
     activity.querySelector('.minutes').textContent = minutes
-    activity.querySelector('.title').textContent = titulo
+    activity.querySelector('.title').textContent = titulo.toUpperCase()
     if (template != 'break-template')
         activity.querySelector('.speaker').textContent = responsavel
 

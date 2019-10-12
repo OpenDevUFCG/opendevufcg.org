@@ -37,14 +37,31 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+#container {
+  min-height: 100%
+}
+
 section {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 40px auto;
   display: flex;
   padding: 0 2rem;
   flex-direction: column;
   align-items: center;
 }
+
+.section-title {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #f2ecd9;
+}
+
 
 /* navbar */
 
@@ -83,7 +100,7 @@ section {
 
 /* SESSAO HOME */
 
-#home {
+#home-content {
   margin-top: 30px; 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -104,7 +121,7 @@ section {
 
 @media screen and (max-width: 760px) {
 
-  #home {
+  #home-content {
     grid-gap: 15px;
     margin-top: 0;
     grid-template-columns: 1fr;
@@ -149,7 +166,7 @@ section {
 }
 
 @media screen and (max-width: 760px) {
-  #social-midias {
+  .social-midias {
     display: none !important;
   }
 
@@ -197,20 +214,20 @@ section {
 
 /* MIDIAS SOCIAIS */
 
-#social-midias {
+.social-midias {
   grid-area: social-midias;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#social-midias a {
+.social-midias a {
   font-size: 1.2rem;
   margin: 0 1.5vw;
   transition: 0.2s ease;
 }
 
-#social-midias a:hover {
+.social-midias a:hover {
   color: #72b4c1;
   font-size: 1.5rem;
 }
@@ -223,44 +240,42 @@ section {
   max-width: 900px;
 }
 
-#about a {
+#about-content a {
   text-decoration: underline;
 }
 
-#about > div {
+#about-content > div {
   margin-bottom: 50px;
 }
 
-#about h3 {
+#about-content h3 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
-#about p {
+#about-content p {
   font-family: 'Lato', sans-serif;
   font-size: 0.58rem;
+  text-align: justify;
 }
 
 @media screen and (max-width: 760px) {
-  #about h3 {
+  #about {
+    margin-top: 20px;
+  }
+
+  #about-content h3 {
     font-size: 1.3rem;
   }
 
-  #about p {
+  #about-content p {
     font-size: 0.8rem;
   }
 }
 
 /* CRONOGRAMA */
 
-#schedule > header {
-  text-align: center;
-  margin: 50px 0;
-  font-size: 1.3rem;
-  border-bottom: 3px solid #f2ecd9;
-}
-
-#general {
+#main-flow {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,10 +291,32 @@ section {
   width: 30%;
 } 
 
+#geral-am h3, #geral-pm h3 {
+  font-size: 0.9rem;
+}
+
+#geral-am p, #geral-pm p {
+  font-size: 0.8rem;
+}
+
+#geral-am .speaker {
+  font-size: 0.55rem;
+}
+
 #parallel-activities header h3 {
   font-size: 0.9rem;
   margin: 20px 0;
   text-align: center;
+  color: #2b3131;
+  background-color: #f2ecd9;
+  padding: 5px;
+}
+
+.line {
+  width: 100%;
+  background-color: #f2ecd9;
+  height: 3px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 760px) {
@@ -296,11 +333,11 @@ section {
     font-size: 1.1rem;
   }
 
-  #general {
+  #main-flow {
     align-items: baseline;
   }
 
-  #general > div {
+  #main-flow > div {
     width: 100%;
   }
 }
@@ -353,22 +390,25 @@ section {
 /* BREAK TEMPLATE */
 
 .break {
-  margin: 20px 0;
+  margin: 10px 0;
   width: 100%;
   height: fit-content;
   display: flex;
-  color: #2b3131;
-  background-color: #f2ecd9;
   align-items: center;
 }
 
-.break  .start-time {
-  border: none;
+.break .start-time {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.break .details h3  {
+.break .start-time .title {
+  margin-left: 10px;
+}
+
+.break h3  {
   font-size: 0.8rem;
-  margin-left: 20px;
 }
 
 .two-hours {
@@ -386,14 +426,86 @@ section {
 }
 
 /* LOCALIZACAO */
-#localization header {
+
+#map {
+  width: 80vw;
+  height: 60vh;
+}
+
+/* FOOTER */
+footer {
+  background: #2b3131;
+  padding: 1rem 3rem 0rem 3rem;
   text-align: center;
 }
 
-#localization div {
-  height: 80vh;
-  width: 80vw;
+#footer-content {
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
 }
 
+#footer-content div {
+  text-align: center;
+}
 
+#sponsors {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+#sponsors div {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-logo img {
+  height: 100px;
+}
+
+#sponsors p {
+  font-size: 0.8rem;
+}
+
+#sponsors img{
+  height: 70%;
+}
+
+#sponsors a {
+  transition: 0.2s ease;
+}
+
+#sponsors a:hover {
+  transform: scale(1.06)
+}
+
+#copyright {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.5rem;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #footer-content {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #sponsors img {
+    height: 60%;
+  }
+
+  #sponsors p {
+    font-size: 1rem;
+  }
+
+  #footer-logo img {
+    margin-bottom: 15px
+  }
+
+}
 
