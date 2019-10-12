@@ -490,13 +490,17 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+  footer {
+    padding: 1rem 0;
+  }
+
   #footer-content {
     flex-direction: column;
     justify-content: space-evenly;
   }
 
   #sponsors img {
-    height: 60%;
+    height: 45%;
   }
 
   #sponsors p {
@@ -504,6 +508,7 @@ footer {
   }
 
   #footer-logo img {
+    height: 80px;
     margin-bottom: 15px
   }
 
