@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+
+jobs:
+    - stage: deploy
+      if: branch = master
+      name: "Deploy to gh-pages"
+      script: skip
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        keep-history: true
+        local_dir: docs
+        fqdn: opendevufcg.org
+        on:
+           branch: master
