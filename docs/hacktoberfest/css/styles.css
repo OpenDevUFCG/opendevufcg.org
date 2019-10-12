@@ -445,8 +445,18 @@ footer {
   justify-content: space-around;
 }
 
+#footer-logo a {
+  width:  20%;
+  height: auto;
+  transition: all 0.2s ease;
+}
+
+#footer-logo a:hover {
+  transform: scale(1.08)
+}
+
 #footer-logo img {
-  height: 100px;
+  width: 100%;
 }
 
 #sponsors {
@@ -466,8 +476,19 @@ footer {
   height: 100%;
 }
 
-#sponsors img{
+#sponsors a {
+  display: flex;
+  justify-content: center;
   height: 60%;
+  transition: 0.2s ease;
+}
+
+#sponsors a:hover {
+  transform: scale(1.08)
+}
+
+#sponsors img {
+  height: 100%;
 }
 
 #copyright {
@@ -487,8 +508,13 @@ footer {
     justify-content: space-evenly;
   }
 
-  #sponsors img {
+  #sponsors a {
     width: 40%;
+    height: auto;
+  }
+
+  #sponsors img {
+    width: 100%;
     height: auto;
   }
 
