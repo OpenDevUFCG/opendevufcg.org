@@ -29,6 +29,7 @@ html {
 
 body {
   font-family: 'mayhem', sans-serif;
+  letter-spacing: 0.05rem;
   background-color:#383E3D;
   display: flex;
   flex-direction: column;
