@@ -4,14 +4,14 @@ const atividades = [
         "horario": "08:30",
         "responsavel": "",
         "duracao":  30, //minutos
-        "tipo": "geral-am"
+        "tipo": "general-am"
     },
     {
         "titulo": "Boas-vindas e Apresentacao do Evento",
         "horario": "09:00",
         "responsavel": "Thayanne Souza",
         "duracao": 60,
-        "tipo": "geral-am"
+        "tipo": "general-am"
     },
     {
         "titulo": "Introducao ao React pt.1",
@@ -101,27 +101,27 @@ const atividades = [
         "horario": "15:30",
         "responsavel": "",
         "duracao": 30,
-        "tipo": "geral-pm"
+        "tipo": "general-pm"
     },
     {
         "titulo":"Pausa pro cafezinho",
         "horario": "16:00",
         "responsavel": "",
         "duracao": 15,
-        "tipo": "geral-pm"
+        "tipo": "general-pm"
     },
     {
         "titulo": "HackTime:  Hora da aventura!",
         "horario": "16:15",
         "responsavel": "",
         "duracao": 105,
-        "tipo": "geral-pm"
+        "tipo": "general-pm"
     },
     {
         "titulo": "Encerramento e Premiacao",
         "horario": "18:00",
         "responsavel": "",
         "duracao": 20,
-        "tipo": "geral-pm"
+        "tipo": "general-pm"
     }
 ]

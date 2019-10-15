@@ -25,7 +25,7 @@
   <body>
       <!-- SESSÃO TELA INICIAL -->
     <header>
-      <ul class="navbar">
+      <ul id="navbar">
         <li><a href="#about">EVENTO</a></li>
         <li><a href="#schedule">CRONOGRAMA</a></li>
         <li><a href="#localization">LOCALIZACAO</a></li>
@@ -33,9 +33,16 @@
       </ul>
     </header>
     <section id="home">
-      <main id="home-content">
+      <main>
         <div id="logo">
           <img src="./assets/img/logo.svg">
+        </div>
+        <div id="event-info">
+          <p id="event-date">19 de outubro de 2019</p>
+          <p id="event-description">Dessa vez, o Hacktoberfest não vai ser somente online!</p>
+          <a id="subscribe-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdLoEOwhtNoPOGB-yykUM8Vh3GP1RcpprzSvlRI9nJ3lyuVMA/viewform" target="_blank" >
+            INSCREVA-SE!  VAGAS LIMITADAS
+          </a>
         </div>
         <div id="counter">
           <div id="display">
@@ -58,21 +65,14 @@
               <span id="seconds"></span>
               <span class="counter-label">Segundos</span>
             </div>
+          </div>
         </div>
-      </div>
-          <div class='social-midias'>
-              <a href="http://twitter.com/opendevufcg" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/opendevufcg/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://github.com/OpenDevUFCG" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://dev.to/opendevufcg" target="_blank"><i class="fab fa-dev"></i></i></a>
-        </div>
-        <div id="event-info">
-          <p id="event-date">19 de outubro de 2019</p>
-          <p id="event-description">Dessa vez, o Hacktoberfest não vai ser somente online!</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLoEOwhtNoPOGB-yykUM8Vh3GP1RcpprzSvlRI9nJ3lyuVMA/viewform" target="_blank" >
-            <div id="subscribe-btn">INSCREVA-SE!  VAGAS LIMITADAS</div>
-          </a>
-        </div>
+        <div class='social-midias'>
+            <a href="http://twitter.com/opendevufcg" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/opendevufcg/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/OpenDevUFCG" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://dev.to/opendevufcg" target="_blank"><i class="fab fa-dev"></i></i></a>
+         </div>
       </main>
     </section>
     <!-- SESSÃO SOBRE O EVENTO -->
@@ -105,7 +105,7 @@
       </header>
       <main>
         <div id="main-flow">
-          <div id="geral-am">
+          <div id="general-am">
             <main></main>
           </div>
 
@@ -129,8 +129,8 @@
                 <main></main>
             </div>
           </div>
-          <div class="line"></div>
-          <div id="geral-pm">
+          <div id="bottom-line"></div>
+          <div id="general-pm">
             <main></main>
           </div>
         </div>
@@ -153,7 +153,7 @@
                     <span class="hour"></span>
                     <span>:</span>
                     <span class="minutes"></span>
-                      <h3 class="title"></h3>
+                    <h3 class="title"></h3>
                   </div>
               </div>
         </div>
@@ -165,7 +165,7 @@
         <h3>LOCALIZACAO</h3>
       </header>
       <main>
-        <iframe id ="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.1229886131034!2d-35.90863294212522!3d-7.212756698698225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1fcd9e578cbb%3A0x9390eee9ee6305a7!2sBloco%20CP1%20-%20Edif%C3%ADcio%20Professor%20Camilo%20de%20Lelis%20Gondim%20Medeiros!5e0!3m2!1spt-BR!2sbr!4v1570821382827!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.1229886131034!2d-35.90863294212522!3d-7.212756698698225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1fcd9e578cbb%3A0x9390eee9ee6305a7!2sBloco%20CP1%20-%20Edif%C3%ADcio%20Professor%20Camilo%20de%20Lelis%20Gondim%20Medeiros!5e0!3m2!1spt-BR!2sbr!4v1570821382827!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </main>
     </section>
     <!-- FOOTER -->
@@ -177,7 +177,7 @@
           </a>
         </div>
         <div id="sponsors">
-          <p>Patrocinadores</p>
+          <p>PATROCINADORES</p>
           <div>
             <a href="http://www.computacao.ufcg.edu.br" target="_blank">
               <img src="./assets/img/computacao.svg" alt="icone computação">

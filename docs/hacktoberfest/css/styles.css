@@ -29,21 +29,11 @@ html {
 
 body {
   font-family: 'mayhem', sans-serif;
+  letter-spacing: 0.05rem;
   background-color:#383E3D;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   color: #f2ecd9;
-  overflow-x: hidden;
-}
-
-html, body {
-  height: 100%;
-  position: relative;
-}
-
-#container {
-  min-height: 100%
 }
 
 section {
@@ -56,30 +46,27 @@ section {
 }
 
 .section-title {
-  text-align: center;
   margin: 50px 0;
   font-size: 1.3rem;
   border-bottom: 3px solid #f2ecd9;
 }
 
 
-/* navbar */
+/* NAVBAR */
 
-.navbar {
-  height: 15vh;
+#navbar {
   padding: 30px 15px;
-   display: flex;
-   font-size: 0.8rem;
-   width: 100%;
-   justify-content: flex-end;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: flex-end;
 }
 
-.navbar  li {
-    margin: 0 1.5vw;
-    transition: all 0.2s ease;
+#navbar  li {
+  margin: 0 1.5vw;
+  transition: all 0.2s ease;
 }
 
-.navbar li:hover {
+#navbar li:hover {
   transform: scale(1.08)
 }
 
@@ -98,30 +85,21 @@ section {
   transform: scale(1.08)
 }
 
-/* SESSAO HOME */
+/* SECAO HOME */
 
-#home-content {
-  margin-top: 30px; 
+#home main {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px; 
-  grid-template-areas: 
+  grid-gap: 40px;
+  grid-template-areas:
   "logo event-info"
   "counter social-midias";
 }
 
-#logo {
-  grid-area: logo;
-  text-align: center;
-}
-
-#logo img {
-  width: 90%;
-}
-
 @media screen and (max-width: 760px) {
 
-  #home-content {
+  #home main {
     grid-gap: 15px;
     margin-top: 0;
     grid-template-columns: 1fr;
@@ -132,14 +110,25 @@ section {
   }
 }
 
-/* EVENT INFO */
+/* logo area*/
+
+#logo {
+  grid-area: logo;
+  text-align: center;
+}
+
+#logo img {
+  width: 90%;
+}
+
+/* event-info grid area*/
 
 #event-info {
   grid-area: event-info;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 25px;
+  justify-content: center;
 }
 
 #event-date {
@@ -154,7 +143,7 @@ section {
 
 #subscribe-btn {
   border-radius: 5px;
-  background-color: #f2ecd9; 
+  background-color: #f2ecd9;
   color: #383E3D;
   padding: 0.5rem 0.7rem;
   margin-top: 2rem;
@@ -166,13 +155,9 @@ section {
 }
 
 @media screen and (max-width: 760px) {
-  .social-midias {
-    display: none !important;
-  }
 
   #event-info {
     text-align: center; 
-    padding-top: 0;
   }
 
   #event-description {
@@ -184,7 +169,7 @@ section {
   }
 }
 
-/* CONTADOR */
+/* counter grid area */
 
 #counter {
   grid-area: counter;
@@ -194,6 +179,7 @@ section {
 }
 
 #display {
+  height: fit-content;
   display: flex;
   padding: 5px;
   border: 4px solid #f2ecd9;
@@ -212,7 +198,7 @@ section {
     font-size: 0.6rem;
 }
 
-/* MIDIAS SOCIAIS */
+/* social-midias grid area */
 
 .social-midias {
   grid-area: social-midias;
@@ -221,19 +207,25 @@ section {
   align-items: center;
 }
 
-.social-midias > a {
+.social-midias a {
   font-size: 1.2rem;
   margin: 0 1.5vw;
   transition: 0.2s ease;
 }
 
-.social-midias > a:hover {
+.social-midias a:hover {
   color: #72b4c1;
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 760px) {
 
-/* SESSAO SOBRE */
+  .social-midias {
+    display: none !important;
+  }
+}
+
+/* SECAO SOBRE */
 
 #about {
   margin-top: 100px;
@@ -244,12 +236,11 @@ section {
   text-decoration: underline;
 }
 
-#about-content > div {
+#about-content div {
   margin-bottom: 50px;
 }
 
 #about-content h3 {
-  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -260,12 +251,9 @@ section {
 }
 
 @media screen and (max-width: 760px) {
+
   #about {
     margin-top: 20px;
-  }
-
-  #about-content h3 {
-    font-size: 1.3rem;
   }
 
   #about-content p {
@@ -273,12 +261,20 @@ section {
   }
 }
 
-/* CRONOGRAMA */
+/* SECAO CRONOGRAMA */
 
 #main-flow {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#general-am h3, #general-pm h3 {
+  font-size: 0.9rem;
+}
+
+#general-am .speaker {
+  font-size: 0.55rem;
 }
 
 #parallel-activities {
@@ -287,20 +283,8 @@ section {
   justify-content: space-evenly;
 }
 
-#parallel-activities > div{
+#parallel-activities > div {
   width: 30%;
-} 
-
-#geral-am h3, #geral-pm h3 {
-  font-size: 0.9rem;
-}
-
-#geral-am p, #geral-pm p {
-  font-size: 0.8rem;
-}
-
-#geral-am .speaker {
-  font-size: 0.55rem;
 }
 
 #parallel-activities header h3 {
@@ -312,7 +296,7 @@ section {
   padding: 5px;
 }
 
-.line {
+#bottom-line {
   width: 100%;
   background-color: #f2ecd9;
   height: 3px;
@@ -320,18 +304,6 @@ section {
 }
 
 @media screen and (max-width: 760px) {
-  #parallel-activities {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #parallel-activities > div {
-    width: 100%;
-  }
-
-  #parallel-activities > div > h3 {
-    font-size: 1.1rem;
-  }
 
   #main-flow {
     align-items: baseline;
@@ -340,9 +312,19 @@ section {
   #main-flow > div {
     width: 100%;
   }
+
+  #parallel-activities {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #parallel-activities > div {
+    width: 100%;
+  }
 }
 
-/* ACTIVITY TEMPLATE */
+/* TEMPLATES */
+/* activity-template */
 
 .activity {
   display: flex;
@@ -355,7 +337,7 @@ section {
 }
 
 .details h3 {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
 }
 
 .details p {
@@ -373,21 +355,22 @@ section {
 }
 
 @media screen and (max-width: 760px) {
+
+  .activity {
+    margin-bottom: 15px; 
+  }
+
   .details h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .details p {
     font-size: 0.6rem;
     margin-top: 5px;
   }
-
-  .activity {
-    margin-bottom: 10px; 
-  }
 }
 
-/* BREAK TEMPLATE */
+/* break-template */
 
 .break {
   margin: 10px 0;
@@ -403,11 +386,8 @@ section {
   justify-content: center;
 }
 
-.break .start-time .title {
+.break h3 {
   margin-left: 10px;
-}
-
-.break h3  {
   font-size: 0.8rem;
 }
 
@@ -416,28 +396,25 @@ section {
 }
 
 @media screen and (max-width: 760px) {
-  .break {
-    margin: 10px 0;
-  }
 
   .two-hours {
     height: 3rem;
   }
 }
 
-/* LOCALIZACAO */
+/* SECAO LOCALIZACAO */
 
-#map {
+#localization iframe {
   width: 80vw;
   height: 60vh;
 }
 
 /* FOOTER */
+
 footer {
   background: #2b3131;
   padding: 1rem 1rem 0 1rem;
   text-align: center;
-  width: 100vw;
 }
 
 #footer-content {
@@ -462,23 +439,16 @@ footer {
 #sponsors {
   display: flex;
   flex-direction: column;
-  text-align: center;
-}
-
-#sponsors p {
-  font-size: 0.8rem;
 }
 
 #sponsors div {
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
   height: 100%;
 }
 
 #sponsors a {
   display: flex;
-  justify-content: center;
   height: 60%;
   transition: 0.2s ease;
 }
@@ -494,38 +464,22 @@ footer {
 #copyright {
   font-family: 'Lato', sans-serif;
   font-size: 0.5rem;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 @media screen and (max-width: 768px) {
 
-  footer {
-    padding: 1rem 0;
-  }
-
   #footer-content {
     flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  #sponsors a {
-    width: 45%;
-    height: auto;
   }
 
   #sponsors img {
     width: 100%;
-    height: auto;
-  }
-
-  #sponsors p {
-    font-size: 1rem;
   }
 
   #footer-logo img {
-    height: 80px;
+    width: 40%;
     margin-bottom: 15px
   }
-
 }
 
