@@ -155,6 +155,24 @@ section:nth-child(even) .sessao-subtitulo {
   margin-top: 5%;
 }
 
+[data-anime]{
+  opacity: 0;
+  transition: 0.6s;
+}
+
+[data-anime="esquerda"]{
+  transform: translate3d(-40px, 0, 0);
+}
+
+[data-anime="direita"]{
+  transform: translate3d(40px, 0, 0);
+}
+
+[data-anime].anima{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 /* SOBRE NOS */
 
 .sobre .topicos {
