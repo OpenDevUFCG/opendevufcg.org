@@ -147,12 +147,11 @@ section {
   color: #383E3D;
   padding: 0.5rem 0.7rem;
   margin-top: 2rem;
-  transition: all 0.2s ease;
 }
 
-#subscribe-btn:hover {
+/* #subscribe-btn:hover {
   transform: scale(1.08)
-}
+} */
 
 @media screen and (max-width: 760px) {
 
