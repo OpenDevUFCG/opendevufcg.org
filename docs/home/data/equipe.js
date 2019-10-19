@@ -46,5 +46,13 @@ const equipe = [
   {
     "nome": 'Ivyna Santino',
     "url_github": 'https://github.com/ivynasantino',
+  },
+  {
+    "nome": "Jessé Souza",
+    "url_github": "https://github.com/jessescn"
+  },
+  {
+    "nome": "Rayla Medeiros",
+    "url_github": "https://github.com/RaylaMedeiros"
   }
 ]
