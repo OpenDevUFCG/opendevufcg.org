@@ -20,7 +20,7 @@ const atividades = [
         "duracao": 120,
         "tipo": "web-a" // web avancado
     },{
-        "titulo": "Pausa",
+        "titulo": "Pausa - Just Dance",
         "horario": "12:00",
         "responsavel": "",
         "duracao": 90,
@@ -41,7 +41,7 @@ const atividades = [
         "tipo": "web-b" // web básico
     },
     {
-        "titulo": "Pausa",
+        "titulo": "Pausa - Just Dance",
         "horario": "12:00",
         "responsavel": "",
         "duracao": 90,
@@ -76,7 +76,7 @@ const atividades = [
         "tipo":"esp" //especifico
     },
     {
-        "titulo": "Pausa",
+        "titulo": "Pausa - Just Dance",
         "horario": "12:00",
         "responsavel": "",
         "duracao": 90,

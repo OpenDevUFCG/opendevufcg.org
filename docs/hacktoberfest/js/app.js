@@ -20,8 +20,8 @@ const renderActivity = ({titulo, horario, responsavel, duracao}, template) => {
 const renderAllActivities = () => {
     atividades.forEach(activity => {
 
-        const { titulo } = activity;        
-        const template = titulo == 'Pausa' ? 'break-template'  :  'activity-template'
+        const { titulo } = activity;                
+        const template = titulo.includes('Pausa') ? 'break-template'  :  'activity-template'
         
         document.querySelector( '#' + activity.tipo + " main").appendChild(renderActivity(activity, template))        
     });
