@@ -23,10 +23,10 @@ const convertTime = () => {
     const currentDate = new Date().getTime()
     const interval  = countdownDate - currentDate
 
-    const days = Math.floor(interval / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((interval % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((interval % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((interval % (1000 * 60)) / 1000);
+    const days = interval <= 0 ? 0 : Math.floor(interval / (1000 * 60 * 60 * 24));
+    const hours = interval <= 0 ? 0 : Math.floor((interval % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = interval <= 0 ? 0 : Math.floor((interval % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = interval <= 0 ? 0 : Math.floor((interval % (1000 * 60)) / 1000);
     
     return {
         interval,
@@ -36,5 +36,7 @@ const convertTime = () => {
         seconds
     }
 }
+
+
 
 renderTimer()
