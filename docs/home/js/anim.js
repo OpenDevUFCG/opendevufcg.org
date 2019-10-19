@@ -16,7 +16,7 @@ function animeScroll(){
             element.classList.remove(animationClass);
         }
     })
-}
+} 
 
 // Acionando a função para caso de browsers antigos ou bugs no js
 animeScroll();

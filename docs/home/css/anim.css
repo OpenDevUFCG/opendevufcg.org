@@ -13,7 +13,7 @@
   
 [data-anime="baixo"]{
   transform: translate3d(0, 40px, 0);
-}
+} 
 
 [data-anime].anima{
   opacity: 1;
