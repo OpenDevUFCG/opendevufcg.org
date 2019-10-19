@@ -17,7 +17,7 @@ const parseValue = (value) => {
 } 
 
 const convertTime = () => {
-    const eventDate = 'Oct 19, 2019 09:00:00'
+    const eventDate = 'Oct 19, 2019 08:30:00'
 
     const countdownDate = new Date(eventDate).getTime()
     const currentDate = new Date().getTime()
