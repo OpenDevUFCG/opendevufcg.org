@@ -224,10 +224,12 @@ section:nth-child(even) .sessao-subtitulo {
   max-width: 250px;
 }
 
-.projeto-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-  margin: 10px 2vw 0  2vw;
-  transform: scale(1.04);
+@media screen and (min-width: 750px) {
+  .projeto-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    margin: 10px 2vw 0  2vw;
+    transform: scale(1.04);
+  }
 }
 
 @media screen and (min-width: 750px) {
