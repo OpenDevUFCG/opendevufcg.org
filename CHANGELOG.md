@@ -5,6 +5,14 @@ O formato foi baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0
 e esse projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/spec/v2.0.0.html).
 
 ## [Não publicado]
+## [1.3.3] - 20/10/2019
+### Adicionado
+- Subtitulo a seção 'Equipe'.
+- Novos maintainers @jessescn e @RaylaMedeiros a seção 'Equipe'.
+ 
+### Removido
+- Efeito _hover_ dos cards de projetos em dispositivos mobile
+
 ## [1.3.2] - 11/10/2019
 - Modificado estratégia de cache `NetworkFirst`.
 - Alteração da página `/hacktoberfest` contendo novas informações sobre o evento (sobre, cronograma, localização e patrocinadores).
