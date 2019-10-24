@@ -52,30 +52,6 @@ body {
   margin: 0;
 }
 
-#message-top-bar {
-  height: 50px;
-  background: #2b3131;
-  display: flex;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
-  cursor: default;
-  text-align: center;
-}
-
-#hacktoberfest-message {
-  margin-right: 5px;
-  text-decoration: none;
-  color: #f2ecd9;
-}
-
-#hacktoberfest-message-link {
-  color: #e45a8b;
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: bold;
-}
-
 @media only screen and (max-width: 728px) {
   .logo {
     width: 100vw;
