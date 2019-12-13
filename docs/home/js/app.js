@@ -33,8 +33,8 @@ const renderProjetos = () => {
   document.getElementById('projeto-template').remove()
 }
 
-const renderEquipe = () => {
-
+const renderEquipe = async () => {
+  const equipe = await inicializarEquipe()
   equipe.forEach(membro => 
     document.querySelector('.equipe').appendChild(renderMembroInfo(membro))
   )

@@ -26,7 +26,5 @@ formatarDadosEquipe = async () => {
 }
 
 const inicializarEquipe = async () => {
-  return (await formatarDadosEquipe().then(async memberListPromises => await Promise.all(memberListPromises).then(memberList=>memberList)))
+  return await formatarDadosEquipe().then(async memberListPromises => await Promise.all(memberListPromises).then(memberList=>memberList))
 }
-
-var equipe = inicializarEquipe()
