@@ -21,19 +21,12 @@ gerarDadosMembro = async (memberLogin) => {
 
 formatarDadosEquipe = async () => {
   const dadosEquipe = await gerarDadosEquipe();
-  console.log(dadosEquipe)
-  let newArray = dadosEquipe.map(memberInfo =>{
-      return gerarDadosMembro(memberInfo.login)
-  })
 
-  return newArray
+  return dadosEquipe.map(member => gerarDadosMembro(member.login))
 }
 
-const inicializarEquipe = () =>{
-  let data = formatarDadosEquipe()
-
-
-  return [] // retornando vazio enquanto o processo de retorno dos dados ainda nao foi corrigido
+const inicializarEquipe = async () => {
+  return (await formatarDadosEquipe().then(async memberListPromises => await Promise.all(memberListPromises).then(memberList=>memberList)))
 }
 
 var equipe = inicializarEquipe()
