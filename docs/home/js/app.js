@@ -34,6 +34,7 @@ const renderProjetos = () => {
 }
 
 const renderEquipe = () => {
+
   equipe.forEach(membro => 
     document.querySelector('.equipe').appendChild(renderMembroInfo(membro))
   )
