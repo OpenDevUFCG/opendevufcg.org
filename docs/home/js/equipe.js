@@ -4,7 +4,7 @@ gerarDadosEquipe = async () =>  {
   const dados = await 
   fetch(`${githubApi}/orgs/opendevufcg/public_members`)
   .then(response => response.json())
-  .catch(error => console.log("Error Team Get" + error))
+  .catch(error => console.error("Erro ao recuperar dados da equipe" + error))
  
   return dados
 }
