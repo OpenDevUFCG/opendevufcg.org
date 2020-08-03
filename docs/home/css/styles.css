@@ -95,15 +95,15 @@ section .sessao-subtitulo {
   text-align: center;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: #263a57;
 }
 
-section:nth-child(even) h2 {
+section:nth-child(odd) h2 {
   color: #f5f5f5;
 }
 
-section:nth-child(even) .sessao-subtitulo {
+section:nth-child(odd) .sessao-subtitulo {
   color: #d3e5ff;
 }
 
@@ -351,4 +351,36 @@ section:nth-child(even) .sessao-subtitulo {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #29677c; 
+}
+
+/* ANDROMEDEV HEADER */
+.andromedev-header {
+  background-color: #282C35;
+}
+
+.andromedev-header img {
+  zoom: .12;
+  margin-left: 50rem;
+  padding-top: 5rem;
+}
+
+.shp-divider {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shp-divider svg {
+  position: relative;
+  display: block;
+  width: calc(125% + 1.3px);
+  height: 50px;
+}
+
+.shp-divider .shape-fill {
+  fill: #282C35;
 }
