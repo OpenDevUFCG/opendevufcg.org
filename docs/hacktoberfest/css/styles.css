@@ -1,484 +1,76 @@
-@font-face {
-  font-family: 'mayhem';
-  src: url('../assets/fonts/mayhem/MAYHEM-Regular.otf')
-}
 
+/* soft reset do css*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration:  none;
-  color: #f2ecd9;
+@font-face {
+  font-family: I_pixel_u;
+  src: url(../assets/fonts/I-pixel-u.ttf);
 }
 
-ul, li {
-  list-style-type: none;
+@font-face {
+  font-family: retro_gaming;
+  src: url(../assets/fonts/Retro-Gaming.ttf);
 }
 
-h3 {
-  font-weight: normal;
-}
 
-html { 
-  font-size: calc(1em + 1vw);
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'mayhem', sans-serif;
-  letter-spacing: 0.05rem;
-  background-color:#383E3D;
+#home {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  color: #f2ecd9;
-}
-
-section {
-  max-width: 1100px;
-  margin: 40px auto;
-  display: flex;
-  padding: 0 2rem;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-title {
-  margin: 50px 0;
-  font-size: 1.3rem;
-  border-bottom: 3px solid #f2ecd9;
-}
-
-
-/* NAVBAR */
-
-#navbar {
-  padding: 30px 15px;
-  display: flex;
-  font-size: 0.8rem;
-  justify-content: flex-end;
-}
-
-#navbar  li {
-  margin: 0 1.5vw;
-  transition: all 0.2s ease;
-}
-
-#navbar li:hover {
-  transform: scale(1.08)
-}
-
-/* botao doar */
-
-.donate-btn {
-  border: 2px solid #f2ecd9;
-  border-radius: 20px;
-  padding: 0.3rem 1.2rem;
-  transition: all 0.2s ease;
-}
-
-.donate-btn:hover {
-  color: #2b3131;
-  background-color: #f2ecd9;
-  transform: scale(1.08)
-}
-
-/* SECAO HOME */
-
-#home main {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  grid-template-areas:
-  "logo event-info"
-  "counter social-midias";
-}
-
-@media screen and (max-width: 760px) {
-
-  #home main {
-    grid-gap: 15px;
-    margin-top: 0;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "logo"
-    "counter"
-    "event-info";
-  }
-}
-
-/* logo area*/
-
-#logo {
-  grid-area: logo;
+  justify-content: center;
   text-align: center;
+  background: linear-gradient(180deg, #121b51, #191650);
+}
+ 
+.retro {
+  font-family: retro_gaming;
 }
 
-#logo img {
-  width: 90%;
-}
-
-/* event-info grid area*/
-
-#event-info {
-  grid-area: event-info;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#event-date {
-  margin-bottom: 15px;
-  width: 100%;
-}
-
-#event-description {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.6rem;
-}
-
-#subscribe-btn {
-  border-radius: 5px;
-  background-color: #f2ecd9;
-  color: #383E3D;
-  padding: 0.5rem 0.7rem;
-  margin-top: 2rem;
-}
-
-/* #subscribe-btn:hover {
-  transform: scale(1.08)
-} */
-
-@media screen and (max-width: 760px) {
-
-  #event-info {
-    text-align: center; 
-  }
-
-  #event-description {
-    font-size: 0.7rem;
-  }
-
-  #event-date {
-    font-size: 1.4rem;
-  }
-}
-
-/* counter grid area */
-
-#counter {
-  grid-area: counter;
-  display: flex;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-#display {
-  height: fit-content;
-  display: flex;
-  padding: 5px;
-  border: 4px solid #f2ecd9;
-  background-color: rgb(43,49,49, 0.7);
-}
-
-#display div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 0.5vw;
-  font-size: 1.8rem;
-}
-
-.counter-label {
-    font-size: 0.6rem;
-}
-
-/* social-midias grid area */
-
-.social-midias {
-  grid-area: social-midias;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-midias a {
-  font-size: 1.2rem;
-  margin: 0 1.5vw;
-  transition: 0.2s ease;
-}
-
-.social-midias a:hover {
-  color: #72b4c1;
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 760px) {
-
-  .social-midias {
-    display: none !important;
-  }
-}
-
-/* SECAO SOBRE */
-
-#about {
-  margin-top: 100px;
-  max-width: 900px;
-}
-
-#about-content a {
-  text-decoration: underline;
-}
-
-#about-content div {
-  margin-bottom: 50px;
-}
-
-#about-content h3 {
-  margin-bottom: 1rem;
-}
-
-#about-content p {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.58rem;
-  text-align: justify;
-}
-
-@media screen and (max-width: 760px) {
-
-  #about {
-    margin-top: 20px;
-  }
-
-  #about-content p {
-    font-size: 0.8rem;
-  }
-}
-
-/* SECAO CRONOGRAMA */
-
-#main-flow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#general-am h3, #general-pm h3 {
-  font-size: 0.9rem;
-}
-
-#general-am .speaker {
-  font-size: 0.55rem;
-}
-
-#parallel-activities {
-  display: flex;
-  margin: 30px 0;
-  justify-content: space-evenly;
-}
-
-#parallel-activities > div {
-  width: 30%;
-}
-
-#parallel-activities header h3 {
-  font-size: 0.8rem;
-  margin: 20px 0;
-  text-align: center;
-  color: #2b3131;
-  background-color: #f2ecd9;
-  padding: 5px;
-}
-
-#bottom-line {
-  width: 100%;
-  background-color: #f2ecd9;
-  height: 3px;
+#home h4 {
+  font-size: 16px;
+  color: #4758b8;
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 760px) {
+#logo {
+  margin: 0 25px;
+}
 
-  #main-flow {
-    align-items: baseline;
+/* timer */
+
+#timer-section {
+  margin-top: 100px;
+}
+
+#timer {
+  border: solid 1px #B6B9F2;
+  display: inline-flex;
+  padding: 20px;
+  color: #B6B9F2;
+  font-size: 25px;
+  font-family: retro_gaming;
+}
+
+.time-label {
+  color: #616a9d;
+}
+
+@media (max-width: 700px) {
+  #home h4 {
+      margin-bottom: 0;
   }
 
-  #main-flow > div {
-    width: 100%;
+  #timer {
+      padding: 15px;
+      font-size: 20px;
   }
 
-  #parallel-activities {
-    display: flex;
-    flex-direction: column;
+  #timer-section {
+      margin-top: 60px;
   }
 
-  #parallel-activities > div {
-    width: 100%;
-  }
 }
-
-/* TEMPLATES */
-/* activity-template */
-
-.activity {
-  display: flex;
-  align-items: center;
-  height: 3rem;
-}
-
-.details {
-  margin-left: 10px;
-}
-
-.details h3 {
-  font-size: 0.55rem;
-}
-
-.details p {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.4rem;
-  color: #71b3c2;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.start-time {
-  border: 2px solid #f2ecd9;
-  padding: 5px;
-  font-size: 0.8rem;
-}
-
-@media screen and (max-width: 760px) {
-
-  .activity {
-    margin-bottom: 15px; 
-  }
-
-  .details h3 {
-    font-size: 0.8rem;
-  }
-
-  .details p {
-    font-size: 0.6rem;
-    margin-top: 5px;
-  }
-}
-
-/* break-template */
-
-.break {
-  margin: 10px 0;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-}
-
-.break .start-time {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.break h3 {
-  margin-left: 10px;
-  font-size: 0.8rem;
-}
-
-.two-hours {
-  height: 6rem;
-}
-
-@media screen and (max-width: 760px) {
-
-  .two-hours {
-    height: 3rem;
-  }
-}
-
-/* SECAO LOCALIZACAO */
-
-#localization iframe {
-  width: 80vw;
-  height: 60vh;
-}
-
-/* FOOTER */
-
-footer {
-  background: #2b3131;
-  padding: 1rem 1rem 0 1rem;
-  text-align: center;
-}
-
-#footer-content {
-  display: flex;
-  justify-content: space-around;
-}
-
-#footer-logo a {
-  width:  20%;
-  height: auto;
-  transition: all 0.2s ease;
-}
-
-#footer-logo a:hover {
-  transform: scale(1.08)
-}
-
-#footer-logo img {
-  width: 100%;
-}
-
-#sponsors {
-  display: flex;
-  flex-direction: column;
-}
-
-#sponsors div {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-}
-
-#sponsors a {
-  display: flex;
-  height: 60%;
-  transition: 0.2s ease;
-}
-
-#sponsors a:hover {
-  transform: scale(1.08)
-}
-
-#sponsors img {
-  height: 100%;
-}
-
-#copyright {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.5rem;
-  margin: 15px 0;
-}
-
-@media screen and (max-width: 768px) {
-
-  #footer-content {
-    flex-direction: column;
-  }
-
-  #sponsors img {
-    width: 100%;
-  }
-
-  #footer-logo img {
-    width: 40%;
-    margin-bottom: 15px
-  }
-}
-
