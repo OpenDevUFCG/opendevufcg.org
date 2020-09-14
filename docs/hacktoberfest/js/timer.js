@@ -1,4 +1,4 @@
-var interval = 0
+let interval = 0
 
 calculateInterval = () => {
     const startDate = new Date()
