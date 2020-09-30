@@ -2,7 +2,7 @@ let interval = 0
 
 calculateInterval = () => {
     const startDate = new Date()
-    const endDate = new Date("October 03, 2020 16:00:00")
+    const endDate = new Date("October 03, 2020 14:00:00")
     interval = endDate - startDate
 }
 
