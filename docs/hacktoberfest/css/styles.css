@@ -1,5 +1,3 @@
-
-/* soft reset do css*/
 * {
   margin: 0;
   padding: 0;
@@ -7,27 +5,265 @@
 }
 
 @font-face {
-  font-family: I_pixel_u;
-  src: url(../assets/fonts/I-pixel-u.ttf);
+    font-family: 'retro-gaming';
+    src: url('../assets/fonts/Retro\ Gaming.ttf');
 }
 
 @font-face {
-  font-family: retro_gaming;
-  src: url(../assets/fonts/Retro-Gaming.ttf);
+  font-family: I_pixel_u;
+  src: url('../assets/fonts/I-pixel-u.ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'roboto-mono';
+    src: url('../assets/fonts/RobotoMono.ttf')
+}
+
+section {
+  width: 80vw;
+  max-width: 1080px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+body {
+    --blue-low-opacity: rgba(18, 27, 81, 0.9);
+    --solid-blue: rgba(18, 27, 81);
+    --light-purple: #B6B9F2;
+    --light-blue: rgba(156,168,240,1);
+    --header-font: #6C75A8;
+    --header-font-hover: #E8EBFF;
+    --solid-light-blue: #9ca8f0;
+    width: 100%;
+    height: 100%;
+    background: #24224f;
+    font-family: 'retro-gaming';
+}
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+
+    padding: 1.25rem 5rem;
+    
+    color: var(--header-font);
+}
+
+.fixed {
+  position: fixed;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.nav-links {
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-links:hover {
+  color: var(--header-font-hover);
+  cursor: pointer;
+}
+
+#more-information {
+  display: inline-block;
+  position: relative;
+}
+
+#more::after {
+  content: url("../assets/img/icons/icon-mais-menu.svg");
+  margin-left: 0.5rem;
+}
+#more:hover::after {
+  content: url("../assets/img/icons/light-icon-mais-menu.svg");
+}
+
+.hidden-content{
+    display: none;
+}
+
+#countdown-timer {
+  gap: 0.5rem;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border: thin solid var(--light-purple);
+  text-align: center;
+}
+
+#countdown-timer span {
+    color: var(--light-purple);
+}
+
+/* FAQ Section */
+
+#faq {
+  color: #fff;
+  padding: 80px 0;
+}
+
+#faq h2 {
+  margin-bottom: 30px;
+}
+
+#faq-container {
+  background: var(--solid-blue);
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+#faq-list {
+  height: 400px;
+  padding: 20px;
+  width: 100%;
+}
+
+.line {
+  width: 40%;
+  border-bottom: 1px solid var(--solid-light-blue)
+}
+
+.faq-item {
+  padding: 10px 0;
+  height: 50%;
+}
+
+.faq-item .question {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.faq-item .answer {
+  color: #A5A9BC;
+  font-size: 0.85em;
+  font-family: 'roboto-mono';
+}
+
+#faq-menu ul {
+  display: flex;
+}
+
+#faq-menu button {
+  border: none;
+  display: flex;
+  align-items:center;
+  background: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid #A5A9BC;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'retro-gaming';
+}
+
+#faq-menu button img {
+  margin-left: 5px;
+}
+
+#faq-menu button:hover {
+  transform: scale(1.05);
+}
+
+#faq-menu ul li {
+  margin: 0 5px;
+  color: #A5A9BC;
+  cursor: pointer;
+}
+
+.btn-active {
+  color: #fff !important;
+}
+
+@media (max-width: 1080px) {
+  .faq-item .question {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item .answer {
+    color: #A5A9BC;
+    font-size: 0.8em;
+    font-family: 'roboto-mono';
+  }
+}
+
+@media (max-width: 768px) {
+
+  #faq-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #faq h2 {
+    text-align: center;
+  }
+
+  #faq-list {
+    height: 400px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .faq-item {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .faq-item .question {
+    font-size:  0.8em;
+  }
+  
+  .faq-item .answer {
+    font-size: 0.7em;
+  }
+
+  #faq-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .faq-item .question {
+    margin-bottom: 5px;
+    font-size:  0.7em;
+  }
+  
+  .faq-item .answer {
+    font-size: 0.6em;
+  }
+
+  #faq-menu {
+    font-size: 0.7em;
+  }
+}
+
+/* Home Section */
 
 #home {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(180deg, #121b51, #191650);
-}
- 
-.retro {
-  font-family: retro_gaming;
+  height: 90vh;
 }
 
 #home h4 {
@@ -52,7 +288,6 @@
   padding: 20px;
   color: #B6B9F2;
   font-size: 25px;
-  font-family: retro_gaming;
 }
 
 .time-label {
@@ -70,7 +305,345 @@
   }
 
   #timer-section {
-      margin-top: 60px;
+      margin-top: 20px;
   }
 
+}
+
+/* Anouncement Section */
+
+#eventAnnouncment {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.announcementMediaContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.box {
+  border: 1px solid var(--solid-light-blue);
+  font-family: I_pixel_u;
+  color: var(--solid-light-blue);
+  text-align: center;
+  padding: 10px;
+  margin: 1.5em 0;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  min-height: 150px;
+}
+
+.box h1 {
+  font-size: 1.4em;
+  line-height: 48, 56px;
+}
+
+#social-media-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#social-media {
+  padding: 0;
+  width: 100%;
+  height: 10%;
+}
+
+.social-media-img {
+  margin: 0.8em;
+  transition: 0.2s ease;
+}
+
+.social-media-img:hover{
+  transform: scale(1.2);    
+}
+
+@media (max-width: 800px) {
+  #eventAnnouncment {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .announcementMediaContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .box {
+    min-height: none;
+  }
+
+  .box h1 {
+    padding: 4px;
+  }
+
+  #social-media {
+    padding: 0;
+    width: 100%;
+    height: 10%;
+  }
+
+  .social-media-img {
+    margin: 0.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .box h1 {
+    font-size: 1em;
+  }
+}
+
+/* Sections */
+
+.section-title {
+  font-family: I_pixel_u; 
+  font-style: normal;
+  font-size: 2em;
+  color: #fff; 
+}
+
+/* Previus Events Section */
+
+#previous-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#previous-events .section-title {
+  margin: 0 0 1.2rem 1.6rem;
+  padding: 0;
+}
+
+.carousel-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  max-width: 1030px;
+  width: 80vw;
+  background: rgba(18, 27, 81, 0.9);
+  overflow: hidden;
+}
+
+.divImg {
+  width: 100%;
+  min-width: 100%;
+  height: 0;
+  padding-bottom: calc(200%/3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+}
+
+#arrow-left {
+  height: 1.8em;
+  width: 1.8em;
+  border: 0.880342px solid #ced2ec;
+  background: #182466;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  left: 1%;
+}
+
+#arrow-right {
+  height: 1.8em;
+  width: 1.8em;
+  border: 0.880342px solid #ced2ec;
+  background: #182466;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  right: 1%;
+}
+
+
+/* About Section */
+
+#about {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  width: 80%;
+}
+
+.info + .info {
+  margin-top: 80px;
+}
+
+.info p {
+  margin-top: 25px;
+  color: #A5A9BC;
+  font-family: 'roboto-mono';
+  line-height: 1.5;
+}
+
+.info a {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px){
+  .info {
+    width: 100%;
+  }
+
+  .info p {
+    font-size: 0.8em;
+  }
+}
+
+
+/* Schedule Section */
+
+#schedule {
+  color: #fff;
+  font-family: 'roboto-mono';
+}
+
+#schedule h2 {
+  margin-bottom: 30px; 
+}
+
+.schedule-item {
+  margin: 10px;
+  padding: 20px;
+}
+
+.schedule-item-title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'retro-gaming';
+  letter-spacing: 1px;
+}
+
+.schedule-item-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30%;
+}
+
+.schedule-item p {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.schedule-item {
+  font-weight: bold;
+}
+
+.schedule-item span {
+  color: #A5A9BC;
+  font-weight: normal;
+}
+
+.schedule-item-subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.days-list {
+  display: flex;
+  justify-content: center;
+}
+
+.day-item {
+  margin: 15px;
+  background: rgba(18, 27, 81, 0.8);
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(100%/3);
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.day-item:hover {
+  transform: scale(1.06);
+}
+
+.day-item-speaker {
+  padding-left: 10px;
+}
+
+.day-item-date {
+  font-family: 'retro-gaming';
+}
+
+.day-item-event-template {
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+
+  .days-list {
+    flex-direction: column;
+  }
+
+  .day-item {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  #schedule h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding-bottom: 20px;
+  color: #6C75A8;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'roboto-mono';
+}
+
+footer img {
+  margin-bottom: 60px;
 }
