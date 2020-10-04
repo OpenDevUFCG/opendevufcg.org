@@ -53,7 +53,7 @@ const schedule = [
                     },
                     {
                         speaker: "Gabriel Tavares",
-                        topic: "Otimização de Código", 
+                        topic: "Como usar os princípios de pesquisa para resolução de problemas", 
                     }
                 ] 
             },
@@ -107,7 +107,7 @@ const schedule = [
                     },
                     {
                         speaker: "Estácio Pereira",
-                        topic: "Introdução a PWA",
+                        topic: "Aproximando a Web de aplicativos nativos",
                     }
                 ]  
             },
