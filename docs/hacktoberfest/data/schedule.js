@@ -25,7 +25,7 @@ const schedule = [
                 events: [
                     { 
                         speaker: "Pedro Espíndula",
-                        topic: "Conceitos iniciais de programação",
+                        topic: "Conceitos base de desenvolvimento Web",
                     }
                 ] 
             },
@@ -76,8 +76,8 @@ const schedule = [
                 date: "Terça (20) - 19h30",
                 events: [
                     {
-                        speaker: "Bea",
-                        topic: "Como estilizar uma página web",
+                        speaker: "Beatriz Albino",
+                        topic: "UX da questão",
                     },
                     {
                         speaker: "Jessé Souza",
