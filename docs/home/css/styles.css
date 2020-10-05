@@ -352,3 +352,29 @@ section:nth-child(even) .sessao-subtitulo {
 ::-webkit-scrollbar-thumb:hover {
   background: #29677c; 
 }
+
+/* hacktoberfest */
+
+@font-face {
+  font-family: 'retro-gaming';
+  src: url('../../hacktoberfest/assets/fonts/Retro Gaming.ttf');
+}
+
+.hacktoberfest-event {
+  font-family: 'retro-gaming';
+  background: #24224f;
+  color: #fff;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+  .hacktoberfest-event h2 {
+    font-size: 1em;
+  }
+}
