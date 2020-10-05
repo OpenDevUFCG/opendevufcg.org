@@ -167,8 +167,7 @@
   /* glitch */
 
 body {
-    --glitch-width: 100vw;
-    --glitch-height: 100vh;
+    --glitch-height: 100%;
     --gap-horizontal: 8px;
     --gap-vertical: 3px;
     --time-anim: 4s;

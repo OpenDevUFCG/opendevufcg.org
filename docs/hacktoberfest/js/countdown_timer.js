@@ -1,4 +1,4 @@
-let interval = 0
+var interval = 0
 
 calculateInterval = () => {
     const startDate = new Date()
@@ -27,17 +27,24 @@ refreshTimer = () => {
 startTimer = () => {
     calculateInterval()
     displayTimer()
-    
+
     setInterval(refreshTimer, 1000);
 }
 
 displayTimer = () => {
     const { days, hours, minutes, seconds } = calculateTime()
 
-    document.getElementById('days').innerHTML = fillZeroes(days)
-    document.getElementById('hours').innerHTML = fillZeroes(hours)
-    document.getElementById('minutes').innerHTML = fillZeroes(minutes)
-    document.getElementById('seconds').innerHTML = fillZeroes(seconds)
+    setValueToTimer('.days', days)
+    setValueToTimer('.hours', hours)
+    setValueToTimer('.minutes', minutes)
+    setValueToTimer('.seconds', seconds)
+}
+
+setValueToTimer = (selector, value) => {
+    const elements = document.querySelectorAll(selector)
+    for(let i = 0; i < elements.length; i++){
+        elements[i].innerHTML = fillZeroes(value)
+    }
 }
 
 

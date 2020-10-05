@@ -1,43 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177856746-1"></script>
-    <script type="module" src="../analytics.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Evento destinado a incentivar a comunidade Open Source na UFCG." />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hacktoberfest OpenDevUFCG">
-    <meta name="twitter:description" content="Evento destinado a incentivar a comunidade Open Source na UFCG.">
-    <meta name="twitter:image" content="https://i.imgur.com/D9dFz4G.png">
-    <meta property="og:image" content="https://i.imgur.com/D9dFz4G.png">
-    <title>Hacktoberfest 2020 - OpendevUFCG</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/glitch.css">
-    <link rel="manifest" href="../manifest.json"/>
-</head>
-<body>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsivity.css">
+    <title>Hacktoberfest 2020</title>
+  </head>
+  <body>
+    <header>
+        <div id="logo-container">
+            <svg id="header-logo" width="200" height="37" viewBox="0 0 200 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M58.4658 11.7544H49.281V13.0637H46.6558V23.5445H49.281V24.8538H58.4658V23.5445H61.091V13.0637H58.4658V11.7544ZM55.8406 20.9237H51.9039V15.6844H55.8406V20.9237ZM74.7746 11.7544H62.9646V24.8538H68.2127V22.233V20.9237H74.7746V19.6145H77.3998V13.0637H74.7746V11.7544ZM72.1494 17.6483H68.2127V15.0276H72.1494V17.6483ZM79.2734 11.7544V24.8538H91.0834V22.233H85.8353V19.6122H88.4605V16.9937H85.8353V14.373H91.0834V11.7522L79.2734 11.7544ZM100.83 11.7544V16.9937H99.5189V14.373H98.2074V11.7522H92.9592V24.8515H98.2074V19.6122H99.5189V22.233H100.83V24.8538H106.079V11.7544H100.83Z" fill="#B6B9F2"/>
+                <path d="M119.63 11.7545H107.82V24.8538H119.63V23.5445H122.256V13.0637H119.63V11.7545ZM117.008 20.9238H113.071V15.6845H117.008V20.9238ZM124.129 11.7545V24.8538H135.939V22.233H130.691V19.6123H133.316V16.9937H130.691V14.373H135.939V11.7522L124.129 11.7545ZM145.688 11.7545V18.3052H143.063V11.7545H137.815V19.6145H139.127V22.2353H141.752V24.856H147V22.2353H149.625V19.6145H150.937V11.7545H145.688Z" fill="#B6B9F2"/>
+                <path d="M156.12 21.9993V14.6091H159.082V20.5208H160.561V14.6091H163.523V21.9993H156.12Z" fill="#4B5CBF"/>
+                <path d="M165.004 21.9993V14.6091H172.409V16.0876H167.966V17.5639H170.928V19.0423H167.966V21.9993H165.004Z" fill="#4B5CBF"/>
+                <path d="M173.89 21.9993V14.6091H181.293V16.0876H176.85V20.5208H181.293V21.9993H173.89Z" fill="#4B5CBF"/>
+                <path d="M182.774 21.9993V14.6091H190.179V16.0876H185.736V20.5208H187.217V17.5639H190.179V21.9993H182.774Z" fill="#4B5CBF"/>
+                <path d="M191.657 21.9993V20.5208H199.062V21.9993H191.657Z" fill="#4B5CBF"/>
+                <path d="M23.5108 31.2336L10.512 18.2589L23.5108 5.2843L18.2537 0.0361023L0 18.2589L18.3251 36.553L23.5108 31.2336Z" fill="#B6B9F2"/>
+                <path d="M12.9966 5.31945L25.9955 18.2941L12.9966 31.2687L18.2537 36.5169L36.5075 18.2941L18.1824 0L12.9966 5.31945Z" fill="#4B5CBF"/>
+                </svg>                
+            <div class="hidden-content" id="burguer-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <ul id="nav-bar">
+                <li class='nav-links'><a href="#home">Home</a></li>
+                <li class='nav-links'><a href="#about">como será?</a></li>
+                <li class='nav-links'><a href="#schedule">cronograma</a></li>
+                <div id="more-information">
+                    <li class='nav-links' id='more'><a>mais</a></li>
+                    <div class="hidden-content">
+                        <li class='nav-links' ><a href="#faq">dúvidas</a></li>
+                        <li class='nav-links' ><a href="#previous-events">Eventos</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div id="countdown-timer-container">
+            <div id="countdown-timer">
+                <span>00d 00h 00m 00s</span>
+            </div>
+        </div>
+        </ul>
+      </nav>
+    </header>
     <section class="crt" id="home">
-        <h4 class="retro">OUTUBRO DE 2020</h4>
-        <img id="logo" src="./assets/imgs/logo.svg" alt="Logo" />
-
-        <div class="content">
-            <div class="glitch">
-                 <div class="glitchit"></div>
-                 <div class="glitchit"></div>
-            </div>
-        </div>
-            
-        <div id="timer-section">
-            <div id="timer">
-                <div id="days"></div> <span class="time-label">d</span> &nbsp
-                <div id="hours"></div> <span class="time-label">h</span> &nbsp
-                <div id="minutes"></div> <span class="time-label">m</span> &nbsp
-                <div id="seconds"></div> <span class="time-label">s</span> &nbsp
-            </div>
-        </div>
-      
+      <h4 class="retro">OUTUBRO DE 2020</h4>
+      <img id="logo" src="./assets/img/logo.svg" alt="Logo" />
+ 
+      <div id="timer-section">
+          <div id="timer">
+              <!-- <div class="days"></div> <span class="time-label">d</span> &nbsp
+              <div class="hours"></div> <span class="time-label">h</span> &nbsp
+              <div class="minutes"></div> <span class="time-label">m</span> &nbsp
+              <div class="seconds"></div> <span class="time-label">s</span> &nbsp -->
+              PARTICIPE
+                
+          </div>
+      </div>
     </section>
-    <script defer src="./js/timer.js"></script> 
+    <section id="anouncement">
+      <div class="announcementMediaContainer">
+        <div class="box">
+          <h1>AS DEFINIÇÕES DE EVENTOS FORAM ATUALIZADAS!</h1>
+        </div>
+        <div>
+          <ul id="social-media-container">
+            <li class="social-media-img">
+              <a href="https://twitter.com/OpenDevUFCG"
+                target="_blank"><img src="./assets/img/social-icons/twitter.svg"
+              /></a>
+            </li>
+            <li class="social-media-img">
+              <a href="https://www.instagram.com/opendevufcg/"
+                target="_blank"><img src="./assets/img/social-icons/instagram.svg"
+              /></a>
+            </li>
+            <li class="social-media-img">
+              <a href="https://discord.com/invite/NQAXzq"
+                target="_blank"><img src="./assets/img/social-icons/discord.svg"
+              /></a>
+            </li>
+            <li class="social-media-img">
+              <a href="https://github.com/OpenDevUFCG"
+                target="_blank"><img src="./assets/img/social-icons/github.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="info">
+        <h2 class="section-title">SOBRE O HACKTOBERFEST</h2>
+        <p>
+          O Hacktoberfest é um evento realizado ao longo de todo o mês de outubro, engajando estudantes e
+          desenvolvedores em atividades e iniciativas voltadas ao open source ao redor do mundo todo. 
+          Além das muitas experiências possibilitadas, muitas organizações oferecem aos participantes 
+          camisetas, adesivos e outros mimos como forma de incentivo a contribuições. A cada ano o 
+          Hacktoberfest ganha proporções maiores, demonstrando o impacto crescente da comunidade open source.
+        </p>
+      </div>
+      <div class="info">
+        <h2 class="section-title">O EVENTO</h2>
+        <p>
+          Com toda a situação causada pelo COVID-19, tivemos que repensar totalmente a estrutura do evento
+          para conseguirmos engajar e passar conhecimentos sobre programação e cultura open source ao mesmo
+          tempo que respeitamos às recomendações de isolamento social. Você pode conferir nosso Code of Conduct
+          através <a target="_blank" href="https://github.com/OpenDevUFCG/opendevufcg.org/blob/master/CODE_OF_CONDUCT.md">desse link</a>.
+        </p>
+      </div>
+      <div class="info">
+        <h2 class="section-title">COMO SERÁ?</h2>
+        <p>
+          Este ano o evento vai durar o MÊS INTEIRO!! é isso mesmo que você leu, vão ser 4 semanas abordando
+          vários temas distintos através de Palestras e Workshops com uma galerinha da massa. Vamos falar de
+          conceitos iniciais, open source, análise de dados, frontend, design e muito mais, e o melhor, TUDO DE GRAÇA!
+          mais barato que uma coxinha do seu Olavo. Fique por dentro de tudo que vai acontecer vendo o cronograma abaixo.
+        </p>
+      </div>
+    </section>
+    <section id="schedule">
+      <h2 class="section-title">CRONOGRAMA</h2>
+      <div id="schedule-container">
+        <div id="schedule-list">
+          <div class="schedule-item schedule-template">
+            <div class="schedule-item-header"> 
+              <p class="schedule-item-title"></p>
+              <p class="schedule-item-topic"></p>
+            </div>
+            <div class="days-list">
+              <div class="day-item day-template">
+                <p class="day-item-date"></p>
+                <div class="day-item-events">
+                  <div class="day-item-event-template">
+                    <p class="day-item-topic"></p>
+                    <p class="day-item-speaker"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+        <h2 class="section-title">DÚVIDAS SOBRE O EVENTO</h2>
+        <div id="faq-container">
+            <div id="faq-list">
+                <div class="faq-item faq-template">
+                    <p class="question"></p>
+                    <p class="answer"></p>
+                </div>
+            </div>
+            <div id="faq-menu">
+                <button class="control-btn next">Próxima seção<img src="./assets/img/icons/carousel-right.svg"/></button>
+                <ul></ul>
+            </div>
+        </div>
+    </section>
+    <section id="previous-events">
+      <div>
+        <h2 class="section-title">EVENTOS ANTERIORES</h2>
+        <div class="carousel-box">
+          <button id="arrow-left">
+            <img src="./assets/img/icons/carousel-left.svg" />
+          </button>
+          <div class="carousel-container">
+            <div class="carousel-slide">
+            </div>
+          </div>
+          <button id="arrow-right">
+            <img src="./assets/img/icons/carousel-right.svg" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <img src="./assets/img/logo-opendevufcg.svg" alt="">
+      <p>Feito com ❤️ por OpendevUFCG + Ovni Design</p>
+    </footer>
+    <script src="./data/frequently_questions.js"></script>
+    <script src="./data/schedule.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/event_schedule.js"></script>
+    <script src="./js/countdown_timer.js"></script>
+    <script src="./js/burguer_menu.js"></script>
+    <script src="./js/carousel-slide.js"></script>
 </body>
 </html>

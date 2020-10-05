@@ -1,0 +1,153 @@
+@media (min-width: 600px) {
+
+    #more-information:hover{
+        flex-direction: column;
+        align-items: center;
+    
+        background-color: var(--solid-blue);
+    }
+    
+    #more-information:hover .hidden-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+    
+        max-width: 100%;
+        background-color: inherit;
+    }
+}
+
+
+@media (max-width: 1060px) {
+    header {
+        padding: 1.25rem 2rem;
+    }
+    
+    .nav-links {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 880px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        width: 100vw;
+
+        align-items: flex-start;
+    }
+    
+    #logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        width: 100%;
+    }
+    
+    #header-logo {
+        width: 13rem;
+    }
+    
+    /* burguer button */
+    #burguer-button {
+        display: grid;
+        gap: .1rem;
+        place-items: center;
+        position: relative;
+
+        height: 1.2rem;
+        cursor: pointer;
+    }
+    
+    #burguer-button span {
+        display: block;
+
+        width: 1.5rem;
+        height: .2rem;
+
+        background-color: var(--light-purple);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    #burguer-button.active span:nth-child(1) {
+        transform-origin: end;
+        transform: rotate(-45deg) translate(-5px, 4px);
+    }
+    
+    #burguer-button.active span:nth-child(2) {
+        transform: translateX(16px);
+        opacity: 0;
+    }
+    
+    #burguer-button.active span:nth-child(3) {
+        transform-origin: center center;
+        transform: rotate(45deg) translate(-6px, -5px);
+    }
+    
+    nav {
+        width: 100%;
+        z-index: 2;
+    }
+    
+    #nav-bar {
+        display: none;
+    }
+    
+    #nav-bar.hidden-content {
+        display: flex;
+        gap: 1rem;
+        overflow: hidden;
+        align-items: center;
+
+        font-size: 0.8rem;
+        background: #24224f;
+    }   
+    
+    #more {
+        display: none;
+    }
+    
+    #more-information, #more-information .hidden-content {
+        display: inherit;
+        flex-direction: inherit;
+        gap: 2rem;
+        align-items: inherit;
+    }
+    
+    .hidden-content {
+        display: block;
+    }
+    
+    #countdown-timer-container {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-bar.hidden-content {
+        flex-direction: column;
+        gap: 2.5rem;
+        font-size: 0.9rem;  
+    }
+
+    #header-logo {
+        width: 10rem;
+    }
+
+    .section-title {
+        font-size: 1.1em;
+    }
+
+    #previous-events .section-title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
