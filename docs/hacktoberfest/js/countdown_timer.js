@@ -38,10 +38,6 @@ displayTimer = () => {
     setValueToTimer('.hours', hours)
     setValueToTimer('.minutes', minutes)
     setValueToTimer('.seconds', seconds)
-    // document.getElementById('days').innerHTML = fillZeroes(days)
-    // document.getElementById('hours').innerHTML = fillZeroes(hours)
-    // document.getElementById('minutes').innerHTML = fillZeroes(minutes)
-    // document.getElementById('seconds').innerHTML = fillZeroes(seconds)
 }
 
 setValueToTimer = (selector, value) => {
