@@ -95,6 +95,10 @@ const schedule = [
                     {
                         speaker: "Luciano de Oliveira",
                         topic: "Estado em React: os comos e os porquês",
+                    },
+                    {
+                        speaker: "Estácio Pereira",
+                        topic: "Aproximando a Web de aplicativos nativos",
                     }
                 ]  
             },
@@ -104,10 +108,6 @@ const schedule = [
                     {
                         speaker: "Thayanne Sousa",
                         topic: "Como fazer um blog utilizando Gatsby",
-                    },
-                    {
-                        speaker: "Estácio Pereira",
-                        topic: "Aproximando a Web de aplicativos nativos",
                     }
                 ]  
             },
