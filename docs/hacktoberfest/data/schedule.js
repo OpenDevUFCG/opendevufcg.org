@@ -5,7 +5,7 @@ const schedule = [
         days: [
             { 
                 date: "Sábado (3) - 14h",
-                live:'',
+                live:'https://drive.google.com/file/d/1crILZIiwRgZHRbh7hpY5BV-vQ0nTvWee/view',
                 events: [
                     { 
                         speaker: "Fanny Vieira e Mariana Nascimento",
