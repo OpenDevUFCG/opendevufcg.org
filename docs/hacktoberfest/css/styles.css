@@ -544,6 +544,10 @@ header {
   margin-bottom: 30px; 
 }
 
+#schedule p {
+  color: #A5A9BC;
+}
+
 .schedule-item {
   margin: 10px;
   padding: 20px;
@@ -617,9 +621,14 @@ header {
 
 @media (max-width: 768px) {
 
+  #schedule p {
+    font-size: 0.8em;
+  }
+
   .days-list {
     flex-direction: column;
   }
+
 
   .day-item {
     width: 100%;

@@ -5,6 +5,7 @@ const schedule = [
         days: [
             { 
                 date: "Sábado (3) - 14h",
+                live:'',
                 events: [
                     { 
                         speaker: "Fanny Vieira e Mariana Nascimento",
@@ -22,6 +23,7 @@ const schedule = [
             { 
                 
                 date: "Terça (6) - 19h30",
+                live:'https://www.youtube.com/watch?v=HbDXkKtjTcc',
                 events: [
                     { 
                         speaker: "Pedro Espíndula",
@@ -31,6 +33,7 @@ const schedule = [
             },
             { 
                 date: "Sábado (10) - 14h",
+                live:'https://www.youtube.com/watch?v=2hLDim8Y_GU',
                 events: [
                     {
                         speaker: "Héricles Emanuel",
@@ -46,6 +49,7 @@ const schedule = [
         days: [
             { 
                 date: "Terça (13) - 19h30",
+                live:'https://www.youtube.com/watch?v=pKT3Cwhb3S4',
                 events: [
                     {
                         speaker: "Matheus Gaudêncio",
@@ -59,6 +63,7 @@ const schedule = [
             },
             { 
                 date: "Sábado (17) - 14h",
+                live:'https://www.youtube.com/watch?v=qrth3hmg02I',
                 events: [
                     {
                         speaker: "Rerisson Matos",
@@ -74,6 +79,7 @@ const schedule = [
         days: [
             { 
                 date: "Terça (20) - 19h30",
+                live:'https://www.youtube.com/watch?v=cMV-sbjx3ZE',
                 events: [
                     {
                         speaker: "Beatriz Albino",
@@ -87,6 +93,7 @@ const schedule = [
             },
             { 
                 date: "Quinta (22) - 19h30",
+                live: 'https://www.youtube.com/watch?v=5jBNaS4Ab9c',
                 events: [
                     {
                         speaker: "Lucas de Medeiros",
@@ -104,6 +111,7 @@ const schedule = [
             },
             { 
                 date: "Sábado (24) - 14h",
+                live:'https://www.youtube.com/watch?v=f5xtS7COSaM',
                 events: [
                     {
                         speaker: "Thayanne Sousa",
@@ -119,6 +127,7 @@ const schedule = [
         days: [
             { 
                 date: "Terça (27) - 19h30",
+                live:'https://www.youtube.com/watch?v=1WxUBUgwBlI',
                 events: [
                     {
                         speaker: "Hadrizia Santos",
@@ -128,6 +137,7 @@ const schedule = [
             },
             { 
                 date: "Quinta (29) - 19h30",
+                live:'https://www.youtube.com/watch?v=OapzhHF8-DQ',
                 events: [
                     {
                         speaker: "Nazareno",
@@ -137,6 +147,7 @@ const schedule = [
             },
             { 
                 date: "Sábado (31) - 14h",
+                live:'https://www.youtube.com/watch?v=TYUNfu9pXQw',
                 events: [
                     {
                         speaker: "Júlio Barreto",
