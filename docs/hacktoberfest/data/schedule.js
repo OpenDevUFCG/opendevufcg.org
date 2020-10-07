@@ -53,7 +53,7 @@ const schedule = [
                 events: [
                     {
                         speaker: "Matheus Gaudêncio",
-                        topic: "Cache, Stateless, Sharding e Load Balancer - Estratégias de escalonamento para sistemas corporativos",
+                        topic: "Cache, Stateless, Sharding e Load Balancer - Estratégias de desempenho para sistemas corporativos",
                     },
                     {
                         speaker: "Gabriel Tavares",
