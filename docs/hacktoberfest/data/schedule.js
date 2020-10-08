@@ -67,7 +67,7 @@ const schedule = [
                 events: [
                     {
                         speaker: "Rerisson Matos",
-                        topic: "Criando uma API utilizando NodeJS e banco de dados",
+                        topic: "Construindo APIs REST com NodeJs, MongoDB e Express",
                     }
                 ]  
             },
