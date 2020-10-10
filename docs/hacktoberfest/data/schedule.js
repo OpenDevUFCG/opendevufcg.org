@@ -30,16 +30,6 @@ const schedule = [
                         topic: "Conceitos base de desenvolvimento Web",
                     }
                 ] 
-            },
-            { 
-                date: "Sábado (10) - 14h",
-                live:'https://www.youtube.com/watch?v=2hLDim8Y_GU',
-                events: [
-                    {
-                        speaker: "Héricles Emanuel",
-                        topic: "OpenMined e contribuindo para organizações",
-                    }
-                ]  
             }
         ],
     },
@@ -65,6 +55,10 @@ const schedule = [
                 date: "Sábado (17) - 14h",
                 live:'https://www.youtube.com/watch?v=qrth3hmg02I',
                 events: [
+                    {
+                        speaker: "Redhat",
+                        topic: "Desafios do open-source em grandes empresas"
+                    },
                     {
                         speaker: "Rerisson Matos",
                         topic: "Construindo APIs REST com NodeJs, MongoDB e Express",
