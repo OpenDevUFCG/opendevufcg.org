@@ -56,8 +56,8 @@ const schedule = [
                 live:'https://www.youtube.com/watch?v=qrth3hmg02I',
                 events: [
                     {
-                        speaker: "Redhat",
-                        topic: "Desafios do open-source em grandes empresas"
+                        speaker: "Iury Gregory e Kaio Kassiano",
+                        topic: "O mundo open source do OpenStack"
                     },
                     {
                         speaker: "Rerisson Matos",
