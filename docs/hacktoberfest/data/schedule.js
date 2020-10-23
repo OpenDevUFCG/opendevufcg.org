@@ -135,7 +135,7 @@ const schedule = [
                 events: [
                     {
                         speaker: "Nazareno",
-                        topic: "Visualização de Dados",
+                        topic: "Nos Visualizando em Dados: tecnologia e visualização para sentir e refletir, além de produzir",
                     }
                 ]  
             },
