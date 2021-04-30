@@ -108,8 +108,13 @@ section {
   background-color: #343587;
   border-radius: 50%;
   margin: 0px 15px 15px 0;
+  overflow: hidden;
 }
 
+.maintainer > img {
+  width: 100%;
+  height: 100%;
+}
 
 .project {
   width: 90px;
