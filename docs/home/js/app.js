@@ -1,4 +1,4 @@
-
+import { inicializarEquipe } from "./equipe.js"
 /*
   Dados de projetos e equipe estão na pasta data/
 */
@@ -15,19 +15,25 @@ const renderProjetoCard = ({titulo, descricao, site, imagem}) => {
 }
 
 const renderMembroInfo = ({nome, url_github}) => {
-  const membroInfo = document.getElementById('membro-template').cloneNode(true)
-  membroInfo.id = url_github
+  const memberLink = document.createElement("a")
+  memberLink.href = url_github
+  memberLink.alt = nome
+  memberLink.title = nome
 
-  membroInfo.querySelector('.membro-github').href = url_github
-  membroInfo.querySelector('.membro-imagem').src = url_github + '.png'
-  membroInfo.querySelector('.membro-imagem').alt = nome 
-  membroInfo.querySelector('.membro-imagem').title = nome 
+  const member = document.createElement("div")
+  member.classList.add("maintainer")
 
-  return membroInfo
+  const memberImage = document.createElement("img")
+  memberImage.src = `${url_github}.png`
+
+  member.appendChild(memberImage)
+  memberLink.appendChild(member)
+
+  return memberLink
 }
 
 const renderProjetos = () => {
-  projetos.forEach(projeto => 
+  projetos.forEach(projeto =>
     document.querySelector('.projetos').appendChild(renderProjetoCard(projeto))
   )
   document.getElementById('projeto-template').remove()
@@ -35,14 +41,16 @@ const renderProjetos = () => {
 
 const renderEquipe = async () => {
   const equipe = await inicializarEquipe()
-  equipe.forEach(membro => 
-    document.querySelector('.equipe').appendChild(renderMembroInfo(membro))
-  )
-  document.getElementById('membro-template').remove()
+
+  equipe.forEach(async membro => {
+    const result = await membro
+    return document.querySelector('.maintainers').appendChild(renderMembroInfo(result))
+  })
+
 }
 
 const init = () => {
-  renderProjetos()
+  //renderProjetos()
   renderEquipe()
 }
 

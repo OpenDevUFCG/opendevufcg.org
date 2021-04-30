@@ -1,30 +1,33 @@
-const githubApi = "https://api.github.com";
+import { getAllMaintainers, getMember, resetExpiredCache } from "./response-caching.js"
 
-gerarDadosEquipe = async () =>  {
-  const dados = await 
-  fetch(`${githubApi}/orgs/opendevufcg/public_members`)
-  .then(response => response.json())
-  .catch(error => console.error("Erro ao recuperar dados da equipe" + error))
- 
+const gerarDadosEquipe = async () =>  {
+  const dados = await getAllMaintainers()
+
+  if(!dados)
+    console.error("Nao foi possivel buscar a equipe!")
+
   return dados
 }
 
-gerarDadosMembro = async (memberLogin) => {
-  const member = await fetch(`${githubApi}/users/${memberLogin}`).then(response =>{
-    return response.json().then(memberData => {
-      const membroEquipe = {nome: memberData.name, url_github: memberData.html_url};
-      return membroEquipe
-  })
-})
-    return member
+const gerarDadosMembro = async (memberLogin) => {
+  const member = await getMember(memberLogin)
+
+  const membroEquipe = {
+    nome: member.name,
+    url_github: member.html_url
+  };
+
+  return membroEquipe
 }
 
-formatarDadosEquipe = async () => {
+const formatarDadosEquipe = async () => {
   const dadosEquipe = await gerarDadosEquipe();
 
-  return dadosEquipe.map(member => gerarDadosMembro(member.login))
+  return dadosEquipe.map(async member => await gerarDadosMembro(member.login))
 }
 
-const inicializarEquipe = async () => {
-  return await formatarDadosEquipe().then(async memberListPromises => await Promise.all(memberListPromises).then(memberList=>memberList))
+export const inicializarEquipe = async () => {
+  await resetExpiredCache()
+
+  return await formatarDadosEquipe()
 }
