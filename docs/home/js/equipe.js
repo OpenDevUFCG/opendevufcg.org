@@ -23,8 +23,6 @@ const gerarDadosMembro = async (memberLogin) => {
 const formatarDadosEquipe = async () => {
   const dadosEquipe = await gerarDadosEquipe();
 
-  console.log(dadosEquipe)
-
   return dadosEquipe.map(async member => await gerarDadosMembro(member.login))
 }
 

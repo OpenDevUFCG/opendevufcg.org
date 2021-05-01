@@ -44,6 +44,10 @@ const renderEquipe = async () => {
 
   equipe.forEach(async membro => {
     const result = await membro
+
+    if(!result.url_github)
+      return
+
     return document.querySelector('.maintainers').appendChild(renderMembroInfo(result))
   })
 

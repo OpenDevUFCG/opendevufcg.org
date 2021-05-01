@@ -35,7 +35,6 @@ export const getMember = async memberId => {
 
   if(!memberResponse) {
     const response = await fetch(memberURI)
-    console.log(response)
     const newResponse = new Response(response.body, response)
     newResponse.headers.append("CreatedAt", Date.now())
     await cache.put(memberURI, newResponse)
