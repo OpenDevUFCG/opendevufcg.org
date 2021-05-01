@@ -55,7 +55,7 @@ export const resetExpiredCache = async () => {
     const createdAt = response.headers.get("CreatedAt")
     const currentTime = Date.now()
 
-    if(currentTime - createdAt >= MAINTAINERS_CACHE_EXPIRATION)
+    if(response.status !== 200 || currentTime - createdAt >= MAINTAINERS_CACHE_EXPIRATION)
       await maintainersCache.delete(req)
 
   })
@@ -71,7 +71,7 @@ export const resetExpiredCache = async () => {
     const createdAt = response.headers.get("CreatedAt")
     const currentTime = Date.now()
 
-    if(currentTime - createdAt >= MEMBER_CACHE_EXPIRATION)
+    if(response.status !== 200 || currentTime - createdAt >= MEMBER_CACHE_EXPIRATION)
       await memberCache.delete(req)
 
   })
