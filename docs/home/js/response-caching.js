@@ -21,7 +21,7 @@ export const getAllMaintainers = async () => {
 
     newResponse.headers.append("CreatedAt", Date.now())
     await cache.put(maintainersURI, newResponse)
-    maintainersResponse = newResponse
+    maintainersResponse = await cache.match(maintainersURI)
   }
 
   return maintainersResponse.json()
@@ -35,10 +35,11 @@ export const getMember = async memberId => {
 
   if(!memberResponse) {
     const response = await fetch(memberURI)
+    console.log(response)
     const newResponse = new Response(response.body, response)
     newResponse.headers.append("CreatedAt", Date.now())
     await cache.put(memberURI, newResponse)
-    memberResponse = newResponse
+    memberResponse = await cache.match(memberURI)
   }
 
   return memberResponse.json()
