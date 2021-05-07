@@ -4,6 +4,7 @@
   padding: 0;
   color: #E5E5E5;
   margin: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -32,18 +33,20 @@ header {
 }
 
 section {
-  margin: 60px 0;
+  margin: 100px 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .community-call-label {
   width: 50%;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  box-sizing: border-box;
 }
 
 .discord-wrapper {
-  box-sizing: border-box;
   width: 100%;
   background: linear-gradient(rgba(51, 52, 92, 0.4), transparent);
   padding: 4% 40px;
@@ -63,7 +66,7 @@ section {
 }
 
 .section-phrase {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 100;
   margin-top: 10px;
 }
@@ -87,6 +90,7 @@ section {
   overflow-y: auto;
   scrollbar-width: 3px;
   scrollbar-color: #343587 transparent;
+  padding: 10px;
 }
 
 .maintainers::-webkit-scrollbar {
@@ -103,12 +107,17 @@ section {
 }
 
 .maintainer {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   background-color: #343587;
   border-radius: 50%;
   margin: 0px 15px 15px 0;
   overflow: hidden;
+  transition: transform .2s;
+}
+
+.maintainer:hover {
+  transform: scale(1.2);
 }
 
 .maintainer > img {
@@ -117,8 +126,8 @@ section {
 }
 
 .project {
-  width: 90px;
-  height: 90px;
+  width: 5.5rem;
+  height: 5.5rem;
   background-color: white;
   display: flex;
 }
@@ -145,7 +154,6 @@ section {
 }
 
 .join-community-call {
-  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -155,7 +163,7 @@ section {
 .join-community-phrase {
   width: 60%;
   text-align: right;
-  font-size: 18px;
+  font-size: 1rem;
   padding-right: 3%;
   padding-left: 10%;
   letter-spacing: 0.5px;
@@ -180,7 +188,7 @@ section {
 }
 
 .discover-button {
-  font-size: 20px;
+  font-size: 1.2rem;
   height: 42px;
   font-weight: bolder;
 }
@@ -202,7 +210,7 @@ section {
 }
 
 .join-discord {
-  font-size: 45px;
+  font-size: 2.8rem;
   letter-spacing: 1px;
   color: #E5E5E5;
   margin: 0;
@@ -210,7 +218,7 @@ section {
 
 .join-community {
   text-align: center;
-  font-size: 45px;
+  font-size: 2.8rem;
   letter-spacing: 1px;
   color: #E5E5E5;
   margin: 0;
@@ -230,7 +238,6 @@ section {
   position: absolute;
   z-index: 50;
   padding: 0 150px;
-  box-sizing: border-box;
 }
 
 .gradient {
