@@ -19,6 +19,7 @@ const renderMembroInfo = ({nome, url_github}) => {
   memberLink.href = url_github
   memberLink.alt = nome
   memberLink.title = nome
+  memberLink.target = "_blank"
 
   const member = document.createElement("div")
   member.classList.add("maintainer")
