@@ -250,3 +250,51 @@ button {
   position: absolute;
   z-index: 0;
 }
+
+@media (max-width: 768px) {
+  header {
+    padding-left: 30px;
+  }
+
+  .content-area {
+    padding: 0;
+  }
+
+  .section-split {
+    flex-direction: column;
+  }
+
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .community-call-label {
+    margin-bottom: 50px
+  }
+}
+
+@media (max-width: 574px) {
+  .join-community-call {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .join-community-phrase {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .discord-split {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .button-area {
+    visibility: hidden;
+  }
+}
