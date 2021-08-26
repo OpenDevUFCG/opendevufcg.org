@@ -180,7 +180,7 @@ button {
   padding: 7px 25px;
   border-radius: 4px;
   font-weight: bold;
-  transform: scale(.85, 1);
+  transition: .2s ease;
 }
 
 .discord-button {
