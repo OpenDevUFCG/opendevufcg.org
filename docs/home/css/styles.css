@@ -128,8 +128,13 @@ button {
 .project {
   width: 5.5rem;
   height: 5.5rem;
+  transition: 0.2s ease;
   background-color: white;
   display: flex;
+}
+
+.project:hover {
+  transform: scale(1.04);
 }
 
 .project > a {
@@ -180,7 +185,13 @@ button {
   padding: 7px 25px;
   border-radius: 4px;
   font-weight: bold;
-  transform: scale(.85, 1);
+  transition: .2s ease;
+}
+
+.default-button:hover {
+  transform: scale(1.04);
+  background-color: #fff;
+  color: #343587;
 }
 
 .discord-button {
@@ -189,7 +200,7 @@ button {
 
 .discover-button {
   font-size: 1.2rem;
-  height: 42px;
+  padding: 10px 25px;
   font-weight: bolder;
 }
 
