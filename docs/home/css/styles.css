@@ -182,7 +182,11 @@ button {
   font-weight: bold;
   transition: .2s ease;
 }
-
+.default-button:hover {
+  transform: scale(1.04);
+  background-color: #fff;
+  color: #343587;
+}
 .discord-button {
   background-color: #7289da;
 }
