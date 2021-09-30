@@ -373,6 +373,10 @@ section:nth-child(even) .sessao-subtitulo {
   padding: 10px;
 }
 
+.hacktoberfest-event:hover {
+  color: #9fef00;
+}
+
 @media screen and (max-width:768px) {
   .hacktoberfest-event h2 {
     font-size: 1em;
