@@ -596,7 +596,7 @@ header {
 }
 
 .schedule-item span {
-  color: #fff;
+  color: var(--solid-light-blue);
   font-weight: normal;
 }
 
@@ -607,6 +607,7 @@ header {
 
 .days-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -616,7 +617,7 @@ header {
   background: var(--dark-blue);
   border-radius: 5px;
   padding: 20px;
-  width: calc(100% / 3);
+  width: 20rem;
   text-align: center;
   transition: 0.2s ease;
 }
@@ -629,12 +630,21 @@ header {
   padding-left: 10px;
 }
 
+.day-item-speaker span {
+  color: var(--solid-light-blue);
+}
+
 .day-item-date {
   font-family: "retro-gaming";
 }
 
 .day-item-event-template {
   margin: 15px 0;
+}
+
+.day-item-topic span {
+  color: var(--light-green);
+  font-weight: bolder;
 }
 
 @media (max-width: 768px) {
