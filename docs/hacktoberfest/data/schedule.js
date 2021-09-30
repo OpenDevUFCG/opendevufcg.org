@@ -101,7 +101,7 @@ const schedule = [
           },
           {
             speaker: "Iago Tito",
-            topic: "Customizacao do terminal",
+            topic: "Customização do terminal",
             isAsync: true,
           },
         ],
