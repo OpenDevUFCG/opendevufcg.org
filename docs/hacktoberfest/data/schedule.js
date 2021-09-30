@@ -9,10 +9,12 @@ const schedule = [
           {
             speaker: "Iele Passos",
             topic: "Abertura do Evento",
+            isAsync: false,
           },
           {
             speaker: "Renan e Juan",
             topic: "Contribuições opensource",
+            isAsync: false,
           },
         ],
       },
@@ -28,6 +30,7 @@ const schedule = [
           {
             speaker: "Mari e Jaciane",
             topic: "Minicurso git github - elas@cc",
+            isAsync: false,
           },
         ],
       },
@@ -37,6 +40,7 @@ const schedule = [
           {
             speaker: "Leandra",
             topic: "Introdução - Markdown",
+            isAsync: true,
           },
         ],
       },
@@ -47,6 +51,7 @@ const schedule = [
             speaker: "Bianca Rangel",
             topic:
               "Como product design pode te ajudar a tornar o ensino remoto mais produtivo",
+            isAsync: true,
           },
         ],
       },
@@ -56,6 +61,7 @@ const schedule = [
           {
             speaker: "Rodrigo Eloy",
             topic: "Introdução à ferramenta Figma",
+            isAsync: true,
           },
         ],
       },
@@ -71,6 +77,7 @@ const schedule = [
           {
             speaker: "Davi",
             topic: "Introdução ao desenvolvimento de jogos",
+            isAsync: true,
           },
         ],
       },
@@ -80,6 +87,7 @@ const schedule = [
           {
             speaker: "Sergio",
             topic: "Linux for dummies",
+            isAsync: false,
           },
         ],
       },
@@ -89,10 +97,12 @@ const schedule = [
           {
             speaker: "Sergio",
             topic: "Introdução ao terminal",
+            isAsync: false,
           },
           {
             speaker: "Iago Tito",
             topic: "Customizacao do terminal",
+            isAsync: true,
           },
         ],
       },
@@ -101,7 +111,8 @@ const schedule = [
         events: [
           {
             speaker: "Thiago",
-            topic: "Introdução ao terminal",
+            topic: "Automação de Deploys com Jenkins",
+            isAsync: true,
           },
         ],
       },
@@ -117,10 +128,12 @@ const schedule = [
           {
             speaker: "Marta",
             topic: "Áreas da infraestrutura",
+            isAsync: false,
           },
           {
             speaker: "Zezo",
             topic: "Docker",
+            isAsync: true,
           },
         ],
       },
@@ -128,13 +141,10 @@ const schedule = [
         date: "Qua (20/10) - 19h",
         events: [
           {
-            speaker: "",
-            topic: "VTEX Lab",
-          },
-          {
             speaker: "Lucas",
             topic:
               "Lab sound distribution -startup spin off- do escritorio modelo à tese de escalonamento",
+              isAsync: true,
           },
         ],
       },
@@ -144,10 +154,12 @@ const schedule = [
           {
             speaker: "Marcella",
             topic: "Lições de Escrita Criativa",
+            isAsync: false,
           },
           {
             speaker: "Lucas Carvalho",
             topic: "Como conseguir projeto freela",
+            isAsync: true,
           },
         ],
       },
@@ -157,6 +169,7 @@ const schedule = [
           {
             speaker: "Ialy",
             topic: "Minicurso: Primeiros passos com Arduíno",
+            isAsync: true,
           },
         ],
       },
@@ -172,6 +185,7 @@ const schedule = [
           {
             speaker: "Marcos Sales e Iele Passos",
             topic: "A Influencia da temperatura no funcionamento do pc",
+            isAsync: true,
           },
         ],
       },
@@ -181,6 +195,7 @@ const schedule = [
           {
             speaker: "Duda Azevedo",
             topic: "Processamento de imagens",
+            isAsync: true,
           },
         ],
       },
@@ -190,6 +205,7 @@ const schedule = [
           {
             speaker: "Emys e Felipe",
             topic: "Dados abertos",
+            isAsync: true,
           },
         ],
       },
@@ -199,6 +215,7 @@ const schedule = [
           {
             speaker: "Iele Passos",
             topic: "Encerramento",
+            isAsync: false,
           },
         ],
       },

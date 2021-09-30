@@ -44,6 +44,8 @@ const createDay = (data, template) => {
     eventsList.innerHTML = ""
 
     for(const event of data.events){
+        eventsList.innerHTML += "------------------"
+
         const eventElement = createEvent(event, eventTemplate)
         eventsList.appendChild(eventElement)
     }
@@ -57,6 +59,7 @@ const createEvent = (data, template) => {
 
     event.querySelector('.day-item-topic').innerHTML = "> " + data.topic
     event.querySelector('.day-item-speaker').innerHTML = "speaker: <span>" + data.speaker + "</span"
+    event.querySelector('.day-item-type').innerHTML = data.isAsync ? "Assíncrono" : "Síncrono"
 
     return event
 }

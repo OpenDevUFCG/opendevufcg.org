@@ -307,7 +307,7 @@ header {
 }
 
 #smile {
-  color: var(--light-green)
+  color: var(--light-green);
 }
 
 .time-label {
