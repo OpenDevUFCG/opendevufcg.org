@@ -4,7 +4,7 @@ const schedule = [
     topic: "",
     days: [
       {
-        date: "Sexta (1) ",
+        date: "Sex (01/10) - 19h ",
         events: [
           {
             speaker: "Iele Passos",
@@ -23,7 +23,7 @@ const schedule = [
     topic: "",
     days: [
       {
-        date: "Segunda (4) - 19h",
+        date: "Seg (04/10) - 19h",
         events: [
           {
             speaker: "Mari e Jaciane",
@@ -32,7 +32,7 @@ const schedule = [
         ],
       },
       {
-        date: "Terça (5) - 19h",
+        date: "Ter (05/10) - 19h",
         events: [
           {
             speaker: "Leandra",
@@ -41,16 +41,17 @@ const schedule = [
         ],
       },
       {
-        date: "Quarta (6) - 19h",
+        date: "Qua (06/10) - 19h",
         events: [
           {
             speaker: "Bianca Rangel",
-            topic: "Como product design pode te ajudar a tornar o ensino remoto mais produtivo",
+            topic:
+              "Como product design pode te ajudar a tornar o ensino remoto mais produtivo",
           },
         ],
       },
       {
-        date: "Quinta (7) - 19h",
+        date: "Qui (07/10) - 19h",
         events: [
           {
             speaker: "Rodrigo Elloy",
@@ -60,76 +61,147 @@ const schedule = [
       },
     ],
   },
-  // {
-  //   title: "2° Semana <br>(dias 14, 15 e 18)",
-  //   topic: "",
-  //   days: [
-  //     {
-  //       date: "Terça (14) - 19h",
-  //       events: [
-  //         {
-  //           speaker: "Sergio",
-  //           topic: "Linux for dummies",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       date: "Sábado (15) - 19h",
-  //       events: [
-  //         {
-  //           speaker: "Sergio",
-  //           topic: "introdução ao terminal",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       date: "Sábado (18) - 19h",
-  //       events: [
-  //         {
-  //           speaker: "Marta Lais",
-  //           topic: "Áreas da Infraestrutura",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "3° Semana <br>(dias 20 e 21)",
-  //   topic: "",
-  //   days: [
-  //     {
-  //       date: "Segunda (20) - 19h30",
-  //       events: [
-  //         {
-  //           speaker: "",
-  //           topic: "VTEX",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       date: "Terça (21) - 19h",
-  //       events: [
-  //         {
-  //           speaker: "Marcella Siqueira",
-  //           topic: "Lições de Escrita Criativa para Escrita Acadêmica",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "4° Semana <br>(dia 29)",
-  //   topic: "",
-  //   days: [
-  //     {
-  //       date: "Quarta (29)",
-  //       events: [
-  //         {
-  //           speaker: "Iele Passos",
-  //           topic: "Encerramento - sorteios",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    title: "2° Semana <br>",
+    topic: "",
+    days: [
+      {
+        date: "Qua (13/10) - 19h",
+        events: [
+          {
+            speaker: "Davi",
+            topic: "Introdução ao desenvolvimento de jogos",
+          },
+        ],
+      },
+      {
+        date: "Qui (14/10) - 19h",
+        events: [
+          {
+            speaker: "Sergio",
+            topic: "Linux for dummies",
+          },
+        ],
+      },
+      {
+        date: "Sex (15/10) - 19h",
+        events: [
+          {
+            speaker: "Sergio",
+            topic: "Introdução ao terminal",
+          },
+          {
+            speaker: "Iago Tito",
+            topic: "Customizacao do terminal",
+          },
+        ],
+      },
+      {
+        date: "Sáb (16/10) - 19h",
+        events: [
+          {
+            speaker: "Thiago",
+            topic: "Introdução ao terminal",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "3° Semana <br>",
+    topic: "",
+    days: [
+      {
+        date: "Seg (18/10) - 19h ",
+        events: [
+          {
+            speaker: "Marta",
+            topic: "Áreas da infraestrutura",
+          },
+          {
+            speaker: "Zezo",
+            topic: "Docker",
+          },
+        ],
+      },
+      {
+        date: "Qua (20/10) - 19h",
+        events: [
+          {
+            speaker: "",
+            topic: "VTEX Lab",
+          },
+          {
+            speaker: "Lucas",
+            topic:
+              "Lab sound distribution -startup spin off- do escritorio modelo à tese de escalonamento",
+          },
+        ],
+      },
+      {
+        date: "Qui (21/10) - 19h",
+        events: [
+          {
+            speaker: "Marcella",
+            topic: "Lições de Escrita Criativa",
+          },
+          {
+            speaker: "Lucas Carvalho",
+            topic: "Como conseguir projeto freela",
+          },
+        ],
+      },
+      {
+        date: "Sex (22/10) - 19h",
+        events: [
+          {
+            speaker: "Ialy",
+            topic: "Minicurso: Primeiros passos com Arduíno",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "4° Semana <br>",
+    topic: "",
+    days: [
+      {
+        date: "Seg (25/10) - 19h",
+        events: [
+          {
+            speaker: "Marcos Sales e Iele Passos",
+            topic: "A Influencia da temperatura no funcionamento do pc",
+          },
+        ],
+      },
+      {
+        date: "Ter (26/10) - 19h",
+        events: [
+          {
+            speaker: "Duda Azevedo",
+            topic: "Processamento de imagens",
+          },
+        ],
+      },
+      {
+        date: "Qua (27/10) - 19h",
+        events: [
+          {
+            speaker: "Emys e Felipe",
+            topic: "Dados abertos",
+          },
+        ],
+      },
+      {
+        date: "Sex (29/10) - 19h",
+        events: [
+          {
+            speaker: "Iele Passos",
+            topic: "Encerramento",
+          },
+        ],
+      },
+    ],
+  },
 ];
