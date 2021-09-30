@@ -54,7 +54,7 @@ const schedule = [
         date: "Qui (07/10) - 19h",
         events: [
           {
-            speaker: "Rodrigo Elloy",
+            speaker: "Rodrigo Eloy",
             topic: "Introdução à ferramenta Figma",
           },
         ],
