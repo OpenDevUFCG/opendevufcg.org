@@ -4,7 +4,7 @@
         flex-direction: column;
         align-items: center;
     
-        background-color: var(--solid-blue);
+        background-color: var(--dark-blue);
     }
     
     #more-information:hover .hidden-content {
@@ -104,7 +104,7 @@
         align-items: center;
 
         font-size: 0.8rem;
-        background: #24224f;
+        background: var(--dark-blue);
     }   
     
     #more {
