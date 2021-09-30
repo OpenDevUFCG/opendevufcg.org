@@ -12,7 +12,7 @@ const schedule = [
             isAsync: false,
           },
           {
-            speaker: "Renan e Juan",
+            speaker: "José Renan e Juan Barros",
             topic: "Contribuições opensource",
             isAsync: false,
           },
@@ -28,7 +28,7 @@ const schedule = [
         date: "Seg (04/10) - 19h",
         events: [
           {
-            speaker: "Mari e Jaciane",
+            speaker: "Iris Almeida, Maria Soares e Jaciane de Oliveira",
             topic: "Minicurso git github - elas@cc",
             isAsync: false,
           },
@@ -38,7 +38,7 @@ const schedule = [
         date: "Ter (05/10) - 19h",
         events: [
           {
-            speaker: "Leandra",
+            speaker: "Leandra Oliveira",
             topic: "Introdução - Markdown",
             isAsync: true,
           },
@@ -75,8 +75,8 @@ const schedule = [
         date: "Qua (13/10) - 19h",
         events: [
           {
-            speaker: "Davi",
-            topic: "Introdução ao desenvolvimento de jogos",
+            speaker: "Davi Sousa",
+            topic: "Introdução ao desenvolvimento de jogos com Unity",
             isAsync: true,
           },
         ],
@@ -85,7 +85,7 @@ const schedule = [
         date: "Qui (14/10) - 19h",
         events: [
           {
-            speaker: "Sergio",
+            speaker: "Sergio Duarte",
             topic: "Linux for dummies",
             isAsync: false,
           },
@@ -95,7 +95,7 @@ const schedule = [
         date: "Sex (15/10) - 19h",
         events: [
           {
-            speaker: "Sergio",
+            speaker: "Sergio Duarte",
             topic: "Introdução ao terminal",
             isAsync: false,
           },
@@ -110,7 +110,7 @@ const schedule = [
         date: "Sáb (16/10) - 19h",
         events: [
           {
-            speaker: "Thiago",
+            speaker: "Thiago Lira",
             topic: "Automação de Deploys com Jenkins",
             isAsync: true,
           },
@@ -126,13 +126,13 @@ const schedule = [
         date: "Seg (18/10) - 19h ",
         events: [
           {
-            speaker: "Marta",
+            speaker: "Marta Laís",
             topic: "Áreas da infraestrutura",
             isAsync: false,
           },
           {
-            speaker: "Zezo",
-            topic: "Docker",
+            speaker: "Ignácio Schmid",
+            topic: "Introdução ao Docker",
             isAsync: true,
           },
         ],
@@ -141,7 +141,7 @@ const schedule = [
         date: "Qua (20/10) - 19h",
         events: [
           {
-            speaker: "Lucas",
+            speaker: "Lucas Farias",
             topic:
               "Lab sound distribution -startup spin off- do escritorio modelo à tese de escalonamento",
               isAsync: true,
@@ -152,7 +152,7 @@ const schedule = [
         date: "Qui (21/10) - 19h",
         events: [
           {
-            speaker: "Marcella",
+            speaker: "Marcella Siqueira",
             topic: "Lições de Escrita Criativa",
             isAsync: false,
           },
@@ -167,7 +167,7 @@ const schedule = [
         date: "Sex (22/10) - 19h",
         events: [
           {
-            speaker: "Ialy",
+            speaker: "Ialy Cordeiro,Lilian Teixeira e Karen Pessoa",
             topic: "Minicurso: Primeiros passos com Arduíno",
             isAsync: true,
           },
@@ -203,7 +203,7 @@ const schedule = [
         date: "Qua (27/10) - 19h",
         events: [
           {
-            speaker: "Emys e Felipe",
+            speaker: "Emilly Albuquerque e Felipe Siqueira",
             topic: "Dados abertos",
             isAsync: true,
           },
