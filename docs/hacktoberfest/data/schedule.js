@@ -5,6 +5,7 @@ const schedule = [
     days: [
       {
         date: "Sex (01/10) - 19h ",
+        link:"https://www.youtube.com/watch?v=YAV5YjqScX0",
         events: [
           {
             speaker: "Iele Passos",
@@ -26,6 +27,7 @@ const schedule = [
     days: [
       {
         date: "Seg (04/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Iris Almeida, Maria Soares e Jaciane de Oliveira",
@@ -36,6 +38,7 @@ const schedule = [
       },
       {
         date: "Ter (05/10) - 19h",
+        link:"https://www.youtube.com/watch?v=t5iMFbt1u-I",
         events: [
           {
             speaker: "Leandra Oliveira",
@@ -46,6 +49,7 @@ const schedule = [
       },
       {
         date: "Qua (06/10) - 19h",
+        link:"https://www.youtube.com/watch?v=UwIQ9-eoFVc",
         events: [
           {
             speaker: "Bianca Rangel",
@@ -57,6 +61,7 @@ const schedule = [
       },
       {
         date: "Qui (07/10) - 19h",
+        link:"https://www.youtube.com/watch?v=ZH4AUczmdAw",
         events: [
           {
             speaker: "Rodrigo Eloy",
@@ -73,6 +78,7 @@ const schedule = [
     days: [
       {
         date: "Qua (13/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Davi Sousa",
@@ -83,6 +89,7 @@ const schedule = [
       },
       {
         date: "Qui (14/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Sergio Duarte",
@@ -93,6 +100,7 @@ const schedule = [
       },
       {
         date: "Sex (15/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Sergio Duarte",
@@ -108,6 +116,7 @@ const schedule = [
       },
       {
         date: "Sáb (16/10) - 19h",
+        link:"https://www.youtube.com/watch?v=4FrDE4pWtoY",
         events: [
           {
             speaker: "Thiago Lira",
@@ -124,6 +133,7 @@ const schedule = [
     days: [
       {
         date: "Seg (18/10) - 19h ",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Marta Laís",
@@ -139,6 +149,7 @@ const schedule = [
       },
       {
         date: "Qua (20/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Lucas Farias",
@@ -150,6 +161,7 @@ const schedule = [
       },
       {
         date: "Qui (21/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Marcella Siqueira",
@@ -165,6 +177,7 @@ const schedule = [
       },
       {
         date: "Sex (22/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Ialy Cordeiro,Lilian Teixeira e Karen Pessoa",
@@ -181,6 +194,7 @@ const schedule = [
     days: [
       {
         date: "Seg (25/10) - 19h",
+        link:"https://www.youtube.com/watch?v=Xygm97OIlF0",
         events: [
           {
             speaker: "Marcos Sales e Iele Passos",
@@ -191,6 +205,7 @@ const schedule = [
       },
       {
         date: "Ter (26/10) - 19h",
+        link:"https://www.youtube.com/watch?v=0rw8r2lU0kk",
         events: [
           {
             speaker: "Duda Azevedo",
@@ -201,6 +216,7 @@ const schedule = [
       },
       {
         date: "Qua (27/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Emilly Albuquerque e Felipe Siqueira",
@@ -211,6 +227,7 @@ const schedule = [
       },
       {
         date: "Sex (29/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Iele Passos",

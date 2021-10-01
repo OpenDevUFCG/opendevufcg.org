@@ -36,6 +36,8 @@ const createCard = (data) => {
 const createDay = (data, template) => {
     const day = template.cloneNode(true);
 
+    day.href = data.link;
+
     day.querySelector('.day-item-date').innerHTML = data.date
     const eventsList = day.querySelector('.day-item-events');
 
