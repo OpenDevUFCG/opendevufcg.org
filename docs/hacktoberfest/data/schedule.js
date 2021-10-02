@@ -132,17 +132,17 @@ const schedule = [
     topic: "",
     days: [
       {
-        date: "Seg (18/10) - 19h ",
+        date: "Seg (18/10)",
         link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Marta Laís",
-            topic: "Áreas da infraestrutura",
+            topic: "Áreas da infraestrutura - 19h",
             isAsync: false,
           },
           {
             speaker: "Ignácio Schmid",
-            topic: "Introdução ao Docker",
+            topic: "Introdução ao Docker - 17:30h",
             isAsync: true,
           },
         ],
@@ -160,17 +160,17 @@ const schedule = [
         ],
       },
       {
-        date: "Qui (21/10) - 19h",
+        date: "Qui (21/10)",
         link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
             speaker: "Marcella Siqueira",
-            topic: "Lições de Escrita Criativa",
+            topic: "Lições de Escrita Criativa para Escrita Acadêmica - 19h",
             isAsync: false,
           },
           {
             speaker: "Lucas Carvalho",
-            topic: "Como conseguir projeto freela",
+            topic: "Como conseguir o seu primeiro projeto como freelancer - 18h",
             isAsync: true,
           },
         ],
@@ -180,7 +180,7 @@ const schedule = [
         link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
         events: [
           {
-            speaker: "Ialy Cordeiro,Lilian Teixeira e Karen Pessoa",
+            speaker: "Ialy Cordeiro, Lilian Teixeira e Karen Pessoa",
             topic: "Minicurso: Primeiros passos com Arduíno",
             isAsync: true,
           },
@@ -198,7 +198,7 @@ const schedule = [
         events: [
           {
             speaker: "Marcos Sales e Iele Passos",
-            topic: "A Influencia da temperatura no funcionamento do pc",
+            topic: "A Influência da temperatura no desempenho de computadores",
             isAsync: true,
           },
         ],
@@ -209,7 +209,7 @@ const schedule = [
         events: [
           {
             speaker: "Duda Azevedo",
-            topic: "Processamento de imagens",
+            topic: "Computadores que enxergam: Detectando formas em imagens",
             isAsync: true,
           },
         ],
@@ -220,7 +220,7 @@ const schedule = [
         events: [
           {
             speaker: "Emilly Albuquerque e Felipe Siqueira",
-            topic: "Dados abertos",
+            topic: "Dados abertos no Brasil",
             isAsync: true,
           },
         ],
