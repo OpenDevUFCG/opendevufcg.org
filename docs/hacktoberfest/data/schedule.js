@@ -27,7 +27,7 @@ const schedule = [
     days: [
       {
         date: "Seg (04/10) - 19h",
-        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        link:"https://www.youtube.com/watch?v=SbrzdldZktA",
         events: [
           {
             speaker: "Iris Almeida, Maria Soares e Jaciane de Oliveira",
@@ -89,7 +89,7 @@ const schedule = [
       },
       {
         date: "Qui (14/10) - 19h",
-        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        link:"https://youtu.be/3tDry7fF8JE",
         events: [
           {
             speaker: "Sergio Duarte",
@@ -100,7 +100,7 @@ const schedule = [
       },
       {
         date: "Sex (15/10) - 19h",
-        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        link:"https://youtu.be/G6uTNbneUd4",
         events: [
           {
             speaker: "Sergio Duarte",
