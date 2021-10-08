@@ -88,7 +88,7 @@ const schedule = [
         ],
       },
       {
-        date: "Qui (14/10) - 19h",
+        date: "Qui (14/10) - 18:30h",
         link:"https://youtu.be/3tDry7fF8JE",
         events: [
           {
@@ -99,17 +99,17 @@ const schedule = [
         ],
       },
       {
-        date: "Sex (15/10) - 19h",
+        date: "Sex (15/10)",
         link:"https://youtu.be/G6uTNbneUd4",
         events: [
           {
             speaker: "Sergio Duarte",
-            topic: "Introdução ao terminal",
+            topic: "Introdução ao terminal- 18:30h",
             isAsync: false,
           },
           {
             speaker: "Iago Tito",
-            topic: "Customização do terminal",
+            topic: "Customização do terminal - 20h",
             isAsync: true,
           },
         ],
