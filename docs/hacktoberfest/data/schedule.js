@@ -148,14 +148,25 @@ const schedule = [
         ],
       },
       {
-        date: "Qua (20/10) - 19h",
-        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        date: "Ter (19/10) - 19h",
+        link:"https://youtu.be/M_ANoZU9cwg",
         events: [
           {
-            speaker: "Lucas Farias",
+            speaker: "Mariana Mendes e Nicácio Oliveira",
+            topic: "VTEX lab",
+            isAsync: false,
+          },
+        ],
+      },
+      {
+        date: "Qua (20/10) - 19h",
+        link:"https://youtu.be/jpjhuJyGOwE",
+        events: [
+          {
+            speaker: "Comunidades Convidadas: Elas@Computação, OpenDevUFCG, Guardians, Mulheres na Computação UEPB, PyLadiesPB",
             topic:
-              "Lab sound distribution -startup spin off- do escritorio modelo à tese de escalonamento",
-              isAsync: true,
+              "Mesa Redonda: Comunidades na área de TI e sua importância",
+              isAsync: false,
           },
         ],
       },
