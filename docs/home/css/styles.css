@@ -232,6 +232,7 @@ button {
   letter-spacing: 1px;
   color: #E5E5E5;
   margin: 0;
+  padding: 0 1rem;
 }
 
 .container {
@@ -289,10 +290,20 @@ button {
     align-items: center;
   }
 
+  .community-call-label {
+    width: 70%;
+  }
+
   .join-community-phrase {
     text-align: center;
     padding: 0;
     margin-bottom: 20px;
+  }
+
+  .join-community-button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 
   .discord-split {
@@ -306,5 +317,39 @@ button {
 
   .button-area {
     visibility: hidden;
+  }
+
+  .maintainers {
+    width: 70%;
+  }
+}
+
+/* hacktoberfest */
+
+@font-face {
+  font-family: 'retro-gaming';
+  src: url('../../hacktoberfest/assets/fonts/Retro Gaming.ttf');
+}
+
+.hacktoberfest-event {
+  font-family: 'retro-gaming';
+  background: #24224f;
+  color: #fff;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.hacktoberfest-event:hover {
+  color: #9fef00;
+}
+
+@media screen and (max-width:768px) {
+  .hacktoberfest-event h2 {
+    font-size: 1em;
   }
 }
