@@ -5,13 +5,18 @@
 }
 
 @font-face {
-    font-family: 'retro-gaming';
-    src: url('../assets/fonts/Retro\ Gaming.ttf');
+  font-family: "retro-gaming";
+  src: url("../assets/fonts/Retro\ Gaming.ttf");
 }
 
 @font-face {
   font-family: I_pixel_u;
-  src: url('../assets/fonts/I-pixel-u.ttf');
+  src: url("../assets/fonts/I-pixel-u.ttf");
+}
+
+@font-face {
+  font-family: mario;
+  src: url("../assets/fonts/Super-Mario-World.ttf");
 }
 
 html {
@@ -19,42 +24,46 @@ html {
 }
 
 @font-face {
-    font-family: 'roboto-mono';
-    src: url('../assets/fonts/RobotoMono.ttf')
+  font-family: "roboto-mono";
+  src: url("../assets/fonts/RobotoMono.ttf");
 }
 
 section {
-  width: 80vw;
-  max-width: 1080px;
-  margin: auto;
+  width: 100%;
   padding: 50px 0;
 }
 
+.section-content {
+  width: 80vw;
+  max-width: 1080px;
+  margin: auto;
+}
+
 body {
-    --blue-low-opacity: rgba(18, 27, 81, 0.9);
-    --solid-blue: rgba(18, 27, 81);
-    --light-purple: #B6B9F2;
-    --light-blue: rgba(156,168,240,1);
-    --header-font: #6C75A8;
-    --header-font-hover: #E8EBFF;
-    --solid-light-blue: #9ca8f0;
-    width: 100%;
-    height: 100%;
-    background: #24224f;
-    font-family: 'retro-gaming';
+  --light-purple: #b6b9f2;
+  --header-font: #6c75a8;
+  --header-font-hover: #e8ebff;
+  --solid-light-blue: #a4b1cd;
+  --light-blue: #1a2332;
+  --dark-blue: #141d2b;
+  --light-green: #9fef00;
+  width: 100%;
+  height: 100%;
+  background: var(--light-blue);
+  font-family: "retro-gaming";
 }
 
 /* Header Section */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
 
-    padding: 1.25rem 5rem;
-    
-    color: var(--header-font);
+  padding: 1.25rem 5rem;
+
+  color: var(--header-font);
 }
 
 .fixed {
@@ -62,10 +71,11 @@ header {
 }
 
 #nav-bar {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-size: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #fff;
 }
 
 .nav-links {
@@ -73,7 +83,7 @@ header {
 }
 
 .nav-links:hover {
-  color: var(--header-font-hover);
+  color: var(--solid-light-blue);
   cursor: pointer;
 }
 
@@ -90,20 +100,20 @@ header {
   content: url("../assets/img/icons/light-icon-mais-menu.svg");
 }
 
-.hidden-content{
-    display: none;
+.hidden-content {
+  display: none;
 }
 
 #countdown-timer {
   gap: 0.5rem;
   box-sizing: border-box;
   padding: 0.75rem 1rem;
-  border: thin solid var(--light-purple);
+  border: thin solid #fff;
   text-align: center;
 }
 
 #countdown-timer span {
-    color: var(--light-purple);
+  color: #fff;
 }
 
 /* FAQ Section */
@@ -118,7 +128,7 @@ header {
 }
 
 #faq-container {
-  background: var(--solid-blue);
+  background: var(--dark-blue);
   display: flex;
   align-items: center;
   padding: 20px 10px;
@@ -132,7 +142,7 @@ header {
 
 .line {
   width: 40%;
-  border-bottom: 1px solid var(--solid-light-blue)
+  border-bottom: 1px solid var(--solid-light-blue);
 }
 
 .faq-item {
@@ -146,9 +156,9 @@ header {
 }
 
 .faq-item .answer {
-  color: #A5A9BC;
+  color: var(--solid-light-blue);
   font-size: 0.85em;
-  font-family: 'roboto-mono';
+  font-family: "roboto-mono";
 }
 
 #faq-menu ul {
@@ -158,15 +168,15 @@ header {
 #faq-menu button {
   border: none;
   display: flex;
-  align-items:center;
-  background: none;
+  align-items: center;
+  background: var(--light-blue);
   cursor: pointer;
   transition: 0.2s ease;
-  border: 1px solid #A5A9BC;
+  border: 1px solid #a5a9bc;
   padding: 5px;
   margin-bottom: 10px;
-  color: #fff;
-  font-family: 'retro-gaming';
+  color: var(--light-green);
+  font-family: "retro-gaming";
 }
 
 #faq-menu button img {
@@ -179,7 +189,7 @@ header {
 
 #faq-menu ul li {
   margin: 0 5px;
-  color: #A5A9BC;
+  color: var(--solid-light-blue);
   cursor: pointer;
 }
 
@@ -192,16 +202,15 @@ header {
     font-size: 0.9em;
     margin-bottom: 10px;
   }
-  
+
   .faq-item .answer {
-    color: #A5A9BC;
+    color: #a5a9bc;
     font-size: 0.8em;
-    font-family: 'roboto-mono';
+    font-family: "roboto-mono";
   }
 }
 
 @media (max-width: 768px) {
-
   #faq-container {
     flex-direction: column;
     justify-content: center;
@@ -216,16 +225,16 @@ header {
     padding: 0;
     text-align: center;
   }
-  
+
   .faq-item {
     width: 100%;
     padding: 5px 0;
   }
 
   .faq-item .question {
-    font-size:  0.8em;
+    font-size: 0.8em;
   }
-  
+
   .faq-item .answer {
     font-size: 0.7em;
   }
@@ -244,9 +253,9 @@ header {
 @media (max-width: 400px) {
   .faq-item .question {
     margin-bottom: 5px;
-    font-size:  0.7em;
+    font-size: 0.7em;
   }
-  
+
   .faq-item .answer {
     font-size: 0.6em;
   }
@@ -268,8 +277,15 @@ header {
 
 #home h4 {
   font-size: 16px;
-  color: #4758b8;
+  color: var(--light-green);
+  margin-bottom: 20px;
+}
+
+#home h1 {
+  font-size: 85px;
+  color: #fff;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 #logo {
@@ -283,11 +299,15 @@ header {
 }
 
 #timer {
-  border: solid 1px #B6B9F2;
+  border: solid 2px var(--solid-light-blue);
   display: inline-flex;
   padding: 20px;
-  color: #B6B9F2;
+  color: var(--solid-light-blue);
   font-size: 25px;
+}
+
+#smile {
+  color: var(--light-green);
 }
 
 .time-label {
@@ -296,22 +316,20 @@ header {
 
 @media (max-width: 700px) {
   #home h4 {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   #timer {
-      padding: 15px;
-      font-size: 20px;
+    padding: 15px;
+    font-size: 20px;
   }
 
   #timer-section {
-      margin-top: 20px;
+    margin-top: 20px;
   }
-
 }
 
 /* Anouncement Section */
-
 #eventAnnouncment {
   text-align: center;
   display: flex;
@@ -328,21 +346,22 @@ header {
 }
 
 .box {
-  border: 1px solid var(--solid-light-blue);
+  border: 1px solid #fff;
   font-family: I_pixel_u;
   color: var(--solid-light-blue);
   text-align: center;
   padding: 10px;
   margin: 1.5em 0;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   min-height: 150px;
 }
 
 .box h1 {
   font-size: 1.4em;
   line-height: 48, 56px;
+  color: #fff;
 }
 
 #social-media-container {
@@ -364,8 +383,8 @@ header {
   transition: 0.2s ease;
 }
 
-.social-media-img:hover{
-  transform: scale(1.2);    
+.social-media-img:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 800px) {
@@ -414,15 +433,16 @@ header {
 /* Sections */
 
 .section-title {
-  font-family: I_pixel_u; 
+  font-family: I_pixel_u;
   font-style: normal;
   font-size: 2em;
-  color: #fff; 
+  color: var(--light-green);
 }
 
 /* Previus Events Section */
 
 #previous-events {
+  background: var(--dark-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -453,7 +473,7 @@ header {
   width: 100%;
   min-width: 100%;
   height: 0;
-  padding-bottom: calc(200%/3);
+  padding-bottom: calc(200% / 3);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
@@ -468,7 +488,7 @@ header {
   height: 1.8em;
   width: 1.8em;
   border: 0.880342px solid #ced2ec;
-  background: #182466;
+  background: var(--dark-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -483,7 +503,7 @@ header {
   height: 1.8em;
   width: 1.8em;
   border: 0.880342px solid #ced2ec;
-  background: #182466;
+  background: var(--dark-blue);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -494,8 +514,10 @@ header {
   right: 1%;
 }
 
-
 /* About Section */
+#about {
+  background: var(--dark-blue);
+}
 
 #about {
   margin-top: 30px;
@@ -513,8 +535,8 @@ header {
 
 .info p {
   margin-top: 25px;
-  color: #A5A9BC;
-  font-family: 'roboto-mono';
+  color: #fff;
+  font-family: "roboto-mono";
   line-height: 1.5;
 }
 
@@ -522,7 +544,7 @@ header {
   text-decoration: underline;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .info {
     width: 100%;
   }
@@ -532,20 +554,15 @@ header {
   }
 }
 
-
 /* Schedule Section */
 
 #schedule {
   color: #fff;
-  font-family: 'roboto-mono';
+  font-family: "roboto-mono";
 }
 
 #schedule h2 {
-  margin-bottom: 30px; 
-}
-
-#schedule p {
-  color: #A5A9BC;
+  margin-bottom: 30px;
 }
 
 .schedule-item {
@@ -557,7 +574,7 @@ header {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: 'retro-gaming';
+  font-family: "retro-gaming";
   letter-spacing: 1px;
 }
 
@@ -579,7 +596,7 @@ header {
 }
 
 .schedule-item span {
-  color: #A5A9BC;
+  color: var(--solid-light-blue);
   font-weight: normal;
 }
 
@@ -590,15 +607,17 @@ header {
 
 .days-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .day-item {
+  color: white;
   margin: 15px;
-  background: rgba(18, 27, 81, 0.8);
+  background: var(--dark-blue);
   border-radius: 5px;
   padding: 20px;
-  width: calc(100%/3);
+  width: 20rem;
   text-align: center;
   transition: 0.2s ease;
 }
@@ -611,24 +630,27 @@ header {
   padding-left: 10px;
 }
 
+.day-item-speaker span {
+  color: var(--solid-light-blue);
+}
+
 .day-item-date {
-  font-family: 'retro-gaming';
+  font-family: "retro-gaming";
 }
 
 .day-item-event-template {
   margin: 15px 0;
 }
 
+.day-item-topic span {
+  color: var(--light-green);
+  font-weight: bolder;
+}
+
 @media (max-width: 768px) {
-
-  #schedule p {
-    font-size: 0.8em;
-  }
-
   .days-list {
     flex-direction: column;
   }
-
 
   .day-item {
     width: 100%;
@@ -644,13 +666,14 @@ header {
 /* Footer */
 
 footer {
+  background: var(--dark-blue);
   padding-bottom: 20px;
-  color: #6C75A8;
+  color: #6c75a8;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
-  font-family: 'roboto-mono';
+  font-family: "roboto-mono";
 }
 
 footer img {

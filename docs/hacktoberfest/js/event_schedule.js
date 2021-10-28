@@ -36,7 +36,8 @@ const createCard = (data) => {
 const createDay = (data, template) => {
     const day = template.cloneNode(true);
 
-    day.href = data.live
+    day.href = data.link;
+
     day.querySelector('.day-item-date').innerHTML = data.date
     const eventsList = day.querySelector('.day-item-events');
 
@@ -45,6 +46,8 @@ const createDay = (data, template) => {
     eventsList.innerHTML = ""
 
     for(const event of data.events){
+        eventsList.innerHTML += "<span>------------------</span>"
+
         const eventElement = createEvent(event, eventTemplate)
         eventsList.appendChild(eventElement)
     }
@@ -56,8 +59,9 @@ const createDay = (data, template) => {
 const createEvent = (data, template) => {
     const event = template.cloneNode(true);
 
-    event.querySelector('.day-item-topic').innerHTML = "> " + data.topic
+    event.querySelector('.day-item-topic').innerHTML = "<span>> </span>" + data.topic
     event.querySelector('.day-item-speaker').innerHTML = "speaker: <span>" + data.speaker + "</span"
+    event.querySelector('.day-item-type').innerHTML = data.isAsync ? "Assíncrono" : "Síncrono"
 
     return event
 }

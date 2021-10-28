@@ -135,7 +135,7 @@
 .crt::after {
     content: " ";
     display: block;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -150,7 +150,7 @@
 .crt::before {
     content: " ";
     display: block;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -167,7 +167,7 @@
   /* glitch */
 
 body {
-    --glitch-height: 10vh;
+    --glitch-height: 100%;
     --gap-horizontal: 8px;
     --gap-vertical: 3px;
     --time-anim: 4s;
@@ -177,7 +177,7 @@ body {
 }
 
 .glitch {
-   position: relative;
+   position: absolute;
    top: 0;
    left: 0;
    width: var(--glitch-width);
@@ -186,7 +186,7 @@ body {
 }
 
 .glitchit {
-    position: relative;
+    position: absolute;
     top: calc(-1 * var(--gap-vertical));
     left: calc(-1 * var(--gap-horizontal));
     width: calc(100% + var(--gap-horizontal) * 2);

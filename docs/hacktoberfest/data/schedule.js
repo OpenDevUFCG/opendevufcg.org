@@ -1,158 +1,252 @@
 const schedule = [
-    { 
-        title: "Abertura Hacktoberfest",
-        topic: "",
-        days: [
-            { 
-                date: "Sábado (3) - 14h",
-                live:'https://drive.google.com/file/d/1crILZIiwRgZHRbh7hpY5BV-vQ0nTvWee/view',
-                events: [
-                    { 
-                        speaker: "Fanny Vieira e Mariana Nascimento",
-                        topic: "Abertura + palestras de Git e trilha open source",
-                    }
-                ]
-                
-            },
+  {
+    title: "Abertura Hacktoberfest",
+    topic: "",
+    days: [
+      {
+        date: "Sex (01/10) - 19h ",
+        link:"https://www.youtube.com/watch?v=YAV5YjqScX0",
+        events: [
+          {
+            speaker: "Iele Passos",
+            topic: "Abertura do Evento",
+            isAsync: false,
+          },
+          {
+            speaker: "José Renan e Juan Barros",
+            topic: "Contribuições opensource",
+            isAsync: false,
+          },
         ],
-    },
-    { 
-        title: "1° Semana <br>(dias 6 e 10)",
-        topic: "Trilha Iniciantes",
-        days: [
-            { 
-                
-                date: "Terça (6) - 19h30",
-                live:'https://www.youtube.com/watch?v=HbDXkKtjTcc',
-                events: [
-                    { 
-                        speaker: "Pedro Espíndula",
-                        topic: "Conceitos base de desenvolvimento Web",
-                    }
-                ] 
-            }
+      },
+    ],
+  },
+  {
+    title: "1° Semana <br>",
+    topic: "",
+    days: [
+      {
+        date: "Seg (04/10) - 19h",
+        link:"https://www.youtube.com/watch?v=SbrzdldZktA",
+        events: [
+          {
+            speaker: "Iris Almeida, Maria Soares e Jaciane de Oliveira",
+            topic: "Minicurso git github - elas@cc",
+            isAsync: false,
+          },
         ],
-    },
-    { 
-        title: "2° Semana <br>(dias 13 e 17)",
-        topic: "Trilha Backend",
-        days: [
-            { 
-                date: "Terça (13) - 19h30",
-                live:'https://www.youtube.com/watch?v=pKT3Cwhb3S4',
-                events: [
-                    {
-                        speaker: "Matheus Gaudêncio",
-                        topic: "Cache, Stateless, Sharding e Load Balancer - Estratégias de desempenho para sistemas corporativos",
-                    },
-                    {
-                        speaker: "Gabriel Tavares",
-                        topic: "Como usar os princípios de pesquisa para resolução de problemas", 
-                    }
-                ] 
-            },
-            { 
-                date: "Sábado (17) - 14h",
-                live:'https://www.youtube.com/watch?v=qrth3hmg02I',
-                events: [
-                    {
-                        speaker: "Iury Gregory e Kaio Kassiano",
-                        topic: "O mundo open source do OpenStack"
-                    },
-                    {
-                        speaker: "Rerisson Matos",
-                        topic: "Construindo APIs REST com NodeJs, MongoDB e Express",
-                    }
-                ]  
-            },
+      },
+      {
+        date: "Ter (05/10) - 19h",
+        link:"https://www.youtube.com/watch?v=t5iMFbt1u-I",
+        events: [
+          {
+            speaker: "Leandra Oliveira",
+            topic: "Introdução - Markdown",
+            isAsync: true,
+          },
         ],
-    },
-    { 
-        title: "3° Semana <br>(dias 20, 22 e 24)",
-        topic: "Trilha Frontend",
-        days: [
-            { 
-                date: "Terça (20) - 19h30",
-                live:'https://www.youtube.com/watch?v=cMV-sbjx3ZE',
-                events: [
-                    {
-                        speaker: "Beatriz Albino",
-                        topic: "UX da questão",
-                    },
-                    {
-                        speaker: "Jessé Souza",
-                        topic: "Introdução a Web",
-                    }
-                ]  
-            },
-            { 
-                date: "Quinta (22) - 19h30",
-                live: 'https://www.youtube.com/watch?v=5jBNaS4Ab9c',
-                events: [
-                    {
-                        speaker: "Lucas de Medeiros",
-                        topic: "Introdução a React",
-                    },
-                    {
-                        speaker: "Luciano de Oliveira",
-                        topic: "Estado em React: os comos e os porquês",
-                    },
-                    {
-                        speaker: "Estácio Pereira",
-                        topic: "Aproximando a Web de aplicativos nativos",
-                    }
-                ]  
-            },
-            { 
-                date: "Sábado (24) - 14h",
-                live:'https://www.youtube.com/watch?v=f5xtS7COSaM',
-                events: [
-                    {
-                        speaker: "Thayanne Sousa",
-                        topic: "Como fazer um blog utilizando Gatsby",
-                    }
-                ]  
-            },
+      },
+      {
+        date: "Qua (06/10) - 19h",
+        link:"https://www.youtube.com/watch?v=UwIQ9-eoFVc",
+        events: [
+          {
+            speaker: "Bianca Rangel",
+            topic:
+              "Como product design pode te ajudar a tornar o ensino remoto mais produtivo",
+            isAsync: true,
+          },
         ],
-    },
-    { 
-        title: "4° Semana <br>(dias 27, 29 e 31)",
-        topic: "Trilha Análise de Dados",
-        days: [
-            { 
-                date: "Terça (27) - 19h30",
-                live:'https://www.youtube.com/watch?v=1WxUBUgwBlI',
-                events: [
-                    {
-                        speaker: "Hadrizia Santos",
-                        topic: "Introdução à Ciência de dados",
-                    }
-                ]  
-            },
-            { 
-                date: "Quinta (29) - 19h30",
-                live:'https://www.youtube.com/watch?v=OapzhHF8-DQ',
-                events: [
-                    {
-                        speaker: "Nazareno",
-                        topic: "Nos Visualizando em Dados: tecnologia e visualização para sentir e refletir, além de produzir",
-                    }
-                ]  
-            },
-            { 
-                date: "Sábado (31) - 14h",
-                live:'https://www.youtube.com/watch?v=TYUNfu9pXQw',
-                events: [
-                    {
-                        speaker: "Júlio Barreto",
-                        topic: "Textões e dados: o que é PLN e em que podemos utilizar",
-                    },
-                    {
-                        speaker: "Elloá B. Guedes",
-                        topic: "Machine Learning: Os Próximos Desafios",
-                    }
-                ]  
-            }
+      },
+      {
+        date: "Qui (07/10) - 19h",
+        link:"https://www.youtube.com/watch?v=ZH4AUczmdAw",
+        events: [
+          {
+            speaker: "Rodrigo Eloy",
+            topic: "Introdução à ferramenta Figma",
+            isAsync: true,
+          },
         ],
-    }
-]
+      },
+    ],
+  },
+  {
+    title: "2° Semana <br>",
+    topic: "",
+    days: [
+      {
+        date: "Qua (13/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        events: [
+          {
+            speaker: "Davi Sousa",
+            topic: "Introdução ao desenvolvimento de jogos com Unity",
+            isAsync: true,
+          },
+        ],
+      },
+      {
+        date: "Qui (14/10) - 18:30h",
+        link:"https://youtu.be/3tDry7fF8JE",
+        events: [
+          {
+            speaker: "Sergio Duarte",
+            topic: "Linux for dummies",
+            isAsync: false,
+          },
+        ],
+      },
+      {
+        date: "Sex (15/10)",
+        link:"https://youtu.be/G6uTNbneUd4",
+        events: [
+          {
+            speaker: "Sergio Duarte",
+            topic: "Introdução ao terminal- 18:30h",
+            isAsync: false,
+          },
+          {
+            speaker: "Iago Tito",
+            topic: "Customização do terminal - 20h",
+            isAsync: true,
+          },
+        ],
+      },
+      {
+        date: "Sáb (16/10) - 19h",
+        link:"https://www.youtube.com/watch?v=4FrDE4pWtoY",
+        events: [
+          {
+            speaker: "Thiago Lira",
+            topic: "Automação de Deploys com Jenkins",
+            isAsync: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "3° Semana <br>",
+    topic: "",
+    days: [
+      {
+        date: "Seg (18/10)",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        events: [
+          {
+            speaker: "Marta Laís",
+            topic: "Áreas da infraestrutura - 19h",
+            isAsync: false,
+          },
+          {
+            speaker: "Ignácio Schmid",
+            topic: "Introdução ao Docker - 17:30h",
+            isAsync: true,
+          },
+        ],
+      },
+      {
+        date: "Ter (19/10) - 19h",
+        link:"https://youtu.be/M_ANoZU9cwg",
+        events: [
+          {
+            speaker: "Mariana Mendes e Nicácio Oliveira",
+            topic: "VTEX lab",
+            isAsync: false,
+          },
+        ],
+      },
+      {
+        date: "Qua (20/10) - 19h",
+        link:"https://youtu.be/jpjhuJyGOwE",
+        events: [
+          {
+            speaker: "Comunidades Convidadas: Elas@Computação, OpenDevUFCG, Guardians, Mulheres na Computação UEPB, PyLadiesPB",
+            topic:
+              "Mesa Redonda: Comunidades na área de TI e sua importância",
+              isAsync: false,
+          },
+        ],
+      },
+      {
+        date: "Qui (21/10)",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        events: [
+          {
+            speaker: "Marcella Siqueira",
+            topic: "Lições de Escrita Criativa para Escrita Acadêmica - 19h",
+            isAsync: false,
+          },
+          {
+            speaker: "Lucas Carvalho",
+            topic: "Como conseguir o seu primeiro projeto como freelancer - 18h",
+            isAsync: true,
+          },
+        ],
+      },
+      {
+        date: "Sex (22/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        events: [
+          {
+            speaker: "Ialy Cordeiro, Lilian Teixeira e Karen Pessoa",
+            topic: "Minicurso: Primeiros passos com Arduíno",
+            isAsync: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "4° Semana <br>",
+    topic: "",
+    days: [
+      {
+        date: "Seg (25/10) - 19h",
+        link:"https://www.youtube.com/watch?v=Xygm97OIlF0",
+        events: [
+          {
+            speaker: "Marcos Sales e Iele Passos",
+            topic: "A Influência da temperatura no desempenho de computadores",
+            isAsync: true,
+          },
+        ],
+      },
+      {
+        date: "Ter (26/10) - 19h",
+        link:"https://www.youtube.com/watch?v=0rw8r2lU0kk",
+        events: [
+          {
+            speaker: "Duda Azevedo",
+            topic: "Computadores que enxergam: Detectando formas em imagens",
+            isAsync: true,
+          },
+        ],
+      },
+      {
+        date: "Qua (27/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        events: [
+          {
+            speaker: "Emilly Albuquerque e Felipe Siqueira",
+            topic: "Dados abertos no Brasil",
+            isAsync: true,
+          },
+        ],
+      },
+      {
+        date: "Sex (29/10) - 19h",
+        link:"https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw",
+        events: [
+          {
+            speaker: "Iele Passos",
+            topic: "Encerramento",
+            isAsync: false,
+          },
+        ],
+      },
+    ],
+  },
+];

@@ -5,7 +5,7 @@ const questions = [
     },
     {
         question: "Onde vai acontecer o evento?",
-        answer: "As palestras e workshops irão se concentrar no nosso <a target='_blank' style='text-decoration: underline' href='https://www.youtube.com/channel/UCQYxuECnzQ_Cjbgcx8RPUWw'>canal do youtube</a>, se inscreve lá e ativa o sininho pra não perder nenhuma programação que teremos durante esse mês!"
+        answer: "As palestras e workshops irão se concentrar no nosso canal do Youtube, se inscreve lá e ativa o sininho pra não perder nenhuma programação que teremos durante esse mês!"
     },
     {
         question: "Eu estou no começo da faculdade ou tenho pouca experiência com programação, mesmo assim eu vou conseguir assistir as programações?",
