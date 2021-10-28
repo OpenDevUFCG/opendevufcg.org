@@ -276,7 +276,7 @@ button {
   }
 
   section {
-    height: fit-content;
+    height: auto;
   }
 
   .content-area {
@@ -311,6 +311,7 @@ button {
 }
 
 @media (max-width: 574px) {
+
   .join-community-call {
     flex-direction: column;
     align-items: center;
