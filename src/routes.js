@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+import { About } from "./pages/About";
 
 const routes = {
-  about: <div>about</div>,
+  about: <About />,
   history: <div>history</div>,
   projects: <div>history</div>,
   events: <div>history</div>,
