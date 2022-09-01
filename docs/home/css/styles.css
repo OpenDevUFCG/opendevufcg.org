@@ -385,3 +385,67 @@ button {
     font-size: 1em;
   }
 }
+
+/* About us section */
+.about-us {
+  height: auto;
+  max-height: 863px;
+  background:  linear-gradient(180deg, #4979B7 0%, #3C457B 65.85%, #393A6E 100%), linear-gradient(180deg, #4979B7 0%, #393A6E 100%);
+  border-radius: 25px;
+}
+
+.about-us > p {
+  font-size: 2rem;
+}
+
+.about-us h2, .about-us p {
+  text-align: center;
+}
+
+.about-us h2 {
+  margin-bottom: 2rem;
+}
+
+.about-us-container {
+  display: flex;
+  max-width: 100%;
+  padding: 7.5rem 0;
+  justify-content: end;
+}
+
+.about-us-card {
+  width: 100%;
+ 
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.about-us-card > div {
+  display: flex;
+  justify-content: center;
+  height: 135px;
+}
+
+.about-us-card p {
+  word-wrap: break-word;
+}
+
+.highlight-text {
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width:768px) {
+  .about-us {
+    max-height: none;
+  }
+  .about-us-container {
+    flex-direction: column;
+  }
+
+  .about-us-card {
+    margin-bottom: 2rem;
+  }
+}
