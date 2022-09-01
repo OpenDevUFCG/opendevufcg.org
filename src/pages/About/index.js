@@ -1,5 +1,11 @@
+import { Carousel } from "../../components/Carousel";
 import { Wrapper } from "./style";
 
 export const About = () => {
-  return <Wrapper>About</Wrapper>;
+  return (
+    <Wrapper>
+      About
+      <Carousel />
+    </Wrapper>
+  );
 };
