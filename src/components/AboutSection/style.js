@@ -12,7 +12,7 @@ export const Wrapper = styled.section`
     }
 
     @media screen and (max-width:768px) {
-        max-height: none;
+        padding: 2rem 0.5rem;
     }
 `;
 
@@ -33,6 +33,7 @@ export const CardsContainer = styled.div`
     @media screen and (max-width:768px) {
         flex-direction: column;
         padding: 1rem;
+        margin: 0;
         margin-top: 1rem;
         align-items: center;
     }
