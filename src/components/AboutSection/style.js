@@ -21,6 +21,8 @@ export const Title = styled.h2`
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
 `
 export const CardsContainer = styled.div`
     display: flex;
