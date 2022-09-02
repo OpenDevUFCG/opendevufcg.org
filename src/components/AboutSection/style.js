@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     background:  linear-gradient(180deg, #4979B7 0%, #3C457B 65.85%, #393A6E 100%), linear-gradient(180deg, #4979B7 0%, #393A6E 100%);
     border-radius: 25px;
     color: #FFF;
