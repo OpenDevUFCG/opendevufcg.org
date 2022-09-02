@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
     color: #FFF;
  
     & > p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-align: center;
     }
 
