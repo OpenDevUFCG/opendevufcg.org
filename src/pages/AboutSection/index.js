@@ -6,8 +6,7 @@ export const AboutSection = () => {
   return (
     <Wrapper>
           <Title>Sobre nós</Title>
-          <p>Somos uma comunidade voltada a incentivar a cultura open source no curso</p>
-          <p>de Ciência da Computação da UFCG</p>
+          <p>Somos uma comunidade voltada a incentivar a cultura open source no curso de Ciência da Computação da UFCG</p>
           <CardsContainer class="about-us-container">
             <Card class="about-us-card">
               <div>
