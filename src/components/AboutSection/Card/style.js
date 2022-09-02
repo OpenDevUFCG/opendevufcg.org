@@ -12,21 +12,14 @@ export const CardContainer = styled.div`
         text-align: center;
     }
 
-    & > div {
-        display: flex;
-        justify-content: center;
-        height: 135px;
-    }
-
     @media screen and (max-width:768px) {
         margin: 2rem;   
     }
 `
 export const Icon = styled.img`
- 
+
     height: 6.875rem;
     
-   
 `
 
 export const HighlightText = styled.p`
