@@ -1,5 +1,6 @@
+import { AboutSection } from '../../components/AboutSection'
 import { Wrapper } from "./style";
 
 export const About = () => {
-  return <Wrapper>About</Wrapper>;
+  return <Wrapper><AboutSection/></Wrapper>;
 };
