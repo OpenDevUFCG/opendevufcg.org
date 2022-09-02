@@ -2,7 +2,7 @@ import { Card, CardsContainer, HighlightText, Wrapper } from "./style";
 import ComunnityImg from '../../assets/community.svg';
 import EmpowermentImg from '../../assets/empowerment.svg';
 import LightBoxImg from '../../assets/light-box.svg';
-export const About = () => {
+export const AboutSection = () => {
   return (
     <Wrapper>
           <h2>SOBRE NÓS</h2>
