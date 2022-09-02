@@ -1,5 +1,36 @@
-import { Wrapper } from "./style";
-
+import { Card, CardsContainer, HighlightText, Wrapper } from "./style";
+import ComunnityImg from '../../assets/community.svg';
+import EmpowermentImg from '../../assets/empowerment.svg';
+import LightBoxImg from '../../assets/light-box.svg';
 export const About = () => {
-  return <Wrapper>About</Wrapper>;
+  return (
+    <Wrapper>
+          <h2>SOBRE NÓS</h2>
+          <p>Somos uma comunidade voltada a incentivar a cultura open source no curso</p>
+          <p>de Ciência da Computação da UFCG</p>
+          <CardsContainer class="about-us-container">
+            <Card class="about-us-card">
+              <div>
+                <img src={ComunnityImg} alt="Representação de rrês pessoas formando uma corrente para representar uma comunidade."/>
+              </div>
+              <HighlightText>Comunidade</HighlightText>
+              <p>Juntos fazemos mais, por isso nos esforçamos em criar uma comunidade que exista diálogo, amizade, respeito e suporte. Todos são bem vindos, seja para contribuir, sugerir novas ideias ou pedir ajuda.</p>
+            </Card>
+            <Card class="about-us-card">
+              <div>
+                <img src={LightBoxImg} alt="Representação de uma caixa de papelão com uma lâmpada saindo através do topo dela, a lâmpada está acesa"/>
+              </div>
+              <HighlightText>Open Source</HighlightText>
+              <p>Open Source permite que qualquer pessoa possa ver, modificar, contribuir e distribuir seu código. Adotamos o Open Source como filosofia pois acreditamos que é isso que nos conecta, todos nossos projetos são Open Source e queremos espalhar essa cultura pela UFCG e quem sabe até fora dela.</p>
+            </Card>
+            <Card class="about-us-card">
+              <div>
+                <img src={EmpowermentImg} alt="Representação de uma pessoa dançando, com uma estrela, serpentina, quadrado e nota musical ao lado."/>
+              </div>
+              <HighlightText class="highlight-text">Empoderamento</HighlightText>
+              <p>Queremos empoderar pessoas, do iniciante ao experiente, todos podem aprender, sugerir e ajudar na OpenDevUFCG. Queremos ser a comunidade que possa encorajar pessoas a tomarem o primeiro passo, a sugerir novas ideias e principalmente, a contruí-las.</p>
+            </Card>
+          </CardsContainer>
+        </Wrapper>
+  )
 };
