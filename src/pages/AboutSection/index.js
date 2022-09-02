@@ -1,11 +1,11 @@
-import { Card, CardsContainer, HighlightText, Wrapper } from "./style";
+import { Card, CardsContainer, HighlightText, Title, Wrapper } from "./style";
 import ComunnityImg from '../../assets/community.svg';
 import EmpowermentImg from '../../assets/empowerment.svg';
 import LightBoxImg from '../../assets/light-box.svg';
 export const AboutSection = () => {
   return (
     <Wrapper>
-          <h2>SOBRE NÓS</h2>
+          <Title>Sobre nós</Title>
           <p>Somos uma comunidade voltada a incentivar a cultura open source no curso</p>
           <p>de Ciência da Computação da UFCG</p>
           <CardsContainer class="about-us-container">
