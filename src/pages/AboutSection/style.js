@@ -23,6 +23,7 @@ export const Title = styled.h2`
     text-align: center;
         font-size: 2.5rem;
         padding: 6rem 0 2.5rem 0;
+    text-transform: uppercase;
 `
 export const CardsContainer = styled.div`
     display: flex;
