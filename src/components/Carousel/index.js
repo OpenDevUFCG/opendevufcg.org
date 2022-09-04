@@ -57,9 +57,9 @@ export const Carousel = ({ imagesId }) => {
 Carousel.defaultProps = {
   imagesId: [
     "1TVtOEGrDH_Jnj0j9VOSv43dDJu3roJrC",
+    "1Q-oZgMUagvvTnLMQrna00m_NqsP1zKCQ",
     "1AYzS5eSPHo4fBaIcQk1fF4KIa9fWiVZf",
     "1yjYUSGM1WKEIdeQ_PNyhBQPmKOreeJAh",
-    "1pps-lzTmoYV9PlwsQtELgRZhZGKGnpFW",
   ],
 };
 
