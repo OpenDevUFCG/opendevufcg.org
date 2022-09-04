@@ -38,8 +38,8 @@ export const OutContainer = styled.div`
 `;
 
 export const BackgroundImg = styled.img`
-  position: relative;
   object-fit: cover;
+  height: 27rem;
 `;
 
 export const DotsContainer = styled.div`
