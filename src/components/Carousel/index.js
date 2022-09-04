@@ -32,11 +32,11 @@ export const Carousel = ({ imagesId }) => {
     <Wrapper>
       <OutContainer translate={currentPhoto} imagesLength={imagesId.length + 1}>
         <BackgroundImg src={Logo} />
-        {imagesId.map((id, i) => (
+        {imagesId.map((imageData, i) => (
           <img
             key={i}
-            src={`https://drive.google.com/uc?export=view&id=${[id]}`}
-            alt="Vacas pretas sao vagas mortas"
+            src={`https://drive.google.com/uc?export=view&id=${[imageData.id]}`}
+            alt={imageData.alt}
           />
         ))}
       </OutContainer>
@@ -56,10 +56,22 @@ export const Carousel = ({ imagesId }) => {
 
 Carousel.defaultProps = {
   imagesId: [
-    "1TVtOEGrDH_Jnj0j9VOSv43dDJu3roJrC",
-    "1Q-oZgMUagvvTnLMQrna00m_NqsP1zKCQ",
-    "1AYzS5eSPHo4fBaIcQk1fF4KIa9fWiVZf",
-    "1yjYUSGM1WKEIdeQ_PNyhBQPmKOreeJAh",
+    {
+      id: "1TVtOEGrDH_Jnj0j9VOSv43dDJu3roJrC",
+      alt: "Grupo de 11 pessoas, e um balão branco com um rosto feliz, participantes do core team da opendev. Todos estão vestidos com a camisa do evento.",
+    },
+    {
+      id: "1Q-oZgMUagvvTnLMQrna00m_NqsP1zKCQ",
+      alt: "Grupo de muitas pessoas posando para a foto do evento, com todos os organizadores e participantes do evento amontoados.",
+    },
+    {
+      id: "1AYzS5eSPHo4fBaIcQk1fF4KIa9fWiVZf",
+      alt: "Integrantes do core team na semana do fera sentados com um microfone olhando algo que está sendo apresentado",
+    },
+    {
+      id: "1yjYUSGM1WKEIdeQ_PNyhBQPmKOreeJAh",
+      alt: "Mulher de costas com camisa com a logo da VTEX olhando para um grupo de pessoas sentadas em frente a computadores",
+    },
   ],
 };
 
