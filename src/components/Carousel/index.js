@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import Logo from "../../assets/img/logopendev.png";
 import {
   DotsContainer,
@@ -60,4 +61,8 @@ Carousel.defaultProps = {
     "1yjYUSGM1WKEIdeQ_PNyhBQPmKOreeJAh",
     "1pps-lzTmoYV9PlwsQtELgRZhZGKGnpFW",
   ],
+};
+
+Carousel.propTypes = {
+  imagesId: PropTypes.arrayOf(PropTypes.string),
 };
