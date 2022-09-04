@@ -28,7 +28,6 @@ export const OutContainer = styled.div`
   background-color: white;
 
   img {
-    width: 100%;
     max-width: inherit;
     max-height: inherit;
     object-fit: cover;
