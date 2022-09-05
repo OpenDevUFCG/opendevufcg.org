@@ -76,5 +76,7 @@ Carousel.defaultProps = {
 };
 
 Carousel.propTypes = {
-  imagesId: PropTypes.arrayOf(PropTypes.string),
+  imagesId: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.string, alt: PropTypes.string })
+  ),
 };
