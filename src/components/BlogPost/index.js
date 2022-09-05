@@ -1,6 +1,7 @@
-import { BlogPostCard, CardImage, PublishedAt, Title, Author, ReadingTime, WrapperAuthorReadingTime} from "./style"
+import { BlogPostCard, CardImage, PublishedAt, Title, Author, ReadingTime, CardFooter} from "./style"
+import PropTypes from "prop-types"
 
-const BlogPostComponent = (props) => {
+export const BlogPost = (props) => {
 
     const formataNomeAutor = (nome) => {
         if (nome.length > 28) {
@@ -19,17 +20,32 @@ const BlogPostComponent = (props) => {
             <Title>
                 {props.title}
             </Title>
-            <WrapperAuthorReadingTime>
+            <CardFooter>
                 <Author>
                     Autor(a): {formataNomeAutor(props.author)}
                 </Author>
                 <ReadingTime>
                     Tempo de leitura: {props.reading_time_minutes} min
                 </ReadingTime>
-            </WrapperAuthorReadingTime>
+            </CardFooter>
         </BlogPostCard>
         </>
     )
 }
 
-export default BlogPostComponent
+BlogPost.prototypes = {
+    url: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    published_at: PropTypes.string.isRequired,
+    reading_time_minutes: PropTypes.number.isRequired
+}
+
+BlogPost.defaultProps = {
+    url: 'https://dev.to/opendevufcg',
+    author: "---",
+    title: "---",
+    published_at: new Date(),
+    reading_time_minutes: 0
+}
+

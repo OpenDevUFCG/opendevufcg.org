@@ -6,9 +6,9 @@ export const BlogPostCard = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 9px;
-    gap: 10px;
-    width: 451px;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    max-width: 24rem;
     height: 360px;
     background: #F9F9F9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -21,7 +21,7 @@ export const CardImage = styled.img`
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 182px;
+    height: 10rem;
     box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -29,61 +29,31 @@ export const CardImage = styled.img`
 `
 
 export const PublishedAt = styled.p`
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    text-align: center;
     color: rgba(52, 53, 135, 0.49);
 `
 
 export const Title = styled.h3`
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
     text-align: center;
     letter-spacing: 0.1em;
     color: #343587;
 `
 
 export const Author = styled.p`
-    width: fit-content;
-    height: 76px;
-    left: 9px;
-    top: 275px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: flex-end;
-    text-align: left;
-    color: #343587;
 `
 
 export const ReadingTime = styled.p`
-    width: 170px;
-    height: 76px;
-    left: 293px;
-    top: 275px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
     color: rgba(52, 53, 135, 0.4);
 `
 
-export const WrapperAuthorReadingTime = styled.div`
+export const CardFooter = styled.div`
+    margin-top: 4rem;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: flex-end;
     justify-content: space-between;
 `
