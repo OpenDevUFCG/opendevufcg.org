@@ -1,19 +1,15 @@
 import { Card, CardText, Title, Description, Icon, IconContainer } from './styles'
-import GithubIcon from '../../assets/icons/GithubIcon'
 
-function Socials({ title, mediaName, description, icon }) {
+function Socials({ title, mediaName, description, icon, ...props}) {
   return (
-    <Card>
+    <Card {...props}>
       <CardText>
         <Title>{title}</Title>
         <Description>{description}</Description>
       </CardText>
 
-      {/* <IconContainer>
-        <Icon src={icon} alt={`Icone de ${mediaName}`} />
-      </IconContainer> */}
       <IconContainer>
-        <GithubIcon />
+        <Icon src={icon} alt={`Icone de ${mediaName}`} />
       </IconContainer>
     </Card>
   )

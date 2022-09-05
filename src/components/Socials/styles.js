@@ -6,6 +6,7 @@ export const Card = styled.div`
   height: 216px;
   background-color: #F9F9F9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 `
 
 export const CardText = styled.div`
@@ -31,6 +32,10 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 216px;
-  min-height: 216px;
 `;
+
+export const Icon = styled.img`
+  width: 216px;
+  height: 216px;
+  border-radius: 0 8px 8px 0;
+`
