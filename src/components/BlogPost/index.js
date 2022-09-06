@@ -10,12 +10,19 @@ export const BlogPost = (props) => {
         return nome
     }
 
+    const formataDataPublicacao = (nome) => {
+        if (nome === "---") {
+            return nome
+        }
+        return new Date(props.published_at).toLocaleDateString("pt-br")
+    }
+
     return (
         <>
         <BlogPostCard onClick={() => window.open(props.url)}>
             <CardImage/>
             <PublishedAt>
-                {new Date(props.published_at).toLocaleDateString("pt-br")}
+                {formataDataPublicacao(props.published_at)}
             </PublishedAt>
             <Title>
                 {props.title}
@@ -45,7 +52,7 @@ BlogPost.defaultProps = {
     url: 'https://dev.to/opendevufcg',
     author: "---",
     title: "---",
-    published_at: new Date(),
+    published_at: "---",
     reading_time_minutes: 0
 }
 
