@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  padding: 5rem 3rem;
+  padding: 4rem 3rem;
   background: linear-gradient(180deg, #4979b7 0%, #3c457b 65.85%, #393a6e 100%),
     linear-gradient(180deg, #4979b7 0%, #393a6e 100%);
   border-radius: 25px;
@@ -14,14 +14,14 @@ export const Wrapper = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 5rem 1rem;
+    padding: 4em 1rem;
   }
 `;
 
 export const Title = styled.h2`
   text-align: center;
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.125rem;
