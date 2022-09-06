@@ -1,10 +1,11 @@
 import { Router } from "./routes";
+import { Wrapper } from "./style";
 
 function App() {
   return (
-    <div>
+    <Wrapper>
       <Router />
-    </div>
+    </Wrapper>
   );
 }
 
