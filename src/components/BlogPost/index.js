@@ -18,7 +18,6 @@ export const BlogPost = (props) => {
     }
 
     return (
-        <>
         <BlogPostCard onClick={() => window.open(props.url)}>
             <CardImage/>
             <PublishedAt>
@@ -36,7 +35,6 @@ export const BlogPost = (props) => {
                 </ReadingTime>
             </CardFooter>
         </BlogPostCard>
-        </>
     )
 }
 
@@ -49,7 +47,7 @@ BlogPost.prototypes = {
 }
 
 BlogPost.defaultProps = {
-    url: 'https://dev.to/opendevufcg',
+    url: "https://dev.to/opendevufcg",
     author: "---",
     title: "---",
     published_at: "---",

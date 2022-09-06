@@ -5,11 +5,10 @@ export const BlogPostCard = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 0.5rem;
     gap: 0.5rem;
     max-width: 24rem;
-    height: 360px;
+    height: 19rem;
     background: #F9F9F9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -54,6 +53,7 @@ export const CardFooter = styled.div`
     margin-top: 4rem;
     width: 100%;
     display: flex;
+    flex-grow: 1;
     align-items: flex-end;
     justify-content: space-between;
 `
