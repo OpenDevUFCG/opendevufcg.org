@@ -8,20 +8,17 @@ import {
   OutContainer,
   Wrapper,
 } from "./style";
+import { useInterval } from "../../util/hooks";
 
 export const Carousel = ({ imagesId }) => {
   const [currentPhoto, setCurrentePhoto] = useState(0);
   const [ascendent, setAscendent] = useState(true);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      ascendent === true
-        ? setCurrentePhoto((previous) => previous + 1)
-        : setCurrentePhoto((previous) => previous - 1);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [ascendent, currentPhoto]);
+  useInterval(() => {
+    ascendent === true
+      ? setCurrentePhoto((previous) => previous + 1)
+      : setCurrentePhoto((previous) => previous - 1);
+  }, 5000);
 
   useEffect(() => {
     if (currentPhoto >= imagesId.length) setAscendent(false);
