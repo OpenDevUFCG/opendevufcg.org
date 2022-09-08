@@ -1,25 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Links, HeaderContainer } from "./styles";
+import { Links, HeaderContainer, Link } from "./styles";
+import Point  from "../../assets/point.svg"
+import { NavLink } from "react-router-dom";
+import { routes } from "../../routes";
 
 export const Header = () => {
-  const pages = [
-    { title: "sobre nós", path: "/" },
-    { title: "nossa história", path: "" },
-    { title: "projetos", path: "" },
-    { title: "eventos", path: "" },
-    { title: "blog", path: "" },
-    { title: "a comunidade", path: "" },
-  ];
-
   return (
     <HeaderContainer>
       <Links>
-        {pages.map((page) => {
+        {routes.map((page) => {
           return (
-            <li key={page.title}>
-              <Link to={page.path}>{page.title}</Link>
-            </li>
+            <Link key={page.title}>
+              <NavLink to={page.path} className="selected">{page.title}</NavLink>
+              <img src={Point} alt="icone em forma geometrica de losango azul"/>
+            </Link>
           );
         })}
       </Links>
