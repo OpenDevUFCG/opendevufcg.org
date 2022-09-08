@@ -1,17 +1,15 @@
-import { Card, CardText, Title, Description, Icon, IconContainer } from './styles'
+import { Card, CardText, Title, Description, Icon } from './styles'
 
-function Socials({ title, mediaName, description, icon, ...props}) {
+function Socials({ title, mediaName, description, icon, link, ...props}) {
   return (
-    <Card {...props}>
-      <CardText>
-        <Title>{title}</Title>
-        <Description>{description}</Description>
-      </CardText>
+      <Card href={link} target="_blank" rel="noopener noreferrer" {...props}>
+        <CardText>
+          <Title>{title}</Title>
+          <Description>{description}</Description>
+        </CardText>
 
-      <IconContainer>
-        <Icon src={icon} alt={`Icone de ${mediaName}`} />
-      </IconContainer>
-    </Card>
+          <Icon src={icon} alt={`Icone de ${mediaName}`} />
+      </Card>
   )
 }
 

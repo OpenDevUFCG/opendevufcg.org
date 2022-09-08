@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
+export const Card = styled.a`
   display: flex;
   width: 549px;
   height: 216px;
   background-color: #F9F9F9;
+  color: inherit;
+  text-decoration: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  overflow: hidden;
 `
 
 export const CardText = styled.div`
-  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-weight: 700;
-  margin-right: 26px;
-  margin-left: 30px;
+  padding: 1rem;
 `
 
 export const Title = styled.h2`
@@ -26,16 +27,9 @@ export const Title = styled.h2`
 export const Description = styled.p`
   margin-top: 41px;
   font-size: 16px;
+  letter-spacing: 0.125rem;
 `
 
-export const IconContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 export const Icon = styled.img`
-  width: 216px;
-  height: 216px;
-  border-radius: 0 8px 8px 0;
+  width: 13.5rem;
 `
