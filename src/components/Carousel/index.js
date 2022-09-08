@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import Logo from "../../assets/img/logopendev.png";
+import Logo from "../../assets/imgs/logopendev.png";
 import {
   DotsContainer,
   BackgroundImg,
