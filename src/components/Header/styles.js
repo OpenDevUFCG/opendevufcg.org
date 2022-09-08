@@ -15,6 +15,7 @@ export const HeaderContainer = styled.nav`
 
 export const Links = styled.ul`
   display: flex;
+  background-color: red;
   gap: 1rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -32,7 +33,7 @@ export const Link = styled.li`
   gap: 1rem;
 
   @media screen and (max-width: 710px) {
-    font-size: 10px !important;
+    font-size: 11px !important;
     gap: 0.5rem;
   }
 
@@ -80,7 +81,7 @@ export const Link = styled.li`
   }
   .selected.active {
     border-bottom: #343578 4px solid;
-    line-height: 1.85rem;
+    line-height: 2.2rem;
 
     @media screen and (max-width: 768px) {
       border-bottom: #343578 3px solid;
