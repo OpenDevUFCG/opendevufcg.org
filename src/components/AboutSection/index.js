@@ -1,8 +1,8 @@
 import { CardsContainer, Title, Wrapper } from "./style";
 import { Card } from "./Card";
-import ComunnityImg from "../../assets/community.svg";
-import EmpowermentImg from "../../assets/empowerment.svg";
-import LightBoxImg from "../../assets/light-box.svg";
+import ComunnityImg from "../../assets/icons/community.svg";
+import EmpowermentImg from "../../assets/icons/empowerment.svg";
+import LightBoxImg from "../../assets/icons/light-box.svg";
 export const AboutSection = () => {
   return (
     <Wrapper>
