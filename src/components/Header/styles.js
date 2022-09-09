@@ -20,7 +20,7 @@ export const Links = styled.ul`
   cursor: pointer;
 
   @media screen and (max-width: 710px) {
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 `;
 
@@ -29,6 +29,7 @@ export const Link = styled.li`
   align-items: center;
   font-weight: bold;
   font-size: 18px;
+  letter-spacing: 0.125rem;
   gap: 1rem;
 
   @media screen and (max-width: 710px) {

@@ -3,12 +3,12 @@ import { About } from "./pages/About";
 import { History } from "./pages/History";
 
 export const routes = [
-  { component: <About />, title: "sobre nós", path: "/" },
+  { component: <About />, title: "Home", path: "/" },
   { component: <History />, title: "nossa história", path: "/history" },
   { component: <div>history</div>, title: "projetos", path: "/projects" },
   { component: <div>history</div>, title: "eventos", path: "/events" },
   { component: <div>history</div>, title: "blog", path: "/blog" },
-  { component: <div>history</div>, title: "a comunidade", path: "/community" },
+  { component: <div>history</div>, title: "comunidade", path: "/community" },
 ];
 
 /*
