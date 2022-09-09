@@ -19,8 +19,10 @@ export const LogoSection = styled.section`
 
 export const Logo = styled.img`
   max-width: 500px;
+  width: 100%;
   justify-self: center;
   flex-grow: 1;
+  margin-bottom: 6rem;
 `;
 
 export const VICon = styled.img`
