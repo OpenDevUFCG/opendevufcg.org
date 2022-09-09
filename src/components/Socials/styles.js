@@ -10,12 +10,19 @@ export const Card = styled.a`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   overflow: hidden;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    width: 216px;
+    height: 480px;
+  }
 `
 
 export const CardText = styled.div`
   text-align: center;
   font-weight: 700;
   padding: 1rem;
+  order: 2;
 `
 
 export const Title = styled.h2`
@@ -32,4 +39,5 @@ export const Description = styled.p`
 
 export const Icon = styled.img`
   width: 13.5rem;
+  order: 1;
 `
