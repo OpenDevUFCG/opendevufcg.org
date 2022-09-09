@@ -15,7 +15,6 @@ export const HeaderContainer = styled.nav`
 
 export const Links = styled.ul`
   display: flex;
-  background-color: red;
   gap: 1rem;
   text-transform: uppercase;
   cursor: pointer;
