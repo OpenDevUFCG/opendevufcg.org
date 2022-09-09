@@ -7,6 +7,7 @@ html {
 	min-height: 100vh;
 	background-image: url('./assets//imgs/background.png');
 	background-repeat: repeat;
+	scroll-behavior: smooth;
 }
 
 html, body, div, span, applet, object, iframe,

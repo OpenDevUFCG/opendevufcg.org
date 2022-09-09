@@ -1,13 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import { About } from "./pages/About";
+import { History } from "./pages/History";
 
 export const routes = [
   { component: <About />, title: "sobre nós", path: "/" },
-  { component: <div>history</div>, title: "nossa história", path: "/history" },
+  { component: <History />, title: "nossa história", path: "/history" },
   { component: <div>history</div>, title: "projetos", path: "/projects" },
   { component: <div>history</div>, title: "eventos", path: "/events" },
   { component: <div>history</div>, title: "blog", path: "/blog" },
-  { component: <div>history</div>, title: "a comunidade", path: "/community" },  
+  { component: <div>history</div>, title: "a comunidade", path: "/community" },
 ];
 
 /*
@@ -19,7 +20,7 @@ export const Router = () => {
     <Routes>
       <Route exact path="/" element={routes[0].component} />
       {routes.map((route, index) => (
-         <Route key={index} path={route.path} element={route.component} />
+        <Route key={index} path={route.path} element={route.component} />
       ))}
     </Routes>
   );

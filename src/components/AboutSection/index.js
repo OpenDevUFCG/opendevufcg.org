@@ -3,10 +3,10 @@ import { Card } from "./Card";
 import ComunnityImg from "../../assets/icons/community.svg";
 import EmpowermentImg from "../../assets/icons/empowerment.svg";
 import LightBoxImg from "../../assets/icons/light-box.svg";
-export const AboutSection = () => {
+export const AboutSection = ({ ref }) => {
   return (
-    <Wrapper>
-      <Title>Sobre nós</Title>
+    <Wrapper ref={ref}>
+      <Title id="about-us">Sobre nós</Title>
       <p>
         Somos uma comunidade voltada a incentivar a cultura open source no curso
         de Ciência da Computação da UFCG
