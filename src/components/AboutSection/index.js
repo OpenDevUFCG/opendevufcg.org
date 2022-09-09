@@ -27,20 +27,18 @@ export const AboutSection = ({ ref }) => {
           alt="Representação de uma caixa de papelão com uma lâmpada saindo através do topo dela, a lâmpada está acesa"
         >
           Open Source permite que qualquer pessoa possa ver, modificar,
-          contribuir e distribuir seu código. Adotamos o Open Source como
-          filosofia pois acreditamos que é isso que nos conecta, todos nossos
-          projetos são Open Source e queremos espalhar essa cultura pela UFCG e
-          quem sabe até fora dela.
+          contribuir e distribuir seu código. Acreditamos que o Open Source nos
+          conecta, todos nossos projetos são Open Source e queremos espalhar
+          essa cultura pela UFCG e quem sabe até fora dela.
         </Card>
         <Card
           title="Empoderamentos"
           img={EmpowermentImg}
           alt="Representação de uma pessoa dançando, com uma estrela, serpentina, quadrado e nota musical ao lado."
         >
-          Queremos empoderar pessoas, do iniciante ao experiente, todos podem
-          aprender, sugerir e ajudar na OpenDevUFCG. Queremos ser a comunidade
-          que possa encorajar pessoas a tomarem o primeiro passo, a sugerir
-          novas ideias e principalmente, a contruí-las.
+          Queremos empoderar todo tipo de pessoas, todos podem aprender, sugerir
+          e ajudar na OpenDevUFCG. Queremos ser a comunidade que encoraja todos
+          a tomarem o primeiro passo, a sugerir e construir novas ideias.
         </Card>
       </CardsContainer>
     </Wrapper>
