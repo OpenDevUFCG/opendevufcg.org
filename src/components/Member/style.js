@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.a`
-    display: inline-block;
-    position: relative;
     background-color: beige;
     border-radius: 50%;
     width: ${({ width }) => width}rem;
