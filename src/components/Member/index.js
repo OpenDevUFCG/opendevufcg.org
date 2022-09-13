@@ -10,12 +10,8 @@ import { Wrapper, Tooltip } from "./style"
  */
 export const Member = ({ githubURL, srcImg, name, width}) => {
     return(
-        <Wrapper href={githubURL} target="_blank" width={width}>
-           
-                <img src={srcImg} alt={`Foto de ${name}`}/>
-            
-            
-            <Tooltip>{name}</Tooltip>
+        <Wrapper href={githubURL} target="_blank" width={width} title={name}> 
+            <img src={srcImg} alt={`Foto de ${name}`}/>
         </Wrapper> 
     )
 }
