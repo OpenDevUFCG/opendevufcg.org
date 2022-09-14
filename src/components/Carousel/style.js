@@ -10,9 +10,16 @@ export const Wrapper = styled.div`
   padding: 1rem;
   box-sizing: border-box;
   position: relative;
+  float: right;
+  margin: 0 0 1rem 1rem;
 
   @media only screen and (max-width: 430px) {
     padding: 0.6rem;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    float: none;
+    margin: 0 auto;
   }
 `;
 
@@ -65,7 +72,6 @@ export const Dot = styled.div`
   border-radius: 20px;
   background: #fff;
   transition: 0.5s;
-  /* border: 1px solid #f8f8f8; */
   cursor: pointer;
 
   &:hover {
