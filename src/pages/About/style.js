@@ -40,7 +40,7 @@ export const MembersSection = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 3rem 0;
 `;
 
