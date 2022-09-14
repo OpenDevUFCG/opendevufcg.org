@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
   p {
     word-wrap: break-word;
     text-align: center;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
   }
 `;
 export const Icon = styled.img`

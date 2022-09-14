@@ -17,10 +17,10 @@ export const Member = ({ githubURL, srcImg, name, width }) => {
 };
 
 Member.defaultProps = {
-    githubURL: "https://github.com/OpenDevUFCG",
-    srcImg: "https://avatars.githubusercontent.com/u/42285400?v=4",
-    name: "OpenDevUFCG",
-    width: 2
+  githubURL: "https://github.com/OpenDevUFCG",
+  srcImg: "https://avatars.githubusercontent.com/u/42285400?v=4",
+  name: "OpenDevUFCG",
+  width: 4.5,
 };
 
 Member.propTypes = {
