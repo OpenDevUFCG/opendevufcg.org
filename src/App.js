@@ -1,10 +1,13 @@
+import { Header } from "./components/Header";
 import { Router } from "./routes";
+import { Wrapper } from "./style";
 
 function App() {
   return (
-    <div>
+    <Wrapper>
+      <Header />
       <Router />
-    </div>
+    </Wrapper>
   );
 }
 
