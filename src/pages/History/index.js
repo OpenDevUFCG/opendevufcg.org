@@ -90,8 +90,8 @@ export const History = () => {
           são preciosos!
         </MembersText>
         <MembersList>
-          {old_members.map((member) => (
-            <Member {...member} />
+          {old_members.map((member, i) => (
+            <Member {...member} key={i} />
           ))}
         </MembersList>
       </MembersContainer>

@@ -25,7 +25,6 @@ export const About = () => {
     async function getData() {
       const { data: members } = await queryMembers();
       setCoreMembers(members);
-      console.log(members);
     }
 
     getData();
@@ -48,8 +47,9 @@ export const About = () => {
           permanceça seguindo em um caminho coerente.
         </Text>
         <MembersContainer>
-          {coreMembers.map((member) => (
+          {coreMembers.map((member, i) => (
             <Member
+              key={i}
               githubURL={member.html_url}
               srcImg={member.avatar_url}
               name={member.login}
