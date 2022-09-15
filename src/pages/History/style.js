@@ -20,7 +20,7 @@ export const HistoryContainer = styled.div`
 `;
 
 export const HistoryTitle = styled(SectionTitle)`
-  text-align: center;
+  justify-content: center;
   margin-bottom: 2rem;
 `;
 
