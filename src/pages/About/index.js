@@ -25,7 +25,6 @@ export const About = () => {
     async function getData() {
       const { data: members } = await queryMembers();
       setCoreMembers(members);
-      console.log(members);
     }
 
     getData();
