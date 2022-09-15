@@ -18,7 +18,6 @@ the application has.
 export const Router = () => {
   return (
     <Routes>
-      <Route exact path="/" element={routes[0].component} />
       {routes.map((route, index) => (
         <Route key={index} path={route.path} element={route.component} />
       ))}
