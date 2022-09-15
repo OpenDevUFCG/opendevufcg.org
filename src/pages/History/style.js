@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3rem 0;
 `;
 
 export const HistoryContainer = styled.div`
@@ -33,10 +34,26 @@ export const Text = styled.p`
   letter-spacing: 0.125rem;
   line-height: 1.5rem;
   margin-bottom: 1rem;
-  text-align: justify;
 
   @media only screen and (max-width: 1080px) {
     text-align: center;
     margin-top: 2rem;
   }
+`;
+
+export const MembersContainer = styled.div`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+`;
+
+export const MembersText = styled(Text)`
+  text-align: center;
+`;
+
+export const MembersList = styled.div`
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 `;

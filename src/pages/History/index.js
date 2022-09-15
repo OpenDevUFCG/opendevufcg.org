@@ -1,6 +1,17 @@
 import { SectionTitle } from "../../components";
+import heartIcon from "../../assets/icons/heart.svg";
 import { Carousel } from "../../components/Carousel";
-import { HistoryContainer, Text, Wrapper, HistoryTitle } from "./style";
+import {
+  HistoryContainer,
+  Text,
+  Wrapper,
+  HistoryTitle,
+  MembersContainer,
+  MembersText,
+  MembersList,
+} from "./style";
+import { old_members } from "../../util/constants";
+import { Member } from "../../components/Member";
 
 export const History = () => {
   return (
@@ -66,6 +77,24 @@ export const History = () => {
           </strong>
         </Text>
       </HistoryContainer>
+      <MembersContainer>
+        <SectionTitle>
+          Deixaram Saudade{" "}
+          <img src={heartIcon} alt="Red heart icon with pointy edges" />
+        </SectionTitle>
+        <MembersText>
+          Sabemos da importância da história, de relembrar e de homenagear
+          aqueles que fizeram com que sejamos o que somos hoje. Por isso, tão
+          importantes quanto os membros atuais são aqueles que não estão mais
+          ativos no core, mas que fazem parte do coração dessa comunidade. Vocẽs
+          são preciosos!
+        </MembersText>
+        <MembersList>
+          {old_members.map((member) => (
+            <Member {...member} />
+          ))}
+        </MembersList>
+      </MembersContainer>
     </Wrapper>
   );
 };

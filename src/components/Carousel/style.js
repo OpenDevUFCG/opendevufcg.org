@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   box-sizing: border-box;
   position: relative;
   float: right;
-  margin: 0 0 1rem 1rem;
+  margin: 0 0 3rem 3rem;
 
   @media only screen and (max-width: 430px) {
     padding: 0.6rem;
