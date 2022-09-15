@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, ImageSide, EventImage, InfoSide, Title, Date, Description, DescriptionContainer } from './style'
+import { Card, ImageSide, EventImage, InfoSide, Title, Date, Description, UpperRow, LowerRow } from './style'
 import tempImg from '../../assets/imgs/logoandromedev.png'
 
 export const EventCard = ({
@@ -12,16 +12,18 @@ export const EventCard = ({
 }) => {
   return (
     <Card>
-      <ImageSide>
-        <EventImage src={org_image} alt={name} />
-      </ImageSide>
-      <InfoSide textToRight={false}>
-        <Title>{name}</Title>
-        <Date>Data do evento: {init_date} - {end_date}</Date>
-        <DescriptionContainer >
-          <Description>{description}</Description>
-        </DescriptionContainer>
-      </InfoSide>
+      <UpperRow>
+        <ImageSide>
+          <EventImage src={org_image} alt={name} />
+        </ImageSide>
+        <InfoSide>
+          <Title>{name}</Title>
+          <Date>Data do evento - {init_date}</Date>
+        </InfoSide>
+      </UpperRow>
+      <LowerRow>
+        <Description>{description}</Description>
+      </LowerRow>
     </Card>
   )
 }
