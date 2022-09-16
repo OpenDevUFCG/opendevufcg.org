@@ -28,7 +28,10 @@ export const Carousel = ({ imagesId }) => {
   return (
     <Wrapper>
       <OutContainer translate={currentPhoto} imagesLength={imagesId.length + 1}>
-        <BackgroundImg src={Logo} />
+        <BackgroundImg
+          src={Logo}
+          alt="Logo da OpenDev com o ícone da org e o nome OpenDevUFCG abaixo"
+        />
         {imagesId.map((imageData, i) => (
           <img
             key={i}

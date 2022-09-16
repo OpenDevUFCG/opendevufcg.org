@@ -19,11 +19,14 @@ import { queryMembers } from "../../service/github";
 export const About = () => {
   const scrollRef = useRef("#about-us");
   const executeScroll = () => scrollRef.current.scrollIntoView();
-  const [coreMembers, setCoreMembers] = useState([]);
+  const savedMembers =
+    JSON.parse(localStorage.getItem("@opendev/members")) || [];
+  const [coreMembers, setCoreMembers] = useState(savedMembers);
 
   useEffect(() => {
     async function getData() {
       const { data: members } = await queryMembers();
+      localStorage.setItem("@opendev/members", JSON.stringify(members));
       setCoreMembers(members);
     }
 
@@ -33,8 +36,15 @@ export const About = () => {
   return (
     <Wrapper>
       <LogoSection>
-        <Logo src={imgLogo} />
-        <VICon src={vIcon} onClick={executeScroll} />
+        <Logo
+          src={imgLogo}
+          alt="Logo da openDev com o ícone da org e o nome OpenDevUFCG abaixo"
+        />
+        <VICon
+          src={vIcon}
+          onClick={executeScroll}
+          alt="Blue icon in V format"
+        />
       </LogoSection>
       <div ref={scrollRef}>
         <AboutSection />
